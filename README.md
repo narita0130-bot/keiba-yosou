@@ -7,7 +7,10 @@
 | パス | 役割 |
 |---|---|
 | `scripts/fetch_odds.py` | netkeiba の公開オッズ取得スクリプト（依存なし・標準ライブラリのみ） |
+| `scripts/build_sheet.py` | 出馬表・オッズ・買い目の1枚ものHTMLを組み立てる |
+| `data/YYYY-MM-DD.sheet.json` | その日のレース構成・印・買い目の定義（`build_sheet.py` の入力） |
 | `data/YYYY-MM-DD.md` | その日のまとめ（印・単複・想定馬券のオッズ） |
+| `data/YYYY-MM-DD_出馬表オッズ買い目.pdf` | 生成した予想シート |
 
 ## 使い方
 
@@ -25,6 +28,26 @@ python3 scripts/fetch_odds.py combo --race 202607020507 \
 ```
 
 `>` はシェルのリダイレクトと解釈されるので、`--bet` の値は必ずクォートで囲むこと。
+
+### 予想シート（出馬表・オッズ・買い目）のPDF化
+
+`data/YYYY-MM-DD.sheet.json` に、その日のレースID・印・買い目を書いてから実行する。
+
+```bash
+cd scripts
+python3 build_sheet.py --spec ../data/2026-08-08.sheet.json --out /tmp/sheet.html
+
+# Chromium で PDF 化（IPAGothic が入っていれば日本語もそのまま出る）
+/opt/pw-browsers/chromium-1194/chrome-linux/chrome --headless --no-sandbox \
+    --disable-gpu --no-pdf-header-footer \
+    --print-to-pdf=../data/2026-08-08_出馬表オッズ買い目.pdf file:///tmp/sheet.html
+```
+
+起動時に D-Bus 関連の ERROR が出るが、PDF は正常に生成されるので無視してよい。
+
+買い目の `source` は `note`（note本文に書かれていた買い目）と `ref`（印から機械的に組んだ参考）を
+区別する。PDF 上でも「note記載」「参考」として別表示になるので、予想者の推奨と自分で足したものを
+混同しないこと。
 
 ### race_id の構成
 

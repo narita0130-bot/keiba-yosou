@@ -78,23 +78,41 @@ def list_races(date):
 
 
 def race_info(race_id):
-    """出馬表から レース名・条件・馬番→馬名 を取得する。"""
+    """出馬表から レース名・条件・出走各馬（枠/馬番/馬名/性齢/斤量/騎手/厩舎）を取得する。"""
     html = _get(f"https://race.netkeiba.com/race/shutuba.html?race_id={race_id}").decode("utf-8", "replace")
     name = re.search(r'class="RaceName"[^>]*>\s*([^<\n]+)', html)
     d1 = re.search(r'RaceData01">(.*?)</div>', html, re.S)
     d2 = re.search(r'RaceData02">(.*?)</div>', html, re.S)
-    horses = {}
+    horses, rows = {}, []
     for row in re.findall(r'<tr class="HorseList" id="tr_\d+">(.*?)</tr>', html, re.S):
         num = re.search(r'Umaban\d*[^>]*>\s*(\d+)', row)
         horse = re.search(r'class="HorseName"><a[^>]*title="([^"]+)"', row)
-        if num and horse:
-            horses[int(num.group(1))] = horse.group(1)
+        if not (num and horse):
+            continue
+        umaban = int(num.group(1))
+        horses[umaban] = horse.group(1)
+
+        def cell(pattern):
+            m = re.search(pattern, row, re.S)
+            return _strip(m.group(1)) if m else ""
+
+        rows.append({
+            "umaban": umaban,
+            "name": horse.group(1),
+            "waku": cell(r'<td class="Waku\d* [^"]*">(.*?)</td>'),
+            "barei": cell(r'<td class="Barei[^"]*">(.*?)</td>'),
+            # 斤量は class を持たない Txt_C セル。性齢セルの直後に来る。
+            "kinryo": cell(r'<td class="Barei[^"]*">.*?</td>\s*<td class="Txt_C">(.*?)</td>'),
+            "jockey": cell(r'<td class="Jockey">(.*?)</td>'),
+            "trainer": cell(r'<td class="Trainer">(.*?)</td>'),
+        })
     return {
         "race_id": race_id,
         "name": (name.group(1).strip() if name else ""),
         "condition": _strip(d1.group(1) if d1 else "").replace("--> ", ""),
         "class": _strip(d2.group(1) if d2 else ""),
         "horses": horses,
+        "rows": rows,
     }
 
 
