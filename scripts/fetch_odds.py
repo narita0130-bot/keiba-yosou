@@ -16,9 +16,12 @@ import json
 import re
 import sys
 import time
+import urllib.error
 import urllib.request
+from datetime import datetime, timedelta, timezone
 
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+JST = timezone(timedelta(hours=9))
 
 # netkeiba の api_get_jra_odds.html の type 番号
 TYPE_TAN_FUKU = 1   # レスポンス内 "1"=単勝, "2"=複勝
@@ -40,12 +43,27 @@ JYO = {"01": "札幌", "02": "函館", "03": "福島", "04": "新潟", "05": "�
        "06": "中山", "07": "中京", "08": "京都", "09": "阪神", "10": "小倉"}
 
 
+def today_jst():
+    return datetime.now(JST).strftime("%Y%m%d")
+
+
 def _get(url, referer=None):
     headers = {"User-Agent": UA}
     if referer:
         headers["Referer"] = referer
     req = urllib.request.Request(url, headers=headers)
-    return urllib.request.urlopen(req, timeout=30).read()
+    try:
+        return urllib.request.urlopen(req, timeout=30).read()
+    except urllib.error.HTTPError as exc:
+        if exc.code in (403, 407):
+            raise SystemExit(
+                f"{url} が HTTP {exc.code}。実行環境の egress 許可ドメインに "
+                "race.netkeiba.com が入っていない可能性がある。"
+                "オッズの数値は絶対に推測しないこと。"
+            ) from exc
+        raise SystemExit(f"{url} が HTTP {exc.code} を返した") from exc
+    except urllib.error.URLError as exc:
+        raise SystemExit(f"{url} への接続に失敗: {exc.reason}") from exc
 
 
 def _strip(html):
@@ -90,9 +108,11 @@ def odds_api(race_id, type_):
 
 
 def cmd_races(args):
-    ids = list_races(args.date)
+    date = args.date or today_jst()
+    ids = list_races(date)
     if not ids:
-        raise SystemExit(f"{args.date} の開催が見つかりません")
+        raise SystemExit(f"{date} の開催が見つかりません（非開催日の可能性）")
+    print(f"# {date} の対象レース: {len(ids)}件")
     for rid in ids:
         print(f"{rid}  {JYO.get(rid[4:6], rid[4:6])}{int(rid[10:12])}R")
 
@@ -166,7 +186,7 @@ def main():
     sub = p.add_subparsers(dest="cmd", required=True)
 
     p_races = sub.add_parser("races", help="開催日の race_id 一覧")
-    p_races.add_argument("--date", required=True, help="YYYYMMDD")
+    p_races.add_argument("--date", help="YYYYMMDD（既定: 本日JST）")
     p_races.set_defaults(func=cmd_races)
 
     p_odds = sub.add_parser("odds", help="単勝・複勝オッズ")

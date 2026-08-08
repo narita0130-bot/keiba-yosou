@@ -12,7 +12,7 @@
 ## 使い方
 
 ```bash
-# 開催日の全レースの race_id 一覧
+# 開催日の全レースの race_id 一覧（--date 省略時は本日JST）
 python3 scripts/fetch_odds.py races --date 20260808
 
 # 1レースの単勝・複勝（印を付けると先頭にまとめて出る）
