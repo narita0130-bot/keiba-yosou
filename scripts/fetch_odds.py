@@ -84,20 +84,27 @@ def race_info(race_id):
     d1 = re.search(r'RaceData01">(.*?)</div>', html, re.S)
     d2 = re.search(r'RaceData02">(.*?)</div>', html, re.S)
     horses, rows = {}, []
-    for row in re.findall(r'<tr class="HorseList" id="tr_\d+">(.*?)</tr>', html, re.S):
+    draw_confirmed = True
+    for trn, row in re.findall(r'<tr class="HorseList" id="tr_(\d+)">(.*?)</tr>', html, re.S):
         num = re.search(r'Umaban\d*[^>]*>\s*(\d+)', row)
         horse = re.search(r'class="HorseName"><a[^>]*title="([^"]+)"', row)
-        if not (num and horse):
+        if not horse:
             continue
-        umaban = int(num.group(1))
-        horses[umaban] = horse.group(1)
+        # 枠順確定前は 枠・馬番 が空欄で、行は五十音順に並ぶ。この場合は
+        # tr_N（＝オッズAPIのキーと一致する並び順の番号）を代わりの識別子にする。
+        umaban = int(num.group(1)) if num else None
+        if umaban is None:
+            draw_confirmed = False
+        key = umaban if umaban is not None else int(trn)
+        horses[key] = horse.group(1)
 
         def cell(pattern):
             m = re.search(pattern, row, re.S)
             return _strip(m.group(1)) if m else ""
 
         rows.append({
-            "umaban": umaban,
+            "umaban": key,
+            "index": int(trn),
             "name": horse.group(1),
             "waku": cell(r'<td class="Waku\d* [^"]*">(.*?)</td>'),
             "barei": cell(r'<td class="Barei[^"]*">(.*?)</td>'),
@@ -113,6 +120,7 @@ def race_info(race_id):
         "class": _strip(d2.group(1) if d2 else ""),
         "horses": horses,
         "rows": rows,
+        "draw_confirmed": draw_confirmed,
     }
 
 
