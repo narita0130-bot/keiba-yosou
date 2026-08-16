@@ -32,6 +32,8 @@ TYPE_SANRENPUKU = 7
 TYPE_SANRENTAN = 8  # 着順あり
 
 BET_TYPES = {
+    # 単勝はレスポンス内の "1" が単勝なので type と応答キーが一致する
+    "単勝": (TYPE_TAN_FUKU, False),
     "馬連": (TYPE_UMAREN, False),
     "ワイド": (TYPE_WIDE, False),
     "馬単": (TYPE_UMATAN, True),
