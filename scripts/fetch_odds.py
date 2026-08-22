@@ -73,10 +73,14 @@ def _strip(html):
 
 
 def list_races(date):
-    """開催日の全レースの race_id を返す。"""
+    """開催日の全レースの race_id を返す。
+
+    発走済みのレースは一覧のリンクが shutuba.html から result.html に変わるため、
+    開催中の日を扱うときに取りこぼさないよう両方を拾う。
+    """
     body = _get(f"https://race.netkeiba.com/top/race_list_sub.html?kaisai_date={date}").decode("utf-8", "replace")
-    ids = sorted(set(re.findall(r"shutuba\.html\?race_id=(\d+)", body)))
-    return ids
+    ids = re.findall(r"(?:shutuba|result)\.html\?race_id=(\d+)", body)
+    return sorted(set(ids))
 
 
 def race_info(race_id):
