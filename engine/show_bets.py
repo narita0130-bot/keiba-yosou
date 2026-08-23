@@ -20,6 +20,7 @@ def main():
     ap.add_argument("--spec", required=True)
     args = ap.parse_args()
     s = json.load(open(args.spec, encoding="utf-8"))
+    with_amt = any(len(b) > 2 for r in s["races"] for b in r["bets"])
     print(f"{s['source']}\n状態: {s.get('status','')}\n")
     grand = grand_hit = 0
     for r in s["races"]:
@@ -30,9 +31,12 @@ def main():
             od[k] = d["odds"][str(t)]; stamp = d["official_datetime"]
             time.sleep(0.3)
         print(f"■ {r['label']}    （オッズ {stamp}）")
-        print(f"  {'式別':<5}{'買い目':<9}{'配当':>7}{'人気':>5}{'金額':>7}{'払戻':>9}  EV   判定")
+        head = f"  {'式別':<5}{'買い目':<9}{'配当':>7}{'人気':>5}"
+        print(head + (f"{'金額':>7}{'払戻':>9}" if with_amt else "") + "  EV   判定  組み合わせ")
         tot = 0
-        for kind, c, amt in r["bets"]:
+        for bet in r["bets"]:
+            kind, c = bet[0], bet[1]
+            amt = bet[2] if len(bet) > 2 else 0
             key = "".join(f"{n:02d}" for n in (c if kind == "馬単" else sorted(c)))
             v = od[kind].get(key)
             if not v:
@@ -43,11 +47,13 @@ def main():
             mark = "🟢" if lo >= 1 else ("🟡" if ev >= 1 else "❌")
             arrow = "→" if kind == "馬単" else "-"
             tot += amt
-            print(f"  {kind:<5}{arrow.join(map(str,c)):<9}{pay:>7.1f}{v[2]:>5}"
-                  f"{amt:>7,}{int(pay*amt):>9,}{ev:>6.2f}  {mark}")
+            money = f"{amt:>7,}{int(pay*amt):>9,}" if with_amt else ""
+            print(f"  {kind:<5}{arrow.join(map(str,c)):<9}{pay:>7.1f}{v[2]:>5}{money}"
+                  f"{ev:>6.2f}  {mark}   {'-'.join(names[n] for n in c)}")
         grand += tot
-        print(f"  → {len(r['bets'])}点 / {tot:,}円\n")
-    print(f"【合計】{grand:,}円")
+        print(f"  → {len(r['bets'])}点" + (f" / {tot:,}円" if with_amt else "") + "\n")
+    print(f"【合計】{sum(len(r['bets']) for r in s['races'])}点"
+          + (f" / {grand:,}円" if with_amt else "（金額は未設定）"))
 
 
 if __name__ == "__main__":
