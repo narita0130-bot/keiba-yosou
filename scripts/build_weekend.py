@@ -12,7 +12,8 @@ import html
 import time
 from datetime import datetime, timedelta, timezone
 
-from fetch_odds import JYO, TYPE_TAN_FUKU, list_races, odds_api, race_info
+from fetch_odds import (JYO, TYPE_SANRENPUKU, TYPE_TAN_FUKU, TYPE_UMAREN,
+                        list_races, odds_api, race_info)
 
 JST = timezone(timedelta(hours=9))
 
@@ -42,6 +43,10 @@ td.c, th.c { text-align: center; }
 .race h3 .rid { float: right; font-size: 6.6pt; color: #8b9299; font-weight: normal; }
 .cond { font-size: 7pt; color: #5b636a; margin: 0 0 1.2mm; }
 tr.top3 td { background: #fdf6e3; font-weight: bold; }
+.combo { margin-top: 1.5mm; }
+.combo caption { caption-side: top; text-align: left; font-size: 7.4pt;
+                 font-weight: bold; padding: 0 0 .6mm; }
+.combo td, .combo th { padding: .5mm 1mm; font-size: 7pt; }
 .foot { margin-top: 4mm; padding-top: 1.5mm; border-top: .4pt solid #c8ced3;
         font-size: 7pt; color: #8b9299; }
 """
@@ -51,8 +56,11 @@ def esc(s):
     return html.escape(str(s))
 
 
-def collect(date):
-    """1開催日分のレース情報とオッズをまとめて取得する。"""
+def collect(date, combos=0):
+    """1開催日分のレース情報とオッズをまとめて取得する。
+
+    combos>0 のときは馬連・3連複も取得し、人気上位 combos 点を残す。
+    """
     out = []
     for rid in list_races(date):
         info = race_info(rid)
@@ -61,8 +69,19 @@ def collect(date):
             tan, stamp = odds["odds"].get("1", {}), odds["official_datetime"]
         except SystemExit:
             tan, stamp = {}, ""
-        out.append({"rid": rid, "info": info, "tan": tan, "stamp": stamp})
-        time.sleep(0.5)
+        entry = {"rid": rid, "info": info, "tan": tan, "stamp": stamp, "combo": {}}
+        for label, type_ in (("馬連", TYPE_UMAREN), ("3連複", TYPE_SANRENPUKU)):
+            if not combos:
+                continue
+            try:
+                d = odds_api(rid, type_)["odds"][str(type_)]
+                rows = sorted(d.items(), key=lambda kv: int(kv[1][2]))[:combos]
+                entry["combo"][label] = rows
+            except (SystemExit, KeyError):
+                entry["combo"][label] = []
+            time.sleep(0.4)
+        out.append(entry)
+        time.sleep(0.4)
     return out
 
 
@@ -96,7 +115,22 @@ def render_race(entry):
             f'<td>{esc(h["jockey"])}</td><td>{esc(h["trainer"])}</td>'
             f'<td class="num">{esc(o[0]) if o else "-"}</td>'
             f'<td class="num">{ninki if ninki else "-"}</td></tr>')
-    out.append("</tbody></table></section>")
+    out.append("</tbody></table>")
+
+    for label, rows in (entry.get("combo") or {}).items():
+        if not rows:
+            continue
+        out.append(f'<table class="combo"><caption>{label}（人気上位{len(rows)}点）</caption>'
+                   "<thead><tr><th>買い目</th><th>組み合わせ</th>"
+                   '<th class="num">オッズ</th><th class="num">人気</th></tr></thead><tbody>')
+        for key, v in rows:
+            nums = [int(key[i:i + 2]) for i in range(0, len(key), 2)]
+            names = "-".join(info["horses"].get(n, "?") for n in nums)
+            out.append(f'<tr><td>{"-".join(str(n) for n in nums)}</td><td>{esc(names)}</td>'
+                       f'<td class="num">{esc(v[0])}</td><td class="num">{esc(v[2])}</td></tr>')
+        out.append("</tbody></table>")
+
+    out.append("</section>")
     return "\n".join(out)
 
 
@@ -143,13 +177,15 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", action="append", required=True, help="YYYYMMDD（複数可）")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--combos", type=int, default=0,
+                    help="馬連・3連複を人気上位N点まで併記する（0で省略）")
     args = ap.parse_args()
 
     now = datetime.now(JST).strftime("%Y-%m-%d %H:%M")
     body = [f'<h1>中央競馬 週末まとめ（出走馬・オッズ）</h1>',
             f'<p class="sub">netkeiba 公開情報より作成　{esc(now)} JST 時点</p>']
     for date in args.date:
-        entries = collect(date)
+        entries = collect(date, args.combos)
         body.append(render_day(date, entries))
         print(f"  {date}: {len(entries)}レース取得")
     body.append('<p class="foot">本紙は公開情報の集計であり、的中を保証するものではありません。'
