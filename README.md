@@ -1,5 +1,9 @@
 # 競馬予想メモ・オッズ集計
 
+> **AIが作業する場合は、まず [`AGENTS.md`](./AGENTS.md) を読むこと。**
+> 実行仕様（定数・式・分岐・禁止事項）が確定させてあり、担当AIが変わっても同じ出力になるようにしてある。
+> 経緯・実績・学びは [`docs/handoff.md`](./docs/handoff.md)。
+
 購読している予想note（PDF）の印に、netkeiba の公開オッズを突き合わせて日次でまとめるためのリポジトリ。
 
 ## ファイル構成
@@ -9,6 +13,12 @@
 | `scripts/fetch_odds.py` | netkeiba の公開オッズ取得スクリプト（依存なし・標準ライブラリのみ） |
 | `scripts/build_sheet.py` | 出馬表・オッズ・買い目の1枚ものHTMLを組み立てる |
 | `data/YYYY-MM-DD.sheet.json` | その日のレース構成・印・買い目の定義（`build_sheet.py` の入力） |
+| `engine/keiba_engine_v2.py` | EV計算エンジン（Plackett-Luce厳密計算・乱数なし） |
+| `engine/test_engine.py` | 回帰テスト21項目。**使用前に必ず全項目合格を確認** |
+| `engine/run_ev.py` | 印→EV計算 |
+| `engine/show_bets.py` | 買い目を最新オッズで再評価 |
+| `data/YYYY-MM-DD.ev.json` | 印の定義（EV計算の入力） |
+| `data/YYYY-MM-DD.bets.json` | 買い目リスト |
 | `data/YYYY-MM-DD.md` | その日のまとめ（印・単複・想定馬券のオッズ） |
 | `data/YYYY-MM-DD_出馬表オッズ買い目.pdf` | 生成した予想シート |
 
