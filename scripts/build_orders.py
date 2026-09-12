@@ -3,12 +3,14 @@
 
 非馬のテンプレート。本人の想定馬券が note にある場合は対象外で、手で書く。
 
-  馬連  : ◎軸流し、相手 = ◯▲△         （☆は入れない）
-  馬単  : ◎1着固定流し、相手 = ◯▲△     （☆は入れない）
-  3連複 : ◎1軸流し、相手 = ◯▲△☆ 全員   （C(n,2) 全点。☆同士のペアも残す）
+  馬連  : ◎軸流し、相手 = ◯▲△          （☆は入れない）
+  馬単  : ◎1着固定流し、相手 = ◯▲△☆    （☆も入れる）
+  3連複 : ◎1軸流し、相手 = ◯▲△☆ 全員    （C(n,2) 全点。☆同士のペアも残す）
 
-☆だけを馬連・馬単から外すのは、note 本文に「☆は基本的に3連系用でつけています」と
-明記があるため。△にはその断りがないので ▲ と同格に扱う。
+☆を馬連から外し、馬単には入れるのは note 本文の記述どおり。
+「☆は基本的に3連系用でつけています。(本命馬からの馬単の相手には流す可能性あり)」
+8/1 に当たったのは、まさにこの 馬単◎→☆ だった（docs/handoff.md の8/1勝因分析）。
+△にはそうした断りがないので ▲ と同格に扱う。
 
 3連複を ▲の有無で分岐させない。相手集合は印そのもので決まり、
 別の印（▲）が付いているかどうかで ☆ の格が変わる理由がないため。
@@ -19,8 +21,9 @@
 import argparse
 import json
 
-RENTAN_PARTNERS = ("◯", "▲", "△")          # 馬連・馬単の相手に使う印
-FUKU_PARTNERS = ("◯", "▲", "△", "☆")       # 3連複の相手に使う印
+UMAREN_PARTNERS = ("◯", "▲", "△")           # 馬連の相手（☆は入れない）
+UMATAN_PARTNERS = ("◯", "▲", "△", "☆")      # 馬単の相手（◎からの流しなら☆も可）
+FUKU_PARTNERS = ("◯", "▲", "△", "☆")        # 3連複の相手
 
 
 def partners(marks, allowed):
@@ -33,13 +36,16 @@ def build_race(marks):
     if not axis:
         return []                                    # ◎非公開 → 組めない
     o = axis[0]
-    ren, fuku = partners(marks, RENTAN_PARTNERS), partners(marks, FUKU_PARTNERS)
+    ren = partners(marks, UMAREN_PARTNERS)
+    tan = partners(marks, UMATAN_PARTNERS)
+    fuku = partners(marks, FUKU_PARTNERS)
     orders = []
     if ren:
         orders.append({"kind": "馬連", "method": "nagashi", "axis": [o],
                        "partners": ren, "source": "ref"})
+    if tan:
         orders.append({"kind": "馬単", "method": "nagashi_1st", "axis": [o],
-                       "partners": ren, "source": "ref"})
+                       "partners": tan, "source": "ref"})
     if len(fuku) >= 2:
         orders.append({"kind": "3連複", "method": "nagashi", "axis": [o],
                        "partners": fuku, "source": "ref"})
