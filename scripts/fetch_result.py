@@ -25,6 +25,8 @@ ROW_CLASS = {
 }
 # 着順が意味を持つ式別。組番を並べ替えずに保持する。
 ORDERED = {"馬単", "3連単"}
+# 着順欄が数字にならない状態のうち、購入金額が返還されるもの
+SCRATCH = ("除外", "取消")
 # 1つの組み合わせに含まれる頭数
 LEGS = {"単勝": 1, "複勝": 1, "枠連": 2, "馬連": 2, "ワイド": 2, "馬単": 2, "3連複": 3, "3連単": 3}
 
@@ -88,20 +90,26 @@ def race_result(race_id):
 
     # 着順テーブル。1列目が着順、3列目が馬番、4列目に馬名。
     # 中止・除外は着順が数字にならないので落とす。
-    order = []
+    order, scratched = [], []
     table = re.search(r'<table[^>]*(?:RaceTable01|ResultTableWrap)[^>]*>(.*?)</table>', html, re.S)
     for row in re.findall(r"<tr[^>]*>(.*?)</tr>", table.group(1) if table else "", re.S):
-        rank = re.search(r'<div class="Rank">\s*(\d+)\s*</div>', row)
+        rank = re.search(r'<div class="Rank">\s*([^<]*?)\s*</div>', row)
         nums = re.findall(r'<td class="Num[^"]*">\s*<div>\s*(\d+)\s*</div>', row)
         name = re.search(r'<span class="HorseNameSpan">\s*([^<]+?)\s*</span>', row)
-        if rank and len(nums) >= 2:
-            order.append({"chaku": int(rank.group(1)), "waku": int(nums[0]),
-                          "umaban": int(nums[1]),
-                          "name": _strip(name.group(1)) if name else ""})
+        if not (rank and len(nums) >= 2):
+            continue
+        umaban, label = int(nums[1]), rank.group(1)
+        nm = _strip(name.group(1)) if name else ""
+        if label.isdigit():
+            order.append({"chaku": int(label), "waku": int(nums[0]),
+                          "umaban": umaban, "name": nm})
+        elif any(k in label for k in SCRATCH):
+            # 除外・取消は全額返還。買い目に1頭でも含まれていれば的中判定の対象外。
+            scratched.append({"umaban": umaban, "name": nm, "reason": label})
     order.sort(key=lambda r: r["chaku"])
 
     return {"race_id": race_id, "payouts": payouts, "order": order,
-            "finished": bool(payouts)}
+            "scratched": scratched, "finished": bool(payouts)}
 
 
 def main():
@@ -113,6 +121,10 @@ def main():
     print(f"# {JYO.get(rid[4:6], '')}{int(rid[10:12])}R  {rid}")
     if not r["finished"]:
         raise SystemExit("結果未確定（払戻が取得できません）")
+    if r["scratched"]:
+        print("\n## 除外・取消（返還対象）")
+        for h in r["scratched"]:
+            print(f"  {h['reason']}  {h['umaban']:>2}  {h['name']}")
     print("\n## 着順")
     for h in r["order"][:5]:
         print(f"  {h['chaku']}着  {h['umaban']:>2}  {h['name']}")
