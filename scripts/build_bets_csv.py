@@ -47,6 +47,10 @@ BET_SPEC = {
 }
 WD = "月火水木金土日"
 
+# 買わないと決めた式別（docs/handoff.md §13）。非馬の想定馬券に出てきても落とす。
+# ワイドは3連複と狙いが重なるうえ配当が低い。3連単は点数を食う。
+SKIP_KINDS = ("ワイド", "3連単", "単勝", "複勝", "枠連")
+
 
 def to_odds(v):
     """netkeiba は 1000倍以上を "1,103.5" とカンマ区切りで返す。"""
@@ -131,7 +135,7 @@ def main():
     if marks_by_race:
         from run_ev import build_engine, judge          # noqa: E402
 
-    rows, gid = [], 0
+    rows, gid, skipped = [], 0, []
     for race in spec["races"]:
         rid = race["race_id"]
         info = race_info(rid)
@@ -155,6 +159,9 @@ def main():
 
         for order in race["orders"]:
             kind = order["kind"]
+            if kind in SKIP_KINDS:
+                skipped.append(f"{venue}{int(rid[10:12])}R {kind}")
+                continue
             gid += 1
             group = f"G{gid:03d}"
             combos = expand(order)
@@ -219,6 +226,8 @@ def main():
     groups = len({r["group_id"] for r in rows})
     print(f"wrote {args.out}  [{args.format}]  {len(rows)}点 / {groups}操作 / "
           f"合計{total:,}円 / 🟢{buys}点")
+    if skipped:
+        print("買わない式別のため除外: " + ", ".join(skipped))
 
 
 if __name__ == "__main__":
