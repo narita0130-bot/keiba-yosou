@@ -49,23 +49,37 @@ def today_jst():
     return datetime.now(JST).strftime("%Y%m%d")
 
 
+# netkeiba は正常なリクエストにも散発的に 400 を返す。1鞍ぶん取る間に
+# 何度も叩くので、ここで吸収しないとパイプライン全体が途中で落ちる。
+RETRY_CODES = (400, 429, 500, 502, 503, 504)
+RETRIES = 5
+
+
 def _get(url, referer=None):
     headers = {"User-Agent": UA}
     if referer:
         headers["Referer"] = referer
     req = urllib.request.Request(url, headers=headers)
-    try:
-        return urllib.request.urlopen(req, timeout=30).read()
-    except urllib.error.HTTPError as exc:
-        if exc.code in (403, 407):
-            raise SystemExit(
-                f"{url} が HTTP {exc.code}。実行環境の egress 許可ドメインに "
-                "race.netkeiba.com が入っていない可能性がある。"
-                "オッズの数値は絶対に推測しないこと。"
-            ) from exc
-        raise SystemExit(f"{url} が HTTP {exc.code} を返した") from exc
-    except urllib.error.URLError as exc:
-        raise SystemExit(f"{url} への接続に失敗: {exc.reason}") from exc
+    last = None
+    for i in range(RETRIES):
+        try:
+            return urllib.request.urlopen(req, timeout=30).read()
+        except urllib.error.HTTPError as exc:
+            if exc.code in (403, 407):
+                raise SystemExit(
+                    f"{url} が HTTP {exc.code}。実行環境の egress 許可ドメインに "
+                    "race.netkeiba.com が入っていない可能性がある。"
+                    "オッズの数値は絶対に推測しないこと。"
+                ) from exc
+            if exc.code not in RETRY_CODES or i == RETRIES - 1:
+                raise SystemExit(f"{url} が HTTP {exc.code} を返した（{i+1}回試行）") from exc
+            last = exc
+        except urllib.error.URLError as exc:
+            if i == RETRIES - 1:
+                raise SystemExit(f"{url} への接続に失敗: {exc.reason}") from exc
+            last = exc
+        time.sleep(1.5 * (i + 1))
+    raise SystemExit(f"{url} の取得に失敗: {last}")
 
 
 def _strip(html):
