@@ -100,9 +100,15 @@ def race_result(race_id):
             continue
         umaban, label = int(nums[1]), rank.group(1)
         nm = _strip(name.group(1)) if name else ""
+        # 人気と単勝オッズ。クラス名が紛らわしく OddsPeople が人気、Odds_Ninki がオッズ。
+        nin = re.search(r'<span[^>]*class="OddsPeople"[^>]*>\s*(\d+)\s*</span>', row)
+        # 単勝オッズのspanは人気上位以外クラスが付かないので td 側で拾う
+        od = re.search(r'<td class="Odds[^"]*Txt_R"[^>]*>\s*<span[^>]*>\s*([\d.,]+)\s*</span>', row)
         if label.isdigit():
             order.append({"chaku": int(label), "waku": int(nums[0]),
-                          "umaban": umaban, "name": nm})
+                          "umaban": umaban, "name": nm,
+                          "ninki": int(nin.group(1)) if nin else None,
+                          "odds": float(od.group(1).replace(",", "")) if od else None})
         elif any(k in label for k in SCRATCH):
             # 除外・取消は全額返還。買い目に1頭でも含まれていれば的中判定の対象外。
             scratched.append({"umaban": umaban, "name": nm, "reason": label})
@@ -127,7 +133,8 @@ def main():
             print(f"  {h['reason']}  {h['umaban']:>2}  {h['name']}")
     print("\n## 着順")
     for h in r["order"][:5]:
-        print(f"  {h['chaku']}着  {h['umaban']:>2}  {h['name']}")
+        pop = f"{h['odds']:>7.1f}倍 {h['ninki']:>2}人気" if h.get("odds") else ""
+        print(f"  {h['chaku']}着  {h['umaban']:>2}  {h['name']:<16}{pop}")
     print("\n## 払戻（100円あたり）")
     for kind, d in r["payouts"].items():
         for key, v in d.items():
