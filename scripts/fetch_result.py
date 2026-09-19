@@ -91,8 +91,10 @@ def race_result(race_id):
     # 着順テーブル。1列目が着順、3列目が馬番、4列目に馬名。
     # 中止・除外は着順が数字にならないので落とす。
     order, scratched = [], []
-    table = re.search(r'<table[^>]*(?:RaceTable01|ResultTableWrap)[^>]*>(.*?)</table>', html, re.S)
-    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", table.group(1) if table else "", re.S):
+    # 着順テーブルを先に切り出すと、行内に入れ子の <table> があるページで
+    # 非貪欲マッチが途中で止まり上位数頭しか拾えない（9/19 阪神9Rで5頭に切れた）。
+    # HorseList 行を本文から直接拾う。
+    for row in re.findall(r'<tr[^>]*class="[^"]*HorseList[^"]*"[^>]*>(.*?)</tr>', html, re.S):
         rank = re.search(r'<div class="Rank">\s*([^<]*?)\s*</div>', row)
         nums = re.findall(r'<td class="Num[^"]*">\s*<div>\s*(\d+)\s*</div>', row)
         name = re.search(r'<span class="HorseNameSpan">\s*([^<]+?)\s*</span>', row)
