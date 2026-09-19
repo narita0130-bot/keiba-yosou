@@ -549,9 +549,9 @@ Logic@競馬が土日朝に出す無料noteの「注目馬」リスト（競馬�
 
 ```bash
 # 1. noteの本文をテキストで data/<日付>.logic.txt に置く（「競馬場,R,馬名」の行がそのまま残っていればよい）
-# 2. 馬名→馬番を出馬表で解決してJSON化
+# 2. 馬名→馬番を出馬表で解決してJSON化（非馬のnoteが無い日でも動く）
 python3 scripts/parse_logic.py --text data/2026-09-26.logic.txt \
-    --ev data/2026-09-26.ev.json --out data/2026-09-26.logic.json
+    --out data/2026-09-26.logic.json
 # 3. レース確定後、着順・人気・単勝オッズとセットで追記
 python3 scripts/record_marks.py --logic data/2026-09-26.logic.json
 # 4. 集計
@@ -560,8 +560,11 @@ python3 scripts/marks_stats.py
 
 - `data/marks_record.csv` に `source` 列（非馬 / Logic）を追加した。旧データは全て非馬。
   重複排除キーは `source + race_id + umaban`。
-- race_id は非馬の ev.json から「その日そのコースの先頭10桁」を借りて組む。
-  非馬が1鞍も扱っていないコースは接頭辞が取れないので取りこぼす（ログに出る）。
+- race_id は netkeiba の開催一覧（`kaisai_date`）から引く。**非馬のnoteが出ない日
+  （日曜にXのポストだけ、など）でも動く。** `--ev` を渡せばそちらを優先する。
+- netkeiba は叩きすぎると HTTP 400 を返す。`parse_logic.py` は解決済みのレースを
+  `--out` から再利用するので、**取りこぼしたら同じコマンドを流し直せば埋まる**。
+  `fetch_odds._get` の待ち時間も 2秒からの倍々（計62秒）に伸ばした。
 - **馬名が出馬表と一致しなければ `umaban: null` のまま残す。推測で埋めない。**
 - Logicの「【厳選】◯Rの予想はコチラ」は有料部分なので取得しない。無料の注目馬のみ。
 

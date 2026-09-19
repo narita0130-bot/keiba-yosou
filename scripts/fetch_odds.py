@@ -52,7 +52,9 @@ def today_jst():
 # netkeiba は正常なリクエストにも散発的に 400 を返す。1鞍ぶん取る間に
 # 何度も叩くので、ここで吸収しないとパイプライン全体が途中で落ちる。
 RETRY_CODES = (400, 429, 500, 502, 503, 504)
-RETRIES = 5
+RETRIES = 6
+# netkeiba は短時間に叩きすぎると 400 を返す。1.5秒刻みでは足りず、
+# 朝のまとめ取得で取りこぼした（9/19）。2秒から倍々で計62秒まで粘る。
 
 
 def _get(url, referer=None):
@@ -78,7 +80,7 @@ def _get(url, referer=None):
             if i == RETRIES - 1:
                 raise SystemExit(f"{url} への接続に失敗: {exc.reason}") from exc
             last = exc
-        time.sleep(1.5 * (i + 1))
+        time.sleep(2 * 2 ** i)
     raise SystemExit(f"{url} の取得に失敗: {last}")
 
 
@@ -95,6 +97,27 @@ def list_races(date):
     body = _get(f"https://race.netkeiba.com/top/race_list_sub.html?kaisai_date={date}").decode("utf-8", "replace")
     ids = re.findall(r"(?:shutuba|result)\.html\?race_id=(\d+)", body)
     return sorted(set(ids))
+
+
+def kaisai_prefixes(date):
+    """その日の開催から {競馬場名: race_idの先頭10桁} を返す。
+
+    race_id は 年4+場2+回次2+日目2+R2。回次・日目は同じ開催なら全レース共通なので、
+    先頭10桁さえ分かれば「中山9R」から race_id を組める。予想記事が
+    「競馬場,レース番号」でしかレースを指さないとき（Logic@競馬など）に使う。
+
+      date: "2026-09-20" か "20260920"
+    """
+    d = date.replace("-", "")
+    html = _get(f"https://race.netkeiba.com/top/race_list_sub.html?kaisai_date={d}").decode("utf-8", "replace")
+    pre = {}
+    for rid in sorted(set(re.findall(r"race_id=(\d{12})", html))):
+        v = JYO.get(rid[4:6])
+        if v:
+            pre[v] = rid[:10]
+    if not pre:
+        sys.exit(f"{date} の開催一覧から race_id を取得できなかった。開催日か確認すること。")
+    return pre
 
 
 def race_info(race_id):

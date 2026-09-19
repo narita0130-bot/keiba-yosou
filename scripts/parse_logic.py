@@ -4,15 +4,22 @@
 noteの本文は「競馬場,レース番号,馬名」の1行1頭。馬番は書かれていないので、
 netkeibaの出馬表を引いて馬名→馬番を解決する。
 
-  python3 scripts/parse_logic.py --text scratchpad/logic0919.txt \
+  python3 scripts/parse_logic.py --text data/2026-09-20.logic.txt \
+      --out data/2026-09-20.logic.json
+  # 非馬の ev.json が既にあるならそれを使ってもよい（無くても動く）
+  python3 scripts/parse_logic.py --text data/2026-09-19.logic.txt \
       --ev data/2026-09-19.ev.json --out data/2026-09-19.logic.json
 
-race_id は 非馬の ev.json から「その日そのコースの接頭10桁」を借りて組み立てる
-（回次・日目は同じ開催なら全レース共通）。非馬がそのコースを1鞍も扱っていない日は
-接頭辞が取れないので、そのコースは取りこぼす。取りこぼしは最後に一覧で出す。
+race_id は netkeiba の開催一覧（kaisai_date）から「その日そのコースの接頭10桁」を
+引いて組み立てる。**非馬のnoteが無い日でも動く。** 非馬が出ない日曜（Xのポストだけ）が
+あるので、ev.json に依存させない。--ev を渡した場合はそちらを優先する
+（既に手元にある確定情報のほうが確か）。
 
 **馬名が出馬表と一致しなかった馬は捨てずに unresolved に残す。** 推測で馬番を
 埋めない（docs/handoff.md の原則）。
+
+--out が既にあれば、そこで解決済みのレースは再取得せずそのまま残す。netkeiba は
+叩きすぎると 400 を返すので、取りこぼしたら同じコマンドを流し直せば埋まる。
 """
 import argparse
 import collections
@@ -25,7 +32,7 @@ import unicodedata
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from fetch_odds import JYO, race_info   # noqa: E402
+from fetch_odds import JYO, kaisai_prefixes, race_info   # noqa: E402
 
 VENUES = "|".join(JYO.values())
 LINE = re.compile(rf"^({VENUES}),\s*(\d+)\s*,\s*(\S+)\s*$")
@@ -51,36 +58,54 @@ def parse_text(path):
     return out
 
 
-def prefixes(ev_files):
-    """非馬の ev.json から (競馬場) -> race_id先頭10桁 を集める。"""
-    pre = {}
-    for f in ev_files:
+def prefixes(date, ev_files):
+    """競馬場 -> race_id先頭10桁。開催一覧を基本にし、ev.json があれば上書きする。"""
+    pre = kaisai_prefixes(date) if date else {}
+    for f in ev_files or []:
         for r in json.load(open(f, encoding="utf-8"))["races"]:
             rid = r["race_id"]
-            pre[JYO.get(rid[4:6], "")] = rid[:10]
+            v = JYO.get(rid[4:6])
+            if v:
+                pre[v] = rid[:10]
     return pre
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--text", required=True, help="noteから抜いたテキスト")
-    ap.add_argument("--ev", required=True, nargs="+", help="同日の非馬 ev.json")
+    ap.add_argument("--ev", nargs="*", default=[],
+                    help="同日の非馬 ev.json（任意。無ければ開催一覧から引く）")
     ap.add_argument("--date", help="省略時は --out / --text のファイル名から拾う")
     ap.add_argument("--out", required=True)
     args = ap.parse_args()
 
     date = args.date
-    if not date:
-        m = re.search(r"(\d{4}-\d{2}-\d{2})", os.path.basename(args.out))
+    for cand in (args.out, args.text):
+        if date:
+            break
+        m = re.search(r"(\d{4}-\d{2}-\d{2})", os.path.basename(cand))
         date = m.group(1) if m else ""
 
+    if not date and not args.ev:
+        ap.error("--date か --out のファイル名で日付を示すこと（開催一覧の取得に必要）")
+
     named = parse_text(args.text)
-    pre = prefixes(args.ev)
+    pre = prefixes(date, args.ev)
+
+    # 既に解決済みのレースは再取得しない（レート制限で取りこぼした分だけ埋める）
+    done = {}
+    if os.path.exists(args.out):
+        for r in json.load(open(args.out, encoding="utf-8")).get("races", []):
+            if all(h.get("umaban") for h in r["horses"]):
+                done[(r["venue"], r["race_no"])] = r
 
     races, unresolved, skipped = [], [], []
     for (venue, no), names in sorted(named.items()):
+        if (venue, no) in done:
+            races.append(done[(venue, no)])
+            continue
         if venue not in pre:
-            skipped.append(f"{venue}{no}R（非馬の ev.json にこのコースが無く race_id を組めない）")
+            skipped.append(f"{venue}{no}R（この日の開催一覧に {venue} が無く race_id を組めない）")
             continue
         rid = pre[venue] + f"{no:02d}"
         try:
@@ -103,9 +128,14 @@ def main():
     doc = {"date": date, "source": "Logic@競馬", "races": races}
     with open(args.out, "w", encoding="utf-8") as fh:
         json.dump(doc, fh, ensure_ascii=False, indent=1)
+    races.sort(key=lambda r: (r["venue"], r["race_no"]))
     n = sum(len(r["horses"]) for r in races)
     ok = sum(1 for r in races for h in r["horses"] if h["umaban"])
-    print(f"wrote {args.out}  {len(races)}レース / {n}頭（馬番解決 {ok}頭）")
+    reused = sum(1 for r in races if (r["venue"], r["race_no"]) in done)
+    print(f"wrote {args.out}  {len(races)}レース / {n}頭（馬番解決 {ok}頭"
+          + (f"、うち {reused}レースは前回の結果を再利用" if reused else "") + "）")
+    if skipped:
+        print("  ※ 取りこぼしは同じコマンドを流し直せば埋まる（解決済みは再取得しない）")
     for s in skipped:
         print(f"  スキップ: {s}")
     for u in unresolved:
