@@ -33,6 +33,7 @@ import unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from fetch_odds import JYO, kaisai_prefixes, race_info   # noqa: E402
+from fetch_result import race_result   # noqa: E402
 
 VENUES = "|".join(JYO.values())
 LINE = re.compile(rf"^({VENUES}),\s*(\d+)\s*,\s*(\S+)\s*$")
@@ -56,6 +57,23 @@ def parse_text(path):
         if m:
             out[(m.group(1), int(m.group(2)))].append(m.group(3))
     return out
+
+
+def name_to_umaban(rid):
+    """馬名 -> 馬番。確定済みなら結果ページ1枚で済む（出馬表を引かない）。
+
+    過去分をさかのぼるときに効く。結果ページには馬番・馬名・着順・人気・単勝オッズ・
+    複勝払戻が全部載っているので、取得回数が半分になる。
+    """
+    try:
+        res = race_result(rid)
+        if res["finished"]:
+            rows = list(res["order"]) + list(res.get("scratched", []))
+            if rows:
+                return {norm(h["name"]): h["umaban"] for h in rows if h.get("name")}
+    except SystemExit:
+        pass
+    return {norm(x["name"]): x["umaban"] for x in race_info(rid)["rows"]}
 
 
 def prefixes(date, ev_files):
@@ -109,11 +127,10 @@ def main():
             continue
         rid = pre[venue] + f"{no:02d}"
         try:
-            info = race_info(rid)
+            by = name_to_umaban(rid)
         except SystemExit as e:
-            skipped.append(f"{venue}{no}R（出馬表が取れず: {e}）")
+            skipped.append(f"{venue}{no}R（馬番を解決できず: {e}）")
             continue
-        by = {norm(x["name"]): x["umaban"] for x in info["rows"]}
         horses = []
         for n in names:
             u = by.get(norm(n))
