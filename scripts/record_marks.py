@@ -32,7 +32,7 @@ from fetch_odds import JYO           # noqa: E402
 from fetch_result import race_result  # noqa: E402
 
 COLS = ["date", "race_id", "source", "venue", "race_no", "stars", "umaban", "mark",
-        "horse", "chaku", "ninki", "odds", "field_size", "scratched"]
+        "horse", "chaku", "ninki", "odds", "fuku", "field_size", "scratched"]
 DEFAULT_OUT = "data/marks_record.csv"
 
 
@@ -60,6 +60,10 @@ def rows_for(spec, date, source):
             continue
         scratched = {h["umaban"]: h for h in res.get("scratched", [])}
         pos = {h["umaban"]: h for h in res["order"]}
+        # 複勝の払戻（100円あたり）。4頭以下は複勝が発売されないので、その場合は
+        # 空欄にして「買えなかった」と「買って外した(0円)」を区別する。
+        # 7頭以下は2着までしか払い戻されない ＝ 3着でも 0円 が正しい。
+        fuku_pay = res.get("payouts", {}).get("複勝", {})
         size = len(res["order"]) + len(scratched)
         for n, mk in marks.items():
             n = int(n)
@@ -72,6 +76,8 @@ def rows_for(spec, date, source):
                 "chaku": h["chaku"] if h else "",
                 "ninki": (h or {}).get("ninki") or "",
                 "odds": (h or {}).get("odds") or "",
+                "fuku": (fuku_pay.get(f"{n:02d}", {}).get("yen", 0)
+                         if fuku_pay else ""),
                 "field_size": size,
                 "scratched": "1" if n in scratched else "",
             })
@@ -95,6 +101,7 @@ def main():
         # source 列を持たない旧データは非馬のもの
         for r in existing:
             r.setdefault("source", "")
+            r.setdefault("fuku", "")
             if not r["source"]:
                 r["source"] = "非馬"
         seen = {(r["source"], r["race_id"], r["umaban"]) for r in existing}

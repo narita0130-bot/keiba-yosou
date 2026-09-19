@@ -14,11 +14,16 @@ Logic@競馬（source=Logic）は印の区別が無いので mark="L" の1種類
 突き合わせて「非馬も印を打った馬」「非馬が無印の馬」に分けて出す。後者が
 市場を上回り続けるなら買い目に足す価値がある、というのが検証したい仮説。
 **まだ決めない。** 5日分の時点では28頭で +9.1pt、誤差と区別できない。
+
+後半で単勝・複勝を全点100円で買った場合の回収率も出す。**複勝を見ること。**
+同じ点数なら複勝は単勝の1/3程度の標準誤差で測れる（170点で SE±14 対 ±43）ので、
+結論が先に出る。ランダムに買えば控除率ぶん80%に沈むので、比較対象は100%ではなく80%。
 """
 import argparse
 import csv
 import collections
 import math
+import statistics
 
 BANDS = [(1, 1, "1人気"), (2, 3, "2-3人気"), (4, 6, "4-6人気"),
          (7, 9, "7-9人気"), (10, 99, "10人気以下")]
@@ -53,6 +58,54 @@ def line(lab, rows, indent=0, sd=False):
 
 
 HEAD = f"{'':14}{'頭数':>5}{'勝率':>8}{'2着内':>9}{'3着内':>9}{'市場想定':>10}{'差':>9}"
+
+
+def ret(lab, rows, key, indent=0):
+    """全点100円で買ったときの回収率。key は "fuku"（複勝）か "tan"（単勝）。"""
+    v = []
+    for r in rows:
+        if key == "fuku":
+            if r["fuku"] == "":      # 複勝が発売されないレース（4頭以下）は除く
+                continue
+            v.append(float(r["fuku"]))
+        else:
+            v.append(round(float(r["odds"]) * 100) if r["chaku"] == "1" and r["odds"] else 0.0)
+    n = len(v)
+    if n < 2:
+        return None
+    m = statistics.mean(v)
+    se = statistics.stdev(v) / math.sqrt(n)
+    hits = sum(1 for x in v if x > 0)
+    print(f"{'  '*indent}{lab:<14}{n:>5}{m:>9.1f}%{se:>8.1f}{m-se:>8.0f}〜{m+se:<5.0f}"
+          f"{(m-80)/se:>+8.1f}SD{hits/n*100:>9.1f}%")
+    return n, m, se
+
+
+def returns(hima, logic):
+    covered = {r["race_id"] for r in hima}
+    marked = {(r["race_id"], r["umaban"]) for r in hima}
+    only = [r for r in logic if r["race_id"] in covered
+            and (r["race_id"], r["umaban"]) not in marked]
+    print("\n\n【全点100円で買った場合の回収率】")
+    print(f"{'':14}{'点数':>5}{'回収率':>9}{'SE':>8}{'±1SE':>13}{'ランダム比':>11}{'的中率':>9}")
+    for key, name in (("fuku", "複勝"), ("tan", "単勝")):
+        print("-" * 70 + f"  {name}")
+        gate = ret("Logic 全部", logic, key)
+        ret("非馬は無印", only, key, indent=1)
+        for mk in ORDER:
+            sub = [r for r in hima if r["mark"] == mk]
+            if len(sub) >= 10:
+                ret(f"非馬 {mk}", sub, key)
+        ret("非馬 全印", hima, key)
+        if key == "fuku" and gate:
+            n, m, se = gate
+            ok = n >= 300 and m - se > 100
+            print(f"\n  採用条件: 300点以上 かつ 複勝回収率の −1SE が100%超")
+            print(f"  いま: {n}点 / −1SE = {m-se:.0f}%  → "
+                  + ("**条件を満たした。買い方の変更を検討してよい。**" if ok
+                     else f"まだ（あと{max(0, 300-n)}点、下限をあと{max(0, 100-(m-se)):.0f}pt）"))
+    print("\n  ※ ランダムに買うと控除率ぶんで80%に沈む。比較対象は100%ではなく80%。")
+    print("  ※ 複勝を見ること。単勝は同じ点数でも誤差が3倍あり、上位1本で符号が変わる。")
 
 
 def main():
@@ -110,6 +163,8 @@ def main():
         need = max(0, 50 - n)
         print(f"  いまの『非馬は無印』は {n}頭。判断まであと {need}頭。"
               if need else f"  『非馬は無印』は {n}頭。頭数の条件は満たした。")
+
+        returns(hima, logic)
 
     print("\n「市場想定」= 単勝オッズから控除率20%を戻した勝率の平均。")
     print("「差」がプラスなら、その印はその人気帯で市場を上回っている。")
