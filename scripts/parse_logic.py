@@ -59,21 +59,31 @@ def parse_text(path):
     return out
 
 
-def name_to_umaban(rid):
+def name_to_umaban(rid, want=()):
     """馬名 -> 馬番。確定済みなら結果ページ1枚で済む（出馬表を引かない）。
 
     過去分をさかのぼるときに効く。結果ページには馬番・馬名・着順・人気・単勝オッズ・
     複勝払戻が全部載っているので、取得回数が半分になる。
+
+    ただし**結果ページは出走取消の馬を落とすことがある**。want に探している馬名を
+    渡すと、結果ページで見つからなかった馬がいる場合だけ出馬表も引いて補う。
+    これを入れないと、結果ページが取れたかどうかで取消馬の有無が変わり、
+    同じレースでも実行のたびに結果が変わる（6/28 函館10R コンティオで発覚）。
     """
+    by = {}
     try:
         res = race_result(rid)
         if res["finished"]:
-            rows = list(res["order"]) + list(res.get("scratched", []))
-            if rows:
-                return {norm(h["name"]): h["umaban"] for h in rows if h.get("name")}
+            for h in list(res["order"]) + list(res.get("scratched", [])):
+                if h.get("name"):
+                    by[norm(h["name"])] = h["umaban"]
     except SystemExit:
         pass
-    return {norm(x["name"]): x["umaban"] for x in race_info(rid)["rows"]}
+    if by and all(norm(n) in by for n in want):
+        return by
+    for x in race_info(rid)["rows"]:
+        by.setdefault(norm(x["name"]), x["umaban"])
+    return by
 
 
 def prefixes(date, ev_files):
@@ -127,7 +137,7 @@ def main():
             continue
         rid = pre[venue] + f"{no:02d}"
         try:
-            by = name_to_umaban(rid)
+            by = name_to_umaban(rid, names)
         except SystemExit as e:
             skipped.append(f"{venue}{no}R（馬番を解決できず: {e}）")
             continue
