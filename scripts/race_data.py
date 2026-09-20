@@ -76,8 +76,19 @@ def race_rows(race_id):
 
     out = []
     for row in re.findall(r'<tr[^>]*class="[^"]*HorseList[^"]*"[^>]*>(.*?)</tr>', html, re.S):
+        # 結果ページには指数分析(IndexMasterCell)と脚質分析(RunType)の表もあり、
+        # **それらの行も class="HorseList" を持つ**。先頭セルのクラスで見分ける。
+        #   本物の着順行 : td数15、先頭が class="Result_Num"
+        #   分析行       : td数19〜21、先頭が class="Horse_Check Sticky"
+        # これを弾かないと1レースあたり2行の偽の行が混ざる（2024-01の収集で発覚）。
+        cells = re.findall(r'<td([^>]*)>(.*?)</td>', row, re.S)
+        if not cells:
+            continue
+        first = re.search(r'class="([^"]*)"', cells[0][0])
+        if not first or first.group(1).strip() != "Result_Num":
+            continue
         # クラス名が重複する（Time が3つある）ので位置で取る
-        tds = [_txt(v) for v in re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)]
+        tds = [_txt(v) for _, v in cells]
         if len(tds) < 11:
             continue
         label = tds[0]
