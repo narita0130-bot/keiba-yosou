@@ -8,8 +8,11 @@
 
   python3 scripts/record_marks.py --ev data/2026-09-13.ev.json
   python3 scripts/record_marks.py --logic data/2026-09-13.logic.json
+  python3 scripts/record_marks.py --picks 複勝専門店=data/2026-09-22.fukusho.json
 
-source 列で予想家を分ける（非馬 / Logic）。Logicの注目馬は印の区別が無いので mark="L"。
+source 列で予想家を分ける。--picks 名前=ファイル で情報源をいくつでも足せる。
+ファイルの形は logic.json と同じ（races[].horses[].umaban）。印の区別が無い情報源は
+mark="L"。**実績ゼロの情報源を買い目に入れる前に、まずここで測る。**
 Logicを買い目に入れるかは**この記録が貯まってから**決める。5日分を見た時点では
 「非馬が無印の馬」で +9.1pt（28頭）という数字が出ているが、28頭では誤差と区別できず、
 しかもデータを見たあとに見つけた切り口。前向きに測って残るかどうかを確かめる。
@@ -37,9 +40,10 @@ DEFAULT_OUT = "data/marks_record.csv"
 
 
 def marks_of(r, source):
-    """レース1鞍分の {馬番: 印} を返す。ev.json と logic.json で形が違う。"""
-    if source == "Logic":
-        return {h["umaban"]: "L" for h in r.get("horses", []) if h.get("umaban")}
+    """レース1鞍分の {馬番: 印} を返す。ev.json と picks形式(logic.json)で形が違う。"""
+    if "horses" in r:
+        # picks形式。印の指定があればそれを、無ければ "L"（無印の注目馬）
+        return {h["umaban"]: h.get("mark", "L") for h in r["horses"] if h.get("umaban")}
     return {int(k): v for k, v in (r.get("marks") or {}).items()}
 
 
@@ -89,10 +93,18 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ev", nargs="*", default=[], help="非馬の ev.json（複数可）")
     ap.add_argument("--logic", nargs="*", default=[], help="Logicの logic.json（複数可）")
+    ap.add_argument("--picks", nargs="*", default=[], metavar="名前=ファイル",
+                    help="任意の情報源。形は logic.json と同じ")
     ap.add_argument("--out", default=DEFAULT_OUT)
     args = ap.parse_args()
-    if not args.ev and not args.logic:
-        ap.error("--ev か --logic のどちらかは必要")
+    extra = []
+    for spec in args.picks:
+        if "=" not in spec:
+            ap.error(f"--picks は 名前=ファイル の形で指定する: {spec}")
+        name, path = spec.split("=", 1)
+        extra.append((name, [path]))
+    if not args.ev and not args.logic and not extra:
+        ap.error("--ev / --logic / --picks のいずれかは必要")
 
     existing, seen = [], set()
     if os.path.exists(args.out):
@@ -107,7 +119,7 @@ def main():
         seen = {(r["source"], r["race_id"], r["umaban"]) for r in existing}
 
     added = 0
-    for source, files in (("非馬", args.ev), ("Logic", args.logic)):
+    for source, files in [("非馬", args.ev), ("Logic", args.logic)] + extra:
         for f in files:
             spec = json.load(open(f, encoding="utf-8"))
             # 古い sheet.json には date が無いのでファイル名から拾う
