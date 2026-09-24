@@ -17,13 +17,32 @@ Logic@競馬（source=Logic）は印の区別が無いので mark="L" の1種類
 
 後半で単勝・複勝を全点100円で買った場合の回収率も出す。**複勝を見ること。**
 同じ点数なら複勝は単勝の1/3程度の標準誤差で測れる（170点で SE±14 対 ±43）ので、
-結論が先に出る。ランダムに買えば控除率ぶん80%に沈むので、比較対象は100%ではなく80%。
+結論が先に出る。
+
+**比較対象は一律80%ではない。** 全出走馬に均等に買った回収率は人気で大きく違う
+（複勝：1人気90% / 10人気以下59%、全体69%）。人気薄を多く含む予想家は実力に関係なく
+低く出る。data/baselines.json の人気帯別の実測値から、その予想家の人気構成で無作為に
+買った場合の期待値を作って比べる（docs/handoff.md §24）。
 """
 import argparse
 import csv
 import collections
 import math
 import statistics
+import json
+import os
+
+_BASE = None
+
+
+def baseline(key):
+    """人気帯別の均等買い回収率（%）。data/baselines.json から読む。"""
+    global _BASE
+    if _BASE is None:
+        path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "baselines.json")
+        _BASE = json.load(open(path, encoding="utf-8"))
+    b = _BASE["fukusho" if key == "fuku" else "tansho"]["by_band"]
+    return b, _BASE["bands"]
 
 BANDS = [(1, 1, "1人気"), (2, 3, "2-3人気"), (4, 6, "4-6人気"),
          (7, 9, "7-9人気"), (10, 99, "10人気以下")]
@@ -62,7 +81,8 @@ HEAD = f"{'':14}{'頭数':>5}{'勝率':>8}{'2着内':>9}{'3着内':>9}{'市場�
 
 def ret(lab, rows, key, indent=0):
     """全点100円で買ったときの回収率。key は "fuku"（複勝）か "tan"（単勝）。"""
-    v = []
+    v, exp = [], []
+    by, bands = baseline(key)
     for r in rows:
         if key == "fuku":
             if r["fuku"] == "":      # 複勝が発売されないレース（4頭以下）は除く
@@ -70,14 +90,19 @@ def ret(lab, rows, key, indent=0):
             v.append(float(r["fuku"]))
         else:
             v.append(round(float(r["odds"]) * 100) if r["chaku"] == "1" and r["odds"] else 0.0)
+        # その馬の人気帯で無作為に買った場合の期待回収率
+        nin = int(r["ninki"]) if r.get("ninki") else None
+        exp.append(next((by[l] for lo, hi, l in bands if nin is not None and lo <= nin <= hi), None))
     n = len(v)
     if n < 2:
         return None
     m = statistics.mean(v)
     se = statistics.stdev(v) / math.sqrt(n)
     hits = sum(1 for x in v if x > 0)
+    e = [x for x in exp if x is not None]
+    base = statistics.mean(e) if e else float("nan")
     print(f"{'  '*indent}{lab:<14}{n:>5}{m:>9.1f}%{se:>8.1f}{m-se:>8.0f}〜{m+se:<5.0f}"
-          f"{(m-80)/se:>+8.1f}SD{hits/n*100:>9.1f}%")
+          f"{base:>8.1f}%{(m-base)/se:>+7.1f}SD{hits/n*100:>8.1f}%")
     return n, m, se
 
 
@@ -87,7 +112,7 @@ def returns(hima, logic):
     only = [r for r in logic if r["race_id"] in covered
             and (r["race_id"], r["umaban"]) not in marked]
     print("\n\n【全点100円で買った場合の回収率】")
-    print(f"{'':14}{'点数':>5}{'回収率':>9}{'SE':>8}{'±1SE':>13}{'ランダム比':>11}{'的中率':>9}")
+    print(f"{'':14}{'点数':>5}{'回収率':>9}{'SE':>8}{'±1SE':>13}{'同人気の無作為':>9}{'差':>8}{'的中率':>8}")
     for key, name in (("fuku", "複勝"), ("tan", "単勝")):
         print("-" * 70 + f"  {name}")
         gate = ret("Logic 全部", logic, key)
@@ -116,7 +141,9 @@ def returns(hima, logic):
                           f"（あと{max(0, need-n):.0f}点）。")
                     print(f"     300点はあくまで下限。SEは1/√nでしか縮まないので、"
                           f"回収率が100%に近いほど必要点数は急に増える。")
-    print("\n  ※ ランダムに買うと控除率ぶんで80%に沈む。比較対象は100%ではなく80%。")
+    print("\n  ※ 「同人気の無作為」＝その予想家と同じ人気構成で、無作為に選んだ馬を買った場合の回収率。")
+    print("    一律80%と比べると、人気薄の多い予想家を不当に低く見る（docs/handoff.md §24）。")
+    print("  ※ 無作為より上でも、100%に届かなければ買って儲かるわけではない。")
     print("  ※ 複勝を見ること。単勝は同じ点数でも誤差が3倍あり、上位1本で符号が変わる。")
 
 
