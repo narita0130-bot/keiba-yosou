@@ -80,6 +80,13 @@ def _get(url, referer=None):
             if i == RETRIES - 1:
                 raise SystemExit(f"{url} への接続に失敗: {exc.reason}") from exc
             last = exc
+        except (TimeoutError, ConnectionError, OSError) as exc:
+            # 接続後の read() でのタイムアウトは URLError に包まれず素の TimeoutError で
+            # 飛んでくる。拾わないと一括処理全体が落ちる（2025-08の収集停止、
+            # 2026-09-24のLogic払戻取得停止はどちらもこれ）。再試行の対象にする。
+            if i == RETRIES - 1:
+                raise SystemExit(f"{url} の読み込みが失敗: {exc}") from exc
+            last = exc
         time.sleep(2 * 2 ** i)
     raise SystemExit(f"{url} の取得に失敗: {last}")
 
