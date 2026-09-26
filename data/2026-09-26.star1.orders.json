@@ -1,0 +1,133 @@
+{
+ "date": "2026-09-26",
+ "source": "非馬 note 11:09（★のWIN5対象。中山11R◎はスキで表示＝1エフォートレース、ユーザー申告）",
+ "default_amount": 100,
+ "races": [
+  {
+   "race_id": "202606040811",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      1
+     ],
+     "partners": [
+      2,
+      3,
+      13
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      1
+     ],
+     "partners": [
+      2,
+      3,
+      13
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      1
+     ],
+     "partners": [
+      2,
+      3,
+      13
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040809",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      7
+     ],
+     "partners": [
+      8,
+      3
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      7
+     ],
+     "partners": [
+      8,
+      3
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      7
+     ],
+     "partners": [
+      8,
+      3
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040810",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      5
+     ],
+     "partners": [
+      1,
+      11
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      5
+     ],
+     "partners": [
+      1,
+      11
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      5
+     ],
+     "partners": [
+      1,
+      11
+     ],
+     "source": "ref"
+    }
+   ]
+  }
+ ]
+}
