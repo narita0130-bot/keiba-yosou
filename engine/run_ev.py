@@ -28,6 +28,11 @@ MARK_BONUS = {"◎": 8, "◯": 5, "○": 5, "▲": 3, "△": 2, "☆": 2, "★":
 BASE_LO, BASE_HI = 50.0, 80.0
 
 
+def to_odds(v):
+    """netkeiba は 1000倍以上を "1,103.5" とカンマ区切りで返す。"""
+    return float(str(v).replace(",", ""))
+
+
 def baseline(odds_list):
     """単勝オッズ → 50〜80 の log 正規化ベースライン（人気馬ほど高い）"""
     ln = [math.log(o) for o in odds_list]
@@ -46,7 +51,7 @@ def build_engine(rid, marks, lam=0.25):
         o = tan.get(f"{n:02d}") or tan.get(str(n))
         if not o:
             continue
-        nums.append(n); names[n] = h["name"]; odds.append(float(o[0]))
+        nums.append(n); names[n] = h["name"]; odds.append(to_odds(o[0]))
     base = baseline(odds)
     horses = []
     for n, nm_o, b in zip(nums, odds, base):
@@ -76,7 +81,7 @@ def lookup(od, kind, nums):
     v = od.get(kind, {}).get(key)
     if not v:
         return None
-    return float(v[0])          # 複勝・ワイドは下限、馬連・3連複は確定値
+    return to_odds(v[0])        # 複勝・ワイドは下限、馬連・3連複は確定値
 
 
 def judge(lo, ev):
