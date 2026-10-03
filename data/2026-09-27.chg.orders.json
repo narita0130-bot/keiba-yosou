@@ -1,0 +1,39 @@
+{
+ "date": "2026-09-27",
+ "default_amount": 100,
+ "races": [
+  {
+   "race_id": "202609040911",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      9,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      9,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      9,
+      10,
+      12
+     ],
+     "source": "ref"
+    }
+   ]
+  }
+ ]
+}
