@@ -125,5 +125,27 @@
    "3連単 1→7→16": 90570
   },
   "note": "非馬◎11・Logic◎12とも5着以内なし。ダリズ（非馬◯／Logic☆）1着"
+ },
+ "purchased": [
+  {
+   "bet": "馬連 1-11",
+   "amount": 100,
+   "payout": 0
+  },
+  {
+   "bet": "馬単 11→1",
+   "amount": 100,
+   "payout": 0
+  },
+  {
+   "bet": "複勝 1",
+   "amount": 1000,
+   "payout": 1400
+  }
+ ],
+ "settle": {
+  "invest": 1200,
+  "payout": 1400,
+  "profit": 200
  }
 }
