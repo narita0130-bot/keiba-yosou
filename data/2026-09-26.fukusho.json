@@ -1,0 +1,225 @@
+{
+ "date": "2026-09-26",
+ "source": "複勝専門店",
+ "note": "有料note（9/25 18:08）。勝負レース5鞍は◎◯▲△☆、その他6鞍は◎のみ。記録用。record_marks は◎を計測対象。",
+ "races": [
+  {
+   "race_id": "202609040801",
+   "venue": "阪神",
+   "race_no": 1,
+   "kind": "勝負❶",
+   "horses": [
+    {
+     "name": "スカイメテオ",
+     "umaban": 10,
+     "mark": "◎"
+    },
+    {
+     "name": "ウルスチャージ",
+     "umaban": 5,
+     "mark": "◯"
+    },
+    {
+     "name": "リアルメッセージ",
+     "umaban": 2,
+     "mark": "▲"
+    }
+   ]
+  },
+  {
+   "race_id": "202606040802",
+   "venue": "中山",
+   "race_no": 2,
+   "kind": "勝負❷",
+   "horses": [
+    {
+     "name": "ハンサム",
+     "umaban": 11,
+     "mark": "◎"
+    },
+    {
+     "name": "ヴェントリナ",
+     "umaban": 10,
+     "mark": "◯"
+    },
+    {
+     "name": "ニーナラルゴ",
+     "umaban": 3,
+     "mark": "▲"
+    }
+   ]
+  },
+  {
+   "race_id": "202606040808",
+   "venue": "中山",
+   "race_no": 8,
+   "kind": "勝負❸",
+   "horses": [
+    {
+     "name": "コウジハラ",
+     "umaban": 1,
+     "mark": "◎"
+    },
+    {
+     "name": "トモジャシーマ",
+     "umaban": 7,
+     "mark": "◯"
+    },
+    {
+     "name": "ノアスペシャル",
+     "umaban": 10,
+     "mark": "▲"
+    },
+    {
+     "name": "ソニックブレイカー",
+     "umaban": 12,
+     "mark": "△"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040810",
+   "venue": "阪神",
+   "race_no": 10,
+   "kind": "勝負❹",
+   "horses": [
+    {
+     "name": "ヴォーカライズ",
+     "umaban": 1,
+     "mark": "◎"
+    },
+    {
+     "name": "ストップザタイム",
+     "umaban": 2,
+     "mark": "◯"
+    },
+    {
+     "name": "ショウナンバルドル",
+     "umaban": 8,
+     "mark": "▲"
+    },
+    {
+     "name": "ジーティーマン",
+     "umaban": 11,
+     "mark": "△"
+    },
+    {
+     "name": "テーオーシュタイン",
+     "umaban": 3,
+     "mark": "☆"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040812",
+   "venue": "阪神",
+   "race_no": 12,
+   "kind": "勝負❺",
+   "horses": [
+    {
+     "name": "タイセイディアマン",
+     "umaban": 7,
+     "mark": "◎"
+    },
+    {
+     "name": "ゴールデンバランス",
+     "umaban": 6,
+     "mark": "◯"
+    },
+    {
+     "name": "インディゴアスール",
+     "umaban": 8,
+     "mark": "▲"
+    },
+    {
+     "name": "ニホンピロカラット",
+     "umaban": 10,
+     "mark": "△"
+    },
+    {
+     "name": "ザウリ",
+     "umaban": 4,
+     "mark": "☆"
+    }
+   ]
+  },
+  {
+   "race_id": "202606040806",
+   "venue": "中山",
+   "race_no": 6,
+   "kind": "その他",
+   "horses": [
+    {
+     "name": "ストーリーオブラブ",
+     "umaban": 2,
+     "mark": "◎"
+    }
+   ]
+  },
+  {
+   "race_id": "202606040807",
+   "venue": "中山",
+   "race_no": 7,
+   "kind": "その他",
+   "horses": [
+    {
+     "name": "ミッドセンチュリー",
+     "umaban": 16,
+     "mark": "◎"
+    }
+   ]
+  },
+  {
+   "race_id": "202606040810",
+   "venue": "中山",
+   "race_no": 10,
+   "kind": "その他",
+   "horses": [
+    {
+     "name": "ドリーミングアップ",
+     "umaban": 7,
+     "mark": "◎"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040807",
+   "venue": "阪神",
+   "race_no": 7,
+   "kind": "その他",
+   "horses": [
+    {
+     "name": "ランスオブヒーロー",
+     "umaban": 1,
+     "mark": "◎"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040808",
+   "venue": "阪神",
+   "race_no": 8,
+   "kind": "その他",
+   "horses": [
+    {
+     "name": "ニホンピロゴルディ",
+     "umaban": 2,
+     "mark": "◎"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040811",
+   "venue": "阪神",
+   "race_no": 11,
+   "kind": "その他",
+   "horses": [
+    {
+     "name": "ラムジェット",
+     "umaban": 13,
+     "mark": "◎"
+    }
+   ]
+  }
+ ]
+}
