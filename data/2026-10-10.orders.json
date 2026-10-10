@@ -1,0 +1,89 @@
+{
+ "date": "2026-10-10",
+ "source": "非馬 X投稿 11:37（「記事書くほどのレース見つからず以下軽く買う感じで」）",
+ "default_amount": 100,
+ "races": [
+  {
+   "race_id": "202605040307",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      6
+     ],
+     "partners": [
+      2,
+      3
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      6
+     ],
+     "partners": [
+      2,
+      3
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      6
+     ],
+     "partners": [
+      2,
+      3
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202608040311",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      8
+     ],
+     "partners": [
+      1,
+      6
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      8
+     ],
+     "partners": [
+      1,
+      6
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      8
+     ],
+     "partners": [
+      1,
+      6
+     ],
+     "source": "ref"
+    }
+   ]
+  }
+ ]
+}
