@@ -72,7 +72,8 @@ def main():
                 elif u in by_uma:
                     pos = f"{by_uma[u]['chaku']}着"
                 else:
-                    pos = "中止等"
+                    # 確定直後の結果ページは上位数頭しか載らないことがあるので「中止」とは書かない
+                    pos = "圏外"
                 parts.append(f"{mk}{u}→{pos}")
             marks_line = " ".join(parts)
             print(f"  印: {marks_line}")
