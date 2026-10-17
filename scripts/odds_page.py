@@ -200,7 +200,7 @@ def main():
         out.append("</section>")
 
     out.append('<p class="foot">組み方は非馬テンプレート（◎から馬連・馬単・3連複）。'
-               '★なしの東京9Rは買い目に入れていない。馬番の色は枠色。</p>')
+               '★なしのレースは買い目に入れていない。馬番の色は枠色。</p>')
     out.append("</main>")
     open(args.out, "w").write("\n".join(out))
     print(f"wrote {args.out}  {len(order)}レース {n_all}点（30倍以下 {n_pick}点）")
