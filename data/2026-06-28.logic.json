@@ -1,0 +1,395 @@
+{
+ "date": "2026-06-28",
+ "source": "Logic@競馬",
+ "races": [
+  {
+   "race_id": "202602010601",
+   "venue": "函館",
+   "race_no": 1,
+   "horses": [
+    {
+     "name": "キセキノユニコーン",
+     "umaban": 4
+    }
+   ]
+  },
+  {
+   "race_id": "202602010602",
+   "venue": "函館",
+   "race_no": 2,
+   "horses": [
+    {
+     "name": "ライカ",
+     "umaban": 3
+    }
+   ]
+  },
+  {
+   "race_id": "202602010603",
+   "venue": "函館",
+   "race_no": 3,
+   "horses": [
+    {
+     "name": "ジャーナーリア",
+     "umaban": 9
+    },
+    {
+     "name": "ウィズアツインクル",
+     "umaban": 10
+    }
+   ]
+  },
+  {
+   "race_id": "202602010604",
+   "venue": "函館",
+   "race_no": 4,
+   "horses": [
+    {
+     "name": "フォーチュンローズ",
+     "umaban": 3
+    },
+    {
+     "name": "ヴィラジョヴィス",
+     "umaban": 11
+    },
+    {
+     "name": "ノリマル",
+     "umaban": 14
+    }
+   ]
+  },
+  {
+   "race_id": "202602010606",
+   "venue": "函館",
+   "race_no": 6,
+   "horses": [
+    {
+     "name": "ベネディクション",
+     "umaban": 10
+    },
+    {
+     "name": "マテンロウオリジン",
+     "umaban": 14
+    },
+    {
+     "name": "ハルノアメ",
+     "umaban": 15
+    }
+   ]
+  },
+  {
+   "race_id": "202602010607",
+   "venue": "函館",
+   "race_no": 7,
+   "horses": [
+    {
+     "name": "キャットテイル",
+     "umaban": 4
+    },
+    {
+     "name": "アリストクラシア",
+     "umaban": 5
+    }
+   ]
+  },
+  {
+   "race_id": "202602010608",
+   "venue": "函館",
+   "race_no": 8,
+   "horses": [
+    {
+     "name": "ディーズメンフィス",
+     "umaban": 6
+    },
+    {
+     "name": "マイケルバローズ",
+     "umaban": 8
+    }
+   ]
+  },
+  {
+   "race_id": "202602010609",
+   "venue": "函館",
+   "race_no": 9,
+   "horses": [
+    {
+     "name": "カムアップローゼス",
+     "umaban": 1
+    },
+    {
+     "name": "ナムラヒナギク",
+     "umaban": 2
+    }
+   ]
+  },
+  {
+   "race_id": "202602010610",
+   "venue": "函館",
+   "race_no": 10,
+   "horses": [
+    {
+     "name": "プリンセッサ",
+     "umaban": 1
+    },
+    {
+     "name": "コンティオ",
+     "umaban": 4
+    }
+   ]
+  },
+  {
+   "race_id": "202602010612",
+   "venue": "函館",
+   "race_no": 12,
+   "horses": [
+    {
+     "name": "ウチュウノセカイ",
+     "umaban": 4
+    },
+    {
+     "name": "ビーコング",
+     "umaban": 7
+    },
+    {
+     "name": "エクストラバック",
+     "umaban": 9
+    }
+   ]
+  },
+  {
+   "race_id": "202610020201",
+   "venue": "小倉",
+   "race_no": 1,
+   "horses": [
+    {
+     "name": "ジョービスコッティ",
+     "umaban": 5
+    },
+    {
+     "name": "セレブトーチ",
+     "umaban": 8
+    }
+   ]
+  },
+  {
+   "race_id": "202610020202",
+   "venue": "小倉",
+   "race_no": 2,
+   "horses": [
+    {
+     "name": "ブランチアウト",
+     "umaban": 1
+    },
+    {
+     "name": "グリミスティ",
+     "umaban": 6
+    },
+    {
+     "name": "エングルマン",
+     "umaban": 8
+    }
+   ]
+  },
+  {
+   "race_id": "202610020203",
+   "venue": "小倉",
+   "race_no": 3,
+   "horses": [
+    {
+     "name": "チュウワメロディー",
+     "umaban": 4
+    },
+    {
+     "name": "タイガーロード",
+     "umaban": 5
+    }
+   ]
+  },
+  {
+   "race_id": "202610020204",
+   "venue": "小倉",
+   "race_no": 4,
+   "horses": [
+    {
+     "name": "メンデレーエフ",
+     "umaban": 10
+    }
+   ]
+  },
+  {
+   "race_id": "202610020207",
+   "venue": "小倉",
+   "race_no": 7,
+   "horses": [
+    {
+     "name": "ゴールデンバランス",
+     "umaban": 2
+    },
+    {
+     "name": "アイカンアズーラ",
+     "umaban": 4
+    },
+    {
+     "name": "リアルアルバ",
+     "umaban": 6
+    }
+   ]
+  },
+  {
+   "race_id": "202610020208",
+   "venue": "小倉",
+   "race_no": 8,
+   "horses": [
+    {
+     "name": "ヴィーナスバブル",
+     "umaban": 5
+    },
+    {
+     "name": "エレガンシア",
+     "umaban": 6
+    }
+   ]
+  },
+  {
+   "race_id": "202610020209",
+   "venue": "小倉",
+   "race_no": 9,
+   "horses": [
+    {
+     "name": "ボンドロア",
+     "umaban": 4
+    }
+   ]
+  },
+  {
+   "race_id": "202610020210",
+   "venue": "小倉",
+   "race_no": 10,
+   "horses": [
+    {
+     "name": "テーオーライマン",
+     "umaban": 7
+    },
+    {
+     "name": "アラナコア",
+     "umaban": 11
+    }
+   ]
+  },
+  {
+   "race_id": "202610020211",
+   "venue": "小倉",
+   "race_no": 11,
+   "horses": [
+    {
+     "name": "スカイハイ",
+     "umaban": 8
+    }
+   ]
+  },
+  {
+   "race_id": "202610020212",
+   "venue": "小倉",
+   "race_no": 12,
+   "horses": [
+    {
+     "name": "ブラックレジェンド",
+     "umaban": 12
+    },
+    {
+     "name": "ロードシュヴァリエ",
+     "umaban": 15
+    }
+   ]
+  },
+  {
+   "race_id": "202603020202",
+   "venue": "福島",
+   "race_no": 2,
+   "horses": [
+    {
+     "name": "ウインビギニング",
+     "umaban": 12
+    },
+    {
+     "name": "カシマライフウ",
+     "umaban": 13
+    }
+   ]
+  },
+  {
+   "race_id": "202603020203",
+   "venue": "福島",
+   "race_no": 3,
+   "horses": [
+    {
+     "name": "オオセイケイ",
+     "umaban": 5
+    }
+   ]
+  },
+  {
+   "race_id": "202603020206",
+   "venue": "福島",
+   "race_no": 6,
+   "horses": [
+    {
+     "name": "リアアーテシアン",
+     "umaban": 2
+    },
+    {
+     "name": "スカット",
+     "umaban": 4
+    }
+   ]
+  },
+  {
+   "race_id": "202603020207",
+   "venue": "福島",
+   "race_no": 7,
+   "horses": [
+    {
+     "name": "アイアンパイク",
+     "umaban": 14
+    }
+   ]
+  },
+  {
+   "race_id": "202603020208",
+   "venue": "福島",
+   "race_no": 8,
+   "horses": [
+    {
+     "name": "ゲンジ",
+     "umaban": 1
+    }
+   ]
+  },
+  {
+   "race_id": "202603020209",
+   "venue": "福島",
+   "race_no": 9,
+   "horses": [
+    {
+     "name": "ボウウィンドウ",
+     "umaban": 6
+    }
+   ]
+  },
+  {
+   "race_id": "202603020210",
+   "venue": "福島",
+   "race_no": 10,
+   "horses": [
+    {
+     "name": "ヴァナルガンド",
+     "umaban": 5
+    },
+    {
+     "name": "ラフエイジアン",
+     "umaban": 7
+    }
+   ]
+  }
+ ]
+}
