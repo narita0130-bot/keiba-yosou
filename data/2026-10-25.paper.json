@@ -33,6 +33,13 @@
      "payout": 0,
      "refund": 0,
      "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
     }
    }
   },
@@ -66,6 +73,13 @@
     "30倍以下": {
      "points": 1,
      "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
      "payout": 0,
      "refund": 0,
      "hits": []
