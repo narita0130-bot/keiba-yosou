@@ -19,3 +19,10 @@
 - 合格：複勝回収率の −1SE が100%を超える（他の事前登録と同じ基準）
 - 合格しても「人気馬が多いから当たりやすいだけ」でないことを、同人気の無作為との差で確認する
 - 途中で条件をいじらない
+
+## 賭け金の扱い（2026-10-29 ユーザー指示）
+- 10/31以降、非馬◎をLogicも挙げたレースは、全部入り・30倍以下版の買い目を**1点200円**にする（他のレースは100円のまま）
+- 作成：買い目CSVを作った後に
+  `python3 scripts/overlap_stake.py --ev data/<日付>.all.ev.json --logic data/<日付>.logic.json [--logic data/<日付>.logic_gensen.json] --in data/<日付>.all.bets.csv --in data/<日付>.all.autofill.csv --in data/<日付>.pick.bets.csv ...`
+- ◎◯3点版（`docs/prereg_hiuma_3pt.md`）は定義が「各100円」なので100円のまま
+- この賭け金の変更は判定に影響しない。判定は上の通り、馬1頭100円あたりの単勝・複勝回収率で見る
