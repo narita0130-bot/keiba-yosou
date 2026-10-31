@@ -1,0 +1,90 @@
+{
+ "prereg": "docs/prereg_hiuma_3pt.md",
+ "start": "2026-10-25 東京7R",
+ "target_races": 150,
+ "races": [
+  {
+   "race_id": "202605040907",
+   "date": "2026-10-25",
+   "invest": 300,
+   "payout": 0
+  },
+  {
+   "race_id": "202605040910",
+   "date": "2026-10-25",
+   "invest": 200,
+   "payout": 0
+  },
+  {
+   "race_id": "202605040911",
+   "date": "2026-10-25",
+   "invest": 300,
+   "payout": 0
+  },
+  {
+   "race_id": "202608040909",
+   "date": "2026-10-25",
+   "invest": 200,
+   "payout": 0
+  },
+  {
+   "race_id": "202608040910",
+   "date": "2026-10-25",
+   "invest": 300,
+   "payout": 0
+  },
+  {
+   "race_id": "202608040911",
+   "date": "2026-10-25",
+   "invest": 300,
+   "payout": 0
+  },
+  {
+   "race_id": "202608040912",
+   "date": "2026-10-25",
+   "invest": 300,
+   "payout": 3720
+  },
+  {
+   "race_id": "202605041008",
+   "date": "2026-10-31",
+   "invest": 200,
+   "payout": 0
+  },
+  {
+   "race_id": "202608041008",
+   "date": "2026-10-31",
+   "invest": 300,
+   "payout": 0
+  },
+  {
+   "race_id": "202608041010",
+   "date": "2026-10-31",
+   "invest": 300,
+   "payout": 0
+  },
+  {
+   "race_id": "202605041011",
+   "date": "2026-10-31",
+   "invest": 200,
+   "payout": 0
+  },
+  {
+   "race_id": "202608041011",
+   "date": "2026-10-31",
+   "invest": 300,
+   "payout": 0
+  },
+  {
+   "race_id": "202605041012",
+   "date": "2026-10-31",
+   "invest": 300,
+   "payout": 0
+  }
+ ],
+ "total": {
+  "races": 13,
+  "invest": 3500,
+  "payout": 3720
+ }
+}
