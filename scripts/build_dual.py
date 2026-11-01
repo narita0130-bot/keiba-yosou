@@ -10,12 +10,16 @@
 
   python3 scripts/build_dual.py --ev data/2026-11-08.all.ev.json \
       --logic data/2026-11-08.logic.json [--logic data/2026-11-08.logic_gensen.json] \
-      --out data/2026-11-08.dual.orders.json
+      --out data/2026-11-08.dual.orders.json --csv
+
+  --csv を付けると続けて build_bets_csv.py を呼び、同じ名前で .bets.csv（記録用）と
+  .autofill.csv（即PAT入力用）も作る（2026-11-01 ユーザー指示：毎回CSVも出す）。
 """
 import argparse
 import itertools
 import json
 import os
+import subprocess
 import sys
 import time
 
@@ -45,6 +49,7 @@ def main():
     ap.add_argument("--ev", required=True)
     ap.add_argument("--logic", action="append", default=[])
     ap.add_argument("--out", required=True)
+    ap.add_argument("--csv", action="store_true", help="bets.csv と autofill.csv も作る")
     args = ap.parse_args()
 
     ev = json.load(open(args.ev))
@@ -77,6 +82,12 @@ def main():
     json.dump({"date": ev["date"], "default_amount": 100, "races": races},
               open(args.out, "w"), ensure_ascii=False, indent=1)
     print(f"wrote {args.out}  {len(races)}レース {sum(len(x['orders']) for x in races)}点")
+    if args.csv and races:
+        base = args.out[:-len(".orders.json")] if args.out.endswith(".orders.json") else args.out
+        tool = os.path.join(os.path.dirname(os.path.abspath(__file__)), "build_bets_csv.py")
+        for out, fmt in ((base + ".bets.csv", []), (base + ".autofill.csv", ["--format", "autofill"])):
+            subprocess.run([sys.executable, tool, "--orders", args.out, "--ev", args.ev, "--out", out] + fmt,
+                           check=True)
 
 
 if __name__ == "__main__":

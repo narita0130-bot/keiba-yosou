@@ -28,8 +28,9 @@
 - 相手：非馬の印の馬（◎◯▲△☆）と Logic の指名馬の和集合
 - 組み方：軸ごとに「軸＋残りから2頭」の全組み合わせ。重複は1点
 - トリガミ除外：オッズ（作成時点）が、そのレースのこの版の点数より低い組を外す。残りがすべて満たすまで繰り返す
-- 作成：`python3 scripts/build_dual.py --ev data/<日付>.all.ev.json --logic data/<日付>.logic.json [--logic …厳選・最終結論] --out data/<日付>.dual.orders.json`
-  → `build_bets_csv.py` で `data/<日付>.dual.bets.csv`／`.dual.autofill.csv`
+- 作成：`python3 scripts/build_dual.py --ev data/<日付>.all.ev.json --logic data/<日付>.logic.json [--logic …厳選・最終結論] --out data/<日付>.dual.orders.json --csv`
+  → `data/<日付>.dual.bets.csv`（記録用）と `.dual.autofill.csv`（即PAT入力用）が同時にできる。
+  **autofill.csv は毎回ユーザーに送る**（11/1 ユーザー指示）。Logic の印が後から届いたら作り直して送り直す
 - 記録：`race_report.py` の `--bets 両◎軸版=data/<日付>.dual.bets.csv`。1日の終わりに `data/dual_tracking.json` へ足す
 
 ## 判定
