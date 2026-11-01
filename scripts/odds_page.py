@@ -5,7 +5,7 @@
       --pick data/2026-10-11.pick.bets.csv --out page.html
 
 - 馬番は枠色のチップで出す（出馬表の枠番を netkeiba から取る）
-- --pick に入っている買い目には「30倍以下版」の印を付ける
+- --pick に入っている買い目には「30倍以下版」の印を付ける（--pick-label で名前を変えられる）
 - 賭け金は CSV の amount 列（基本100円。overlap_stake.py で200円にしたレースは札に表示）
 """
 import argparse
@@ -100,6 +100,10 @@ def main():
     ap.add_argument("--pick", help="30倍以下版の bets.csv（印を付ける）")
     ap.add_argument("--out", required=True)
     ap.add_argument("--title", default=None)
+    ap.add_argument("--heading", default="非馬の買い目", help="見出しの名前")
+    ap.add_argument("--all-label", default="全部入り")
+    ap.add_argument("--pick-label", default="30倍以下版")
+    ap.add_argument("--note", default="組み方は非馬テンプレート（◎から馬連・馬単・3連複）。", help="ページ末尾の説明")
     args = ap.parse_args()
 
     rows = list(csv.DictReader(open(args.bets, encoding="utf-8-sig")))
@@ -142,15 +146,15 @@ def main():
            '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Kaku+Gothic+New:wght@700&display=swap">',
            f"<style>{CSS}</style>", '<main class="wrap">',
            "<header>",
-           f"<h1>{int(m)}/{int(dd)}（{wd}）非馬の買い目　オッズと払戻</h1>",
+           f"<h1>{int(m)}/{int(dd)}（{wd}）{html.escape(args.heading)}　オッズと払戻</h1>",
            f'<p class="lead">払戻は、その組み合わせが当たった時に何円になるか（オッズ×賭け金）。'
            f'賭け金は1点100円、非馬の◎をLogicも挙げたレースだけ1点200円。'
            f'オッズは netkeiba の {t_range} 時点の値で、締切までに動く。今日は購入なし（結果の通知と記録のみ）。</p>',
            "</header>",
            '<div class="sum">',
            f'<span class="chip">レース <b>{len(order)}</b></span>',
-           f'<span class="chip">全部入り <b>{n_all}点・{yen_all:,}円</b></span>',
-           f'<span class="chip pk">30倍以下版 <b>{n_pick}点・{yen_pick:,}円</b></span>',
+           f'<span class="chip">{html.escape(args.all_label)} <b>{n_all}点・{yen_all:,}円</b></span>',
+           f'<span class="chip pk">{html.escape(args.pick_label)} <b>{n_pick}点・{yen_pick:,}円</b></span>',
            "</div>",
            '<nav class="jump" aria-label="レースへ移動">']
     for rid in order:
@@ -195,7 +199,7 @@ def main():
             is_pick = (r["race_id"], r["bet_type"], r["combo"]) in pick
             odds = float(r["odds"]) if r["odds"] else None
             pay = f"{int(round(odds * amt)):,}円" if odds else "不明"
-            badge = '<span class="badge">30倍以下版</span>' if is_pick else ""
+            badge = f'<span class="badge">{html.escape(args.pick_label)}</span>' if is_pick else ""
             out.append(f'<tr class="{"pk" if is_pick else ""}">'
                        f'<td class="kind">{r["bet_type"]}</td>'
                        f'<td><span class="combo">{chips}{badge}</span><span class="names">{html.escape(nm)}</span></td>'
@@ -207,11 +211,11 @@ def main():
         out.append(f'<div class="marks foot">{len(rs)}点・{sum(int(r["amount"]) for r in rs):,}円　当たった時の払戻 {int(lo*amt):,}円〜{int(hi*amt):,}円</div>')
         out.append("</section>")
 
-    out.append('<p class="foot">組み方は非馬テンプレート（◎から馬連・馬単・3連複）。'
+    out.append(f'<p class="foot">{html.escape(args.note)}'
                '★なしのレースは買い目に入れていない。馬番の色は枠色。</p>')
     out.append("</main>")
     open(args.out, "w").write("\n".join(out))
-    print(f"wrote {args.out}  {len(order)}レース {n_all}点（30倍以下 {n_pick}点）")
+    print(f"wrote {args.out}  {len(order)}レース {n_all}点（{args.pick_label} {n_pick}点）")
 
 
 if __name__ == "__main__":
