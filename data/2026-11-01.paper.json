@@ -170,6 +170,70 @@
      "hits": []
     }
    }
+  },
+  "202605041110": {
+   "top3": [
+    [
+     12,
+     "クインズデネブ",
+     7
+    ],
+    [
+     5,
+     "フェンダー",
+     9
+    ],
+    [
+     13,
+     "イノセントキャット",
+     3
+    ]
+   ],
+   "marks": "◎4→15着 ◯9→5着 ▲2→8着 ☆10→4着 ☆12→1着",
+   "books": {
+    "全部入り": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "合算版": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◯▲馬連": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
