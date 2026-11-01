@@ -298,6 +298,77 @@
      "hits": []
     }
    }
+  },
+  "202605041111": {
+   "top3": [
+    [
+     17,
+     "ダノンデサイル",
+     4
+    ],
+    [
+     10,
+     "ネブラディスク",
+     8
+    ],
+    [
+     3,
+     "レガレイラ",
+     3
+    ]
+   ],
+   "marks": "◎10→2着 ◯7→圏外 ▲1→5着 ☆16→圏外",
+   "books": {
+    "全部入り": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "合算版": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "天皇賞追加": {
+     "points": 11,
+     "invest": 1100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◯▲馬連": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
