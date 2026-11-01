@@ -1,0 +1,11 @@
+{
+ "prereg": "docs/prereg_dual_axis.md",
+ "start": "2026-11-07",
+ "target_races": 100,
+ "races": [],
+ "total": {
+  "races": 0,
+  "invest": 0,
+  "payout": 0
+ }
+}
