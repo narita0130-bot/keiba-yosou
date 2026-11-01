@@ -1,0 +1,61 @@
+{
+ "races": {
+  "202605041106": {
+   "top3": [
+    [
+     12,
+     "ゴーゴーパンチ",
+     1
+    ],
+    [
+     9,
+     "ガラク",
+     2
+    ],
+    [
+     15,
+     "トワイライトビュー",
+     9
+    ]
+   ],
+   "marks": "◎11→6着 ◯12→1着 ▲9→2着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "合算版": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  }
+ }
+}
