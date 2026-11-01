@@ -1,0 +1,49 @@
+{
+ "date": "2026-11-01",
+ "default_amount": 100,
+ "source": "非馬の◯-▲馬連（相手同士）を1点ずつ足す記録用（11/1 東京9R以降、ユーザー依頼）",
+ "races": [
+  {
+   "race_id": "202605041110",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      2,
+      9
+     ],
+     "source": "ta"
+    }
+   ]
+  },
+  {
+   "race_id": "202605041111",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      1,
+      7
+     ],
+     "source": "ta"
+    }
+   ]
+  },
+  {
+   "race_id": "202608041111",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      7,
+      12
+     ],
+     "source": "ta"
+    }
+   ]
+  }
+ ]
+}
