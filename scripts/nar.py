@@ -99,15 +99,21 @@ def _tanfuku(race_id):
     if res.get("status") != "OK" or res.get("odds_status") != "real":
         raise SystemExit(f"オッズ未発売（予想オッズのみ、または取得不可） race_id={race_id} "
                          f"status={res.get('status')} odds_status={res.get('odds_status')}")
+    # 発売直後は odds_status=real でも全頭 0.0 が並ぶ。0.0 は「まだ付いていない」であって
+    # オッズではないので落とす。1頭も残らなければ未発売と同じ扱いにする
     tan = {f"{int(k):02d}": [v["Odds"], "", str(v.get("Ninki", ""))]
-           for k, v in res["ary_odds"].items() if k.isdigit()}
+           for k, v in res["ary_odds"].items()
+           if k.isdigit() and re.match(r"\d", str(v.get("Odds", ""))) and float(v["Odds"]) > 0}
+    if not tan:
+        raise SystemExit(f"オッズがまだ付いていない（発売直後で全頭0.0） race_id={race_id}")
     time.sleep(SLEEP)
     html = _get(f"{BASE}/odds/index.html?type=b1&race_id={race_id}").decode("utf-8", "replace")
     fuku = {}
     blk = html[html.find("odds_fuku_block"):] if "odds_fuku_block" in html else ""
     for u, lo, hi in re.findall(r'<td class="Waku\d*">\d+</td>\s*<td>(\d+)</td>.*?'
                                 r'<span class="Odds[^"]*">\s*([\d.]+)\s*-\s*([\d.]+)', blk, re.S):
-        fuku[f"{int(u):02d}"] = [lo, hi, ""]
+        if float(hi) > 0:
+            fuku[f"{int(u):02d}"] = [lo, hi, ""]
     return {"1": tan, "2": fuku}
 
 
@@ -115,8 +121,8 @@ def _combo_page(html, page_type):
     out = {}
     for nums, val in re.findall(rf'id="chk_[^"]*_{page_type}_c\d+_([\d_]+)"[^>]*>\s*([^<]*?)\s*<', html):
         val = val.strip()
-        if not val or not re.match(r"[\d.]", val):
-            continue
+        if not val or not re.match(r"[\d.]", val) or not re.search(r"[1-9]", val):
+            continue          # 空欄・「---」・発売直後の 0.0 はオッズではない
         key = "".join(f"{int(x):02d}" for x in nums.split("_"))
         if page_type == "b5":
             lo, _, hi = val.partition("-")
