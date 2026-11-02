@@ -1172,3 +1172,16 @@ Logicの複勝を単勝オッズに比例して買うと **104.0%**（1,570点�
 
 **再開する場合**：データ・スクリプト・検証記録はすべてこのリポジトリにある。手順は `docs/SYSTEM_OVERVIEW.md` §4。
 再開の前に、まず買わずに記録だけ（`record_marks.py`）を数百レース続け、▲・☆の複勝回収率（9/27時点 96.5%／100.0%、+1.1SD／+1.3SD）が偶然の範囲を抜けるかを確かめること。
+
+## §28 地方競馬（JBC）対応（2026-11-03）
+
+`scripts/nar.py` を追加。race_id の場コードが11以上（地方）なら、`fetch_odds.race_info`／`odds_api` と
+`fetch_result.race_result` が自動で nar.netkeiba.com を読むので、build_orders → build_bets_csv →
+race_report → odds_page / build_dual はJRAと同じコマンドで動く（11/2 盛岡5Rで通し確認済み）。
+
+- 地方の race_id は 年4+場2+月日4+R2。`kaisai_prefixes` は地方の開催も返す（Logicの「金沢,9,馬名」も解決できる）
+- 単勝は API（api_get_nar_odds.html）、組み合わせはオッズページのHTMLから。3連複・3連単は軸馬ごとのページを全頭ぶん読む
+- **発売前は予想オッズ（odds_status=yoso）しか無い。実オッズとして使わず、未発売として止める**
+- 組み合わせの人気・官製の更新時刻はページに無い。人気は空欄、時刻は取得時刻
+- 即PAT用の autofill.csv は JRA の投票画面向け。地方（地方競馬IPAT）の画面で使えるかは未確認
+- 地方のレースでの非馬・Logic・各版の成績は未計測。JRAの検証結果をそのまま当てはめない

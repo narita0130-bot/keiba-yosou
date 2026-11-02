@@ -43,6 +43,18 @@ BET_TYPES = {
 
 JYO = {"01": "札幌", "02": "函館", "03": "福島", "04": "新潟", "05": "東京",
        "06": "中山", "07": "中京", "08": "京都", "09": "阪神", "10": "小倉"}
+# 地方（nar.netkeiba.com）の場コード。race_id の場コードが 11 以上なら地方で、
+# race_info / odds_api は nar.py に回す（2026-11-02、JBC用に追加）。
+NAR_JYO = {"30": "門別", "31": "北見", "32": "岩見沢", "33": "帯広", "34": "旭川", "35": "盛岡",
+           "36": "水沢", "37": "上山", "38": "三条", "39": "足利", "40": "宇都宮", "41": "高崎",
+           "42": "浦和", "43": "船橋", "44": "大井", "45": "川崎", "46": "金沢", "47": "笠松",
+           "48": "名古屋", "49": "紀三井寺", "50": "園田", "51": "姫路", "52": "益田", "53": "福山",
+           "54": "高知", "55": "佐賀", "56": "荒尾", "57": "中津", "65": "帯広"}
+JYO.update(NAR_JYO)
+
+
+def is_nar(race_id):
+    return int(race_id[4:6]) > 10
 
 
 def today_jst():
@@ -122,6 +134,15 @@ def kaisai_prefixes(date):
         v = JYO.get(rid[4:6])
         if v:
             pre[v] = rid[:10]
+    # 地方（JBCなど）。地方の race_id は 年4+場2+月日4+R2 なので、先頭10桁+R で組める点は同じ
+    try:
+        nhtml = _get(f"https://nar.netkeiba.com/top/race_list_sub.html?kaisai_date={d}").decode("utf-8", "replace")
+        for rid in sorted(set(re.findall(r"race_id=(\d{12})", nhtml))):
+            v = NAR_JYO.get(rid[4:6])
+            if v and v not in pre:
+                pre[v] = rid[:10]
+    except SystemExit:
+        pass
     if not pre:
         sys.exit(f"{date} の開催一覧から race_id を取得できなかった。開催日か確認すること。")
     return pre
@@ -129,6 +150,9 @@ def kaisai_prefixes(date):
 
 def race_info(race_id):
     """出馬表から レース名・条件・出走各馬（枠/馬番/馬名/性齢/斤量/騎手/厩舎）を取得する。"""
+    if is_nar(race_id):
+        import nar
+        return nar.race_info(race_id)
     html = _get(f"https://race.netkeiba.com/race/shutuba.html?race_id={race_id}").decode("utf-8", "replace")
     name = re.search(r'class="RaceName"[^>]*>\s*([^<\n]+)', html)
     d1 = re.search(r'RaceData01">(.*?)</div>', html, re.S)
@@ -175,6 +199,9 @@ def race_info(race_id):
 
 
 def odds_api(race_id, type_):
+    if is_nar(race_id):
+        import nar
+        return nar.odds_api(race_id, type_)
     url = (f"https://race.netkeiba.com/api/api_get_jra_odds.html"
            f"?type={type_}&race_id={race_id}&action=init")
     res = json.loads(_get(url, referer=f"https://race.netkeiba.com/odds/index.html?race_id={race_id}").decode())

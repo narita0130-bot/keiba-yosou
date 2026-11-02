@@ -10,7 +10,7 @@ import argparse
 import re
 import sys
 
-from fetch_odds import JYO, _get, _strip
+from fetch_odds import JYO, _get, _strip, is_nar
 
 # 結果ページの行クラス → 式別名（fetch_odds.py の BET_TYPES と同じ呼び方）
 ROW_CLASS = {
@@ -65,6 +65,9 @@ def race_result(race_id):
     payouts: {式別: {組番キー: {"yen": 払戻円, "ninki": 人気}}}
     order:   [{"chaku": 着順, "umaban": 馬番, "name": 馬名}, ...]
     """
+    if is_nar(race_id):                 # 地方は結果ページの作りが違う（nar.py）
+        import nar
+        return nar.race_result(race_id)
     html = _get(f"https://race.netkeiba.com/race/result.html?race_id={race_id}").decode("utf-8", "replace")
 
     payouts = {}
