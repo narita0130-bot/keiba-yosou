@@ -143,6 +143,70 @@
      "hits": []
     }
    }
+  },
+  "202630110309": {
+   "top3": [
+    [
+     1,
+     "オーリエイト",
+     1
+    ],
+    [
+     6,
+     "マルカルーカス",
+     3
+    ],
+    [
+     9,
+     "ワンダーマーベル",
+     2
+    ]
+   ],
+   "marks": "◎4→圏外 ◯1→1着 ☆10→圏外 ☆11→圏外",
+   "books": {
+    "Logic×非馬型": {
+     "points": 18,
+     "invest": 1800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬全部入り": {
+     "points": 7,
+     "invest": 1400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬30倍以下": {
+     "points": 2,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 29,
+     "invest": 2900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬本人想定": {
+     "points": 4,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
