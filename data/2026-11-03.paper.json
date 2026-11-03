@@ -70,6 +70,79 @@
      "hits": []
     }
    }
+  },
+  "202646110308": {
+   "top3": [
+    [
+     11,
+     "メイショウハチロー",
+     2
+    ],
+    [
+     10,
+     "ウィルソンテソーロ",
+     3
+    ],
+    [
+     5,
+     "ハッピーマン",
+     7
+    ]
+   ],
+   "marks": "◎11→1着 ◯12→圏外 ☆7→圏外",
+   "books": {
+    "Logic×非馬型": {
+     "points": 13,
+     "invest": 1300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬全部入り": {
+     "points": 4,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬30倍以下": {
+     "points": 2,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬本人想定": {
+     "points": 3,
+     "invest": 300,
+     "payout": 340,
+     "refund": 0,
+     "hits": [
+      "単勝11 340円"
+     ]
+    },
+    "Z-NOTE3連単": {
+     "points": 24,
+     "invest": 2400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
