@@ -43,6 +43,7 @@ def main():
     ap.add_argument("--ev", help="印の定義（印の着順を出す）")
     ap.add_argument("--bets", action="append", default=[], help="ラベル=買い目CSV（複数可）")
     ap.add_argument("--state", required=True, help="レースごとの結果を貯めるJSON")
+    ap.add_argument("--bought", action="append", default=[], help="実際に買った買い目のラベル（通知に「購入」と出す）")
     args = ap.parse_args()
 
     rid = args.race
@@ -126,7 +127,8 @@ def main():
 
     win = top[0] if top else None
     head = f"{race_label(rid)} 1着{win['umaban']}{win['name']}({win['ninki']}人気)" if win else race_label(rid)
-    msg = f"{head}｜{marks_line}｜{' '.join(notify_parts)}｜累計 {' '.join(tot_txt)}（買わず）"
+    tail = f"（購入: {'・'.join(args.bought)}）" if args.bought else "（買わず）"
+    msg = f"{head}｜{marks_line}｜{' '.join(notify_parts)}｜累計 {' '.join(tot_txt)}{tail}"
     print("NOTIFY:" + msg[:200])
 
 
