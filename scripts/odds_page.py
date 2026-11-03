@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fetch_odds import race_info   # noqa: E402
 
 MARK_ORDER = "◎◯▲△☆"
-KIND_ORDER = {"馬連": 0, "馬単": 1, "3連複": 2}
+KIND_ORDER = {"単勝": 0, "ワイド": 1, "馬連": 2, "馬単": 3, "3連複": 4, "3連単": 5}
 WEEK = "月火水木金土日"
 
 CSS = """
@@ -193,7 +193,7 @@ def main():
                    f'<th class="num">オッズ</th><th class="num">{amt}円→払戻</th><th class="num">人気</th></tr></thead><tbody>')
         for r in rs:
             nums = [int(x) for x in r["combo"].replace(">", "-").split("-")]
-            sep = '<span class="arw">→</span>' if r["bet_type"] == "馬単" else '<span class="arw">-</span>'
+            sep = '<span class="arw">→</span>' if r["bet_type"] in ("馬単", "3連単") else '<span class="arw">-</span>'
             chips = sep.join(uma_chip(u, waku) for u in nums)
             nm = "・".join(names.get(u, "") for u in nums)
             is_pick = (r["race_id"], r["bet_type"], r["combo"]) in pick
