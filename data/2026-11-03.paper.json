@@ -207,6 +207,79 @@
      "hits": []
     }
    }
+  },
+  "202646110309": {
+   "top3": [
+    [
+     2,
+     "アウトレンジ",
+     1
+    ],
+    [
+     10,
+     "ホウオウルーレット",
+     3
+    ],
+    [
+     6,
+     "セラフィックコール",
+     4
+    ]
+   ],
+   "marks": "◎10→2着 ◯11→圏外 ☆8→圏外",
+   "books": {
+    "Logic×非馬型": {
+     "points": 18,
+     "invest": 1800,
+     "payout": 1170,
+     "refund": 0,
+     "hits": [
+      "3連複02-06-10 1,170円"
+     ]
+    },
+    "非馬全部入り": {
+     "points": 4,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬30倍以下": {
+     "points": 2,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 13,
+     "invest": 1300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬本人想定": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Z-NOTE3連単": {
+     "points": 39,
+     "invest": 3900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
