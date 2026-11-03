@@ -170,14 +170,17 @@ def main():
         names = info[rid]["names"]
         stars = mk.get("stars", "")
         ot = r0.get("odds_time", "")[11:16]
-        amt = int(r0["amount"])
+        amts = sorted({int(r["amount"]) for r in rs})
+        amt = amts[0] if len(amts) == 1 else None      # 1レースで金額が混ざる場合（合算・買い足し）は None
+        race_yen = sum(int(r["amount"]) for r in rs)
         out.append(f'<section class="race" id="r{rid[-6:]}">')
         out.append('<div class="rh">'
                    f'<span class="t">{r0["post_time"]}</span>'
                    f'<span class="r">{r0["venue"]}{r0["race_no"]}R</span>'
                    f'<span class="n">{html.escape(info[rid]["name"])}</span>'
                    f'<span class="st">{stars or "★なし"}</span>'
-                   + (f'<span class="up">1点{amt}円（Logic重なり）</span>' if amt != 100 else '') +
+                   + (f'<span class="up">1点{amt}円（Logic重なり）</span>' if amt not in (100, None) else '')
+                   + (f'<span class="up">1点{amts[0]}〜{amts[-1]}円</span>' if amt is None else '') +
                    f'<span class="ot">オッズ {ot} 時点</span></div>')
         mitems = sorted(mk.get("marks", {}).items(), key=lambda kv: (MARK_ORDER.index(kv[1]), int(kv[0])))
         out.append('<div class="marks">')
@@ -190,7 +193,7 @@ def main():
         lo = min(float(r["odds"]) for r in rs if r["odds"])
         hi = max(float(r["odds"]) for r in rs if r["odds"])
         out.append('<div class="tbl"><table><thead><tr><th>式別</th><th>組み合わせ</th>'
-                   f'<th class="num">オッズ</th><th class="num">{amt}円→払戻</th><th class="num">人気</th></tr></thead><tbody>')
+                   f'<th class="num">オッズ</th><th class="num">{f"{amt}円→払戻" if amt else "賭け金→払戻"}</th><th class="num">人気</th></tr></thead><tbody>')
         for r in rs:
             nums = [int(x) for x in r["combo"].replace(">", "-").split("-")]
             sep = '<span class="arw">→</span>' if r["bet_type"] in ("馬単", "3連単") else '<span class="arw">-</span>'
@@ -198,7 +201,12 @@ def main():
             nm = "・".join(names.get(u, "") for u in nums)
             is_pick = (r["race_id"], r["bet_type"], r["combo"]) in pick
             odds = float(r["odds"]) if r["odds"] else None
-            pay = f"{int(round(odds * amt)):,}円" if odds else "不明"
+            ramt = int(r["amount"])
+            pay = f"{int(round(odds * ramt)):,}円" if odds else "不明"
+            if amt is None and odds:
+                pay = f'<span class="names">{ramt}円→</span>{pay}'
+            if odds and odds * ramt < race_yen:
+                pay += ' <span class="names">損</span>'      # 当たってもそのレースの合計より少ない
             badge = f'<span class="badge">{html.escape(args.pick_label)}</span>' if is_pick else ""
             out.append(f'<tr class="{"pk" if is_pick else ""}">'
                        f'<td class="kind">{r["bet_type"]}</td>'
@@ -208,7 +216,8 @@ def main():
                        f'<tr><td class="kind">{r["bet_type"]}</td><td>{chips}</td>'
                        f'<td class="num">不明</td><td class="num">不明</td><td class="num">-</td></tr>')
         out.append("</tbody></table></div>")
-        out.append(f'<div class="marks foot">{len(rs)}点・{sum(int(r["amount"]) for r in rs):,}円　当たった時の払戻 {int(lo*amt):,}円〜{int(hi*amt):,}円</div>')
+        pays = [float(r["odds"]) * int(r["amount"]) for r in rs if r["odds"]]
+        out.append(f'<div class="marks foot">{len(rs)}点・{race_yen:,}円　当たった時の払戻 {int(min(pays)):,}円〜{int(max(pays)):,}円</div>')
         out.append("</section>")
 
     out.append(f'<p class="foot">{html.escape(args.note)}'
