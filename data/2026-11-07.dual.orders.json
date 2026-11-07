@@ -551,6 +551,71 @@
      "source": "dual"
     }
    ]
+  },
+  {
+   "race_id": "202605050111",
+   "orders": [
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      6,
+      8
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      6,
+      9
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      6,
+      10
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      8,
+      9
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      8,
+      10
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      9,
+      10
+     ],
+     "source": "dual"
+    }
+   ]
   }
  ]
 }
