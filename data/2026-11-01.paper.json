@@ -1,0 +1,410 @@
+{
+ "races": {
+  "202605041106": {
+   "top3": [
+    [
+     12,
+     "ゴーゴーパンチ",
+     1
+    ],
+    [
+     9,
+     "ガラク",
+     2
+    ],
+    [
+     15,
+     "トワイライトビュー",
+     9
+    ]
+   ],
+   "marks": "◎11→6着 ◯12→1着 ▲9→2着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "合算版": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605041109": {
+   "top3": [
+    [
+     1,
+     "ミッキーソルジャー",
+     1
+    ],
+    [
+     14,
+     "ウフドゥウフ",
+     4
+    ],
+    [
+     6,
+     "テラメリタ",
+     7
+    ]
+   ],
+   "marks": "◎1→1着 ◯10→6着 ☆2→7着",
+   "books": {
+    "全部入り": {
+     "points": 4,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "合算版": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608041110": {
+   "top3": [
+    [
+     1,
+     "ファームツエンティ",
+     1
+    ],
+    [
+     3,
+     "ディヴァインスター",
+     5
+    ],
+    [
+     6,
+     "ダカラフェスティヴ",
+     9
+    ]
+   ],
+   "marks": "◎4→9着 ◯1→1着 ☆5→6着 ☆9→7着",
+   "books": {
+    "全部入り": {
+     "points": 7,
+     "invest": 700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "合算版": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605041110": {
+   "top3": [
+    [
+     12,
+     "クインズデネブ",
+     7
+    ],
+    [
+     5,
+     "フェンダー",
+     9
+    ],
+    [
+     13,
+     "イノセントキャット",
+     3
+    ]
+   ],
+   "marks": "◎4→15着 ◯9→5着 ▲2→8着 ☆10→4着 ☆12→1着",
+   "books": {
+    "全部入り": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "合算版": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◯▲馬連": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608041111": {
+   "top3": [
+    [
+     7,
+     "レザベーション",
+     1
+    ],
+    [
+     8,
+     "スマートワイス",
+     2
+    ],
+    [
+     12,
+     "キョウエイブリッサ",
+     3
+    ]
+   ],
+   "marks": "◎13→圏外 ◯7→1着 ▲12→3着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "合算版": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◯▲馬連": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605041111": {
+   "top3": [
+    [
+     17,
+     "ダノンデサイル",
+     4
+    ],
+    [
+     10,
+     "ネブラディスク",
+     8
+    ],
+    [
+     3,
+     "レガレイラ",
+     3
+    ]
+   ],
+   "marks": "◎10→2着 ◯7→圏外 ▲1→5着 ☆16→圏外",
+   "books": {
+    "全部入り": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "合算版": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "天皇賞追加": {
+     "points": 11,
+     "invest": 1100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◯▲馬連": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605041112": {
+   "top3": [
+    [
+     8,
+     "スマートスピア",
+     1
+    ],
+    [
+     13,
+     "サマーマッドネス",
+     2
+    ],
+    [
+     9,
+     "キングツェッペリン",
+     7
+    ]
+   ],
+   "marks": "◎3→圏外 ◯8→1着 ▲9→3着 △13→2着 ☆14→5着 ☆2→圏外",
+   "books": {
+    "Logic厳選非馬型": {
+     "points": 18,
+     "invest": 1800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "折衷版": {
+     "points": 15,
+     "invest": 2700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  }
+ }
+}

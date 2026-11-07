@@ -1,0 +1,4 @@
+﻿date,race_id,jyo_code,venue,race_no,post_time,bet_type,bet_type_code,combo,amount,group_id,group_method,group_points,odds,ninki,ev,ev_low,judge,source,odds_time
+20260927,202609040911,09,阪神,11,15:20,馬連,4,09-10,100,G001,normal,1,45.7,18,0.884,0.796,pass,ref,2026-09-27 13:15:16
+20260927,202609040911,09,阪神,11,15:20,馬単,6,09>10,100,G002,normal,1,107.9,41,0.934,0.795,pass,ref,2026-09-27 13:15:16
+20260927,202609040911,09,阪神,11,15:20,3連複,7,09-10-12,100,G003,normal,1,219.2,74,0.991,0.840,pass,ref,2026-09-27 13:15:16

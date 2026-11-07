@@ -1,0 +1,78 @@
+{
+ "prereg": "docs/prereg_dual_axis.md",
+ "start": "2026-11-07",
+ "target_races": 100,
+ "races": [
+  {
+   "race_id": "202603030104",
+   "date": "2026-11-07",
+   "invest": 300,
+   "payout": 0
+  },
+  {
+   "race_id": "202603030106",
+   "date": "2026-11-07",
+   "invest": 600,
+   "payout": 0
+  },
+  {
+   "race_id": "202603030107",
+   "date": "2026-11-07",
+   "invest": 600,
+   "payout": 0
+  },
+  {
+   "race_id": "202603030108",
+   "date": "2026-11-07",
+   "invest": 600,
+   "payout": 0
+  },
+  {
+   "race_id": "202603030109",
+   "date": "2026-11-07",
+   "invest": 300,
+   "payout": 0
+  },
+  {
+   "race_id": "202603030111",
+   "date": "2026-11-07",
+   "invest": 1000,
+   "payout": 0
+  },
+  {
+   "race_id": "202605050110",
+   "date": "2026-11-07",
+   "invest": 600,
+   "payout": 0
+  },
+  {
+   "race_id": "202605050111",
+   "date": "2026-11-07",
+   "invest": 600,
+   "payout": 0
+  },
+  {
+   "race_id": "202608050110",
+   "date": "2026-11-07",
+   "invest": 600,
+   "payout": 0
+  },
+  {
+   "race_id": "202608050111",
+   "date": "2026-11-07",
+   "invest": 100,
+   "payout": 0
+  },
+  {
+   "race_id": "202608050112",
+   "date": "2026-11-07",
+   "invest": 300,
+   "payout": 0
+  }
+ ],
+ "total": {
+  "races": 11,
+  "invest": 5600,
+  "payout": 0
+ }
+}

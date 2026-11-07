@@ -1,0 +1,88 @@
+{
+ "date": "2026-09-22",
+ "source": "Logic@競馬",
+ "races": [
+  {
+   "race_id": "202606040702",
+   "venue": "中山",
+   "race_no": 2,
+   "horses": [
+    {
+     "name": "バタフライ",
+     "umaban": 8
+    }
+   ]
+  },
+  {
+   "race_id": "202606040703",
+   "venue": "中山",
+   "race_no": 3,
+   "horses": [
+    {
+     "name": "ドナビッグベン",
+     "umaban": 5
+    }
+   ]
+  },
+  {
+   "race_id": "202606040704",
+   "venue": "中山",
+   "race_no": 4,
+   "horses": [
+    {
+     "name": "クシェドゥソレイユ",
+     "umaban": 6
+    },
+    {
+     "name": "エレスレイプニル",
+     "umaban": 8
+    },
+    {
+     "name": "コスモバルムンク",
+     "umaban": 9
+    }
+   ]
+  },
+  {
+   "race_id": "202606040707",
+   "venue": "中山",
+   "race_no": 7,
+   "horses": [
+    {
+     "name": "ブレスドナイル",
+     "umaban": 2
+    },
+    {
+     "name": "タケルムサシ",
+     "umaban": 3
+    }
+   ]
+  },
+  {
+   "race_id": "202606040708",
+   "venue": "中山",
+   "race_no": 8,
+   "horses": [
+    {
+     "name": "プルーヴンウィナー",
+     "umaban": 1
+    },
+    {
+     "name": "ラルガメンテ",
+     "umaban": 4
+    }
+   ]
+  },
+  {
+   "race_id": "202606040710",
+   "venue": "中山",
+   "race_no": 10,
+   "horses": [
+    {
+     "name": "プリムツァール",
+     "umaban": 11
+    }
+   ]
+  }
+ ]
+}

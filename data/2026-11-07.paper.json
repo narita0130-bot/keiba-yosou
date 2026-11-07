@@ -1,0 +1,696 @@
+{
+ "races": {
+  "202603030104": {
+   "top3": [
+    [
+     16,
+     "フィサブロス",
+     9
+    ],
+    [
+     9,
+     "スノーディーヴァ",
+     4
+    ],
+    [
+     5,
+     "ステイアンビシャス",
+     7
+    ]
+   ],
+   "marks": "◎6→圏外 ◯9→2着 ▲2→圏外",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030106": {
+   "top3": [
+    [
+     11,
+     "フィエールシャンテ",
+     7
+    ],
+    [
+     14,
+     "ボンボンベイビー",
+     3
+    ],
+    [
+     4,
+     "ニホンピロゴルディ",
+     6
+    ]
+   ],
+   "marks": "◎2→4着 ◯16→圏外 ▲4→3着",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030107": {
+   "top3": [
+    [
+     9,
+     "フロムレイブン",
+     1
+    ],
+    [
+     4,
+     "グレイシエーション",
+     4
+    ],
+    [
+     10,
+     "キャナルクルーズ",
+     5
+    ]
+   ],
+   "marks": "◎7→8着 ◯9→1着 ▲10→3着 ☆3→4着 ☆4→2着",
+   "books": {
+    "購入分": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030108": {
+   "top3": [
+    [
+     9,
+     "モズオウンゴール",
+     1
+    ],
+    [
+     12,
+     "マダムイグレイン",
+     2
+    ],
+    [
+     1,
+     "スイーヴル",
+     6
+    ]
+   ],
+   "marks": "◎14→4着 ◯12→2着 ▲9→1着",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030109": {
+   "top3": [
+    [
+     9,
+     "ダノンハドソン",
+     11
+    ],
+    [
+     5,
+     "ゼットエイト",
+     14
+    ],
+    [
+     4,
+     "アッシズオブローズ",
+     8
+    ]
+   ],
+   "marks": "◎6→13着 ◯16→4着 ▲12→12着 △4→3着",
+   "books": {
+    "購入分": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050110": {
+   "top3": [
+    [
+     10,
+     "ボウウィンドウ",
+     1
+    ],
+    [
+     2,
+     "マイネルフーガ",
+     9
+    ],
+    [
+     8,
+     "トリプルコーク",
+     3
+    ]
+   ],
+   "marks": "◎3→4着 ◯8→3着 ▲1→5着 ☆7→10着 ☆10→1着",
+   "books": {
+    "購入分": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050110": {
+   "top3": [
+    [
+     5,
+     "ルクスデイジー",
+     2
+    ],
+    [
+     6,
+     "ウルスクローム",
+     4
+    ],
+    [
+     13,
+     "ユウトザレン",
+     5
+    ]
+   ],
+   "marks": "◎1→4着 ◯6→2着",
+   "books": {
+    "購入分": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030111": {
+   "top3": [
+    [
+     12,
+     "ハリウッドメモリー",
+     5
+    ],
+    [
+     6,
+     "カーヌスティ",
+     1
+    ],
+    [
+     11,
+     "カウンターセブン",
+     10
+    ]
+   ],
+   "marks": "◎5→7着 ◯6→2着 ▲12→1着",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 10,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050111": {
+   "top3": [
+    [
+     9,
+     "ブルージェイ",
+     1
+    ],
+    [
+     2,
+     "フレイコン",
+     2
+    ],
+    [
+     5,
+     "グルーヴェンス",
+     7
+    ]
+   ],
+   "marks": "◎2→2着 ◯9→1着 ▲8→4着",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 1000,
+     "payout": 1160,
+     "refund": 0,
+     "hits": [
+      "馬連02-09 1,160円"
+     ]
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 1000,
+     "payout": 1160,
+     "refund": 0,
+     "hits": [
+      "馬連02-09 1,160円"
+     ]
+    },
+    "30倍以下": {
+     "points": 5,
+     "invest": 1000,
+     "payout": 1160,
+     "refund": 0,
+     "hits": [
+      "馬連02-09 1,160円"
+     ]
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 580,
+     "refund": 0,
+     "hits": [
+      "馬連02-09 580円"
+     ]
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050111": {
+   "top3": [
+    [
+     3,
+     "エコロレーヴ",
+     2
+    ],
+    [
+     13,
+     "ファムエレガンテ",
+     5
+    ],
+    [
+     10,
+     "ジョーメッドヴィン",
+     8
+    ]
+   ],
+   "marks": "◎10→3着 ◯14→4着 ▲9→圏外",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030112": {
+   "top3": [
+    [
+     15,
+     "イサギ",
+     13
+    ],
+    [
+     12,
+     "キープシャイニング",
+     7
+    ],
+    [
+     6,
+     "エイシンマールス",
+     2
+    ]
+   ],
+   "marks": "◎8→6着 ◯6→3着 ☆4→9着 ☆5→10着",
+   "books": {
+    "購入分": {
+     "points": 7,
+     "invest": 700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 7,
+     "invest": 700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050112": {
+   "top3": [
+    [
+     16,
+     "プレスバーン",
+     2
+    ],
+    [
+     15,
+     "ダノンブギ",
+     4
+    ],
+    [
+     8,
+     "マイネルビスマルク",
+     15
+    ]
+   ],
+   "marks": "◎4→4着 ◯15→2着 ▲2→圏外",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  }
+ }
+}

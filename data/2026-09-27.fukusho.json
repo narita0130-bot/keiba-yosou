@@ -1,0 +1,243 @@
+{
+ "date": "2026-09-27",
+ "source": "複勝専門店",
+ "note": "有料note（9/26 17:53）。大勝負1鞍・勝負4鞍は◎◯▲△☆、その他7鞍は◎のみ。記録用。",
+ "races": [
+  {
+   "race_id": "202609040912",
+   "venue": "阪神",
+   "race_no": 12,
+   "kind": "大勝負",
+   "horses": [
+    {
+     "name": "ソウルアンドジャズ",
+     "umaban": 4,
+     "mark": "◎"
+    },
+    {
+     "name": "サンライズオスカー",
+     "umaban": 8,
+     "mark": "◯"
+    },
+    {
+     "name": "セイントホース",
+     "umaban": 10,
+     "mark": "▲"
+    },
+    {
+     "name": "ポッドフォルク",
+     "umaban": 9,
+     "mark": "△"
+    },
+    {
+     "name": "ビルンバウム",
+     "umaban": 1,
+     "mark": "☆"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040902",
+   "venue": "阪神",
+   "race_no": 2,
+   "kind": "勝負❶",
+   "horses": [
+    {
+     "name": "シュプレヒコール",
+     "umaban": 2,
+     "mark": "◎"
+    },
+    {
+     "name": "ナイトインチュニス",
+     "umaban": 3,
+     "mark": "◯"
+    },
+    {
+     "name": "プレシャスタイム",
+     "umaban": 1,
+     "mark": "▲"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040904",
+   "venue": "阪神",
+   "race_no": 4,
+   "kind": "勝負❷",
+   "horses": [
+    {
+     "name": "クラリスバローズ",
+     "umaban": 7,
+     "mark": "◎"
+    },
+    {
+     "name": "エトワールハマー",
+     "umaban": 3,
+     "mark": "◯"
+    },
+    {
+     "name": "ガリアルダ",
+     "umaban": 4,
+     "mark": "▲"
+    }
+   ]
+  },
+  {
+   "race_id": "202606040907",
+   "venue": "中山",
+   "race_no": 7,
+   "kind": "勝負❸",
+   "horses": [
+    {
+     "name": "デイジー",
+     "umaban": 6,
+     "mark": "◎"
+    },
+    {
+     "name": "スワローシチー",
+     "umaban": 7,
+     "mark": "◯"
+    },
+    {
+     "name": "ナハトナナレオン",
+     "umaban": 13,
+     "mark": "▲"
+    },
+    {
+     "name": "ポッドロルフ",
+     "umaban": 9,
+     "mark": "☆"
+    },
+    {
+     "name": "ニシノコマチムスメ",
+     "umaban": 12,
+     "mark": "☆"
+    }
+   ]
+  },
+  {
+   "race_id": "202606040912",
+   "venue": "中山",
+   "race_no": 12,
+   "kind": "勝負❹",
+   "horses": [
+    {
+     "name": "ワンダラー",
+     "umaban": 9,
+     "mark": "◎"
+    },
+    {
+     "name": "ローズカリス",
+     "umaban": 2,
+     "mark": "◯"
+    },
+    {
+     "name": "ソウルオンファイア",
+     "umaban": 3,
+     "mark": "▲"
+    },
+    {
+     "name": "クリノオリーブ",
+     "umaban": 14,
+     "mark": "△"
+    },
+    {
+     "name": "キタノソワレ",
+     "umaban": 6,
+     "mark": "☆"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040907",
+   "venue": "阪神",
+   "race_no": 7,
+   "kind": "その他",
+   "horses": [
+    {
+     "name": "ハグレジョー",
+     "umaban": 6,
+     "mark": "◎"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040908",
+   "venue": "阪神",
+   "race_no": 8,
+   "kind": "その他",
+   "horses": [
+    {
+     "name": "エンベッカ",
+     "umaban": 9,
+     "mark": "◎"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040909",
+   "venue": "阪神",
+   "race_no": 9,
+   "kind": "その他",
+   "horses": [
+    {
+     "name": "ブラックオリンピア",
+     "umaban": 2,
+     "mark": "◎"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040910",
+   "venue": "阪神",
+   "race_no": 10,
+   "kind": "その他",
+   "horses": [
+    {
+     "name": "ゴッドエスパーダ",
+     "umaban": 2,
+     "mark": "◎"
+    }
+   ]
+  },
+  {
+   "race_id": "202606040906",
+   "venue": "中山",
+   "race_no": 6,
+   "kind": "その他",
+   "horses": [
+    {
+     "name": "ダンツティアラ",
+     "umaban": 7,
+     "mark": "◎"
+    }
+   ]
+  },
+  {
+   "race_id": "202606040908",
+   "venue": "中山",
+   "race_no": 8,
+   "kind": "その他",
+   "horses": [
+    {
+     "name": "メディチパワー",
+     "umaban": 11,
+     "mark": "◎"
+    }
+   ]
+  },
+  {
+   "race_id": "202606040909",
+   "venue": "中山",
+   "race_no": 9,
+   "kind": "その他",
+   "horses": [
+    {
+     "name": "リリカルフレア",
+     "umaban": 1,
+     "mark": "◎"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,184 @@
+{
+ "date": "2026-10-31",
+ "default_amount": 100,
+ "races": [
+  {
+   "race_id": "202605041008",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      4,
+      7
+     ],
+     "source": "m3"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      4,
+      7
+     ],
+     "source": "m3"
+    }
+   ]
+  },
+  {
+   "race_id": "202605041011",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      6,
+      16
+     ],
+     "source": "m3"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      6,
+      16
+     ],
+     "source": "m3"
+    }
+   ]
+  },
+  {
+   "race_id": "202605041012",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      2,
+      7
+     ],
+     "source": "m3"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      2,
+      7
+     ],
+     "source": "m3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      7,
+      8
+     ],
+     "source": "m3"
+    }
+   ]
+  },
+  {
+   "race_id": "202608041008",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      12,
+      3
+     ],
+     "source": "m3"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      12,
+      3
+     ],
+     "source": "m3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      3,
+      8,
+      12
+     ],
+     "source": "m3"
+    }
+   ]
+  },
+  {
+   "race_id": "202608041010",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      6,
+      9
+     ],
+     "source": "m3"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      6,
+      9
+     ],
+     "source": "m3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      9,
+      14
+     ],
+     "source": "m3"
+    }
+   ]
+  },
+  {
+   "race_id": "202608041011",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      9,
+      8
+     ],
+     "source": "m3"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      9,
+      8
+     ],
+     "source": "m3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      4,
+      8,
+      9
+     ],
+     "source": "m3"
+    }
+   ]
+  }
+ ]
+}
