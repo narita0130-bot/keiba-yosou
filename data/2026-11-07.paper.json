@@ -341,6 +341,63 @@
      "hits": []
     }
    }
+  },
+  "202608050110": {
+   "top3": [
+    [
+     5,
+     "ルクスデイジー",
+     2
+    ],
+    [
+     6,
+     "ウルスクローム",
+     4
+    ],
+    [
+     13,
+     "ユウトザレン",
+     5
+    ]
+   ],
+   "marks": "◎1→4着 ◯6→2着",
+   "books": {
+    "購入分": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
