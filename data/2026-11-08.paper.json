@@ -260,6 +260,70 @@
      "hits": []
     }
    }
+  },
+  "202605050210": {
+   "top3": [
+    [
+     8,
+     "ワイドクリーガー",
+     9
+    ],
+    [
+     3,
+     "セギレエルビエント",
+     2
+    ],
+    [
+     7,
+     "メイショウタムシバ",
+     7
+    ]
+   ],
+   "marks": "◎11→7着 ◯5→4着 ☆1→9着 ☆10→6着",
+   "books": {
+    "全部入り": {
+     "points": 7,
+     "invest": 700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
