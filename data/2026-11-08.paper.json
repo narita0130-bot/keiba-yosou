@@ -516,6 +516,70 @@
      "hits": []
     }
    }
+  },
+  "202608050211": {
+   "top3": [
+    [
+     11,
+     "ロードクロンヌ",
+     2
+    ],
+    [
+     8,
+     "テスティモーネ",
+     5
+    ],
+    [
+     3,
+     "パシアンジャン",
+     14
+    ]
+   ],
+   "marks": "◎1→7着 ◯8→2着 ▲11→1着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
