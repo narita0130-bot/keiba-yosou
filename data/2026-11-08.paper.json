@@ -1,0 +1,68 @@
+{
+ "races": {
+  "202605050207": {
+   "top3": [
+    [
+     7,
+     "ハクシンブライアン",
+     2
+    ],
+    [
+     14,
+     "ダノンマスタング",
+     1
+    ],
+    [
+     3,
+     "アイランド",
+     5
+    ]
+   ],
+   "marks": "◎5→4着 ◯14→2着 ▲11→5着 ☆8→12着",
+   "books": {
+    "全部入り": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 10,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 33,
+     "invest": 3300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 23,
+     "invest": 2300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  }
+ }
+}
