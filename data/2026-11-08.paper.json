@@ -63,6 +63,70 @@
      "hits": []
     }
    }
+  },
+  "202603030208": {
+   "top3": [
+    [
+     6,
+     "オプティモ",
+     2
+    ],
+    [
+     9,
+     "ファンシーフリル",
+     6
+    ],
+    [
+     15,
+     "アメリカンビヨンド",
+     3
+    ]
+   ],
+   "marks": "◎6→1着 ◯14→9着 ▲15→3着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 4,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
