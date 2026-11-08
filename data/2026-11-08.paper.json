@@ -196,6 +196,70 @@
      ]
     }
    }
+  },
+  "202608050209": {
+   "top3": [
+    [
+     4,
+     "ホットロッドハート",
+     13
+    ],
+    [
+     10,
+     "マーズエクレール",
+     5
+    ],
+    [
+     3,
+     "エピドゥブレ",
+     2
+    ]
+   ],
+   "marks": "◎15→圏外 ◯2→圏外 ▲10→2着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 15,
+     "invest": 1500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
