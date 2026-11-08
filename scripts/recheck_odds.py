@@ -115,7 +115,7 @@ def main():
         if rid in marks_by_race:
             try:
                 eng, judge = build_engine(rid, marks_by_race[rid])
-            except SystemExit as exc:
+            except (SystemExit, Exception) as exc:      # numpy が無い環境の ImportError も含む
                 print(f"  エンジンを組めない（EVは出さない）: {exc}", file=sys.stderr)
 
         out = []
