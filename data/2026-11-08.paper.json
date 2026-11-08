@@ -324,6 +324,70 @@
      "hits": []
     }
    }
+  },
+  "202608050210": {
+   "top3": [
+    [
+     6,
+     "アヴィオン",
+     1
+    ],
+    [
+     8,
+     "ブルーマエストロ",
+     2
+    ],
+    [
+     2,
+     "スライビングロード",
+     5
+    ]
+   ],
+   "marks": "",
+   "books": {
+    "全部入り": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 4,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
