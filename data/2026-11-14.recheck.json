@@ -98,6 +98,106 @@
      }
     ]
    }
+  ],
+  "202605050307": [
+   {
+    "checked_at": "2026-11-14 12:58:44",
+    "odds_time": "2026-11-14 12:08:12",
+    "post_time": "13:10",
+    "total": 500,
+    "rows": [
+     {
+      "bet_type": "馬連",
+      "combo": "01-03",
+      "nums": [
+       1,
+       3
+      ],
+      "amount": 100,
+      "odds_am": 79.6,
+      "odds_now": 63.2,
+      "ev_am": 2.538,
+      "ev_now": 1.729,
+      "ev_low_now": 1.416,
+      "judge_am": "buy",
+      "judge_now": "buy",
+      "flags": []
+     },
+     {
+      "bet_type": "馬連",
+      "combo": "01-13",
+      "nums": [
+       1,
+       13
+      ],
+      "amount": 100,
+      "odds_am": 212.5,
+      "odds_now": 200.7,
+      "ev_am": 1.975,
+      "ev_now": 1.625,
+      "ev_low_now": 1.14,
+      "judge_am": "buy",
+      "judge_now": "buy",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "01>03",
+      "nums": [
+       1,
+       3
+      ],
+      "amount": 100,
+      "odds_am": 173.0,
+      "odds_now": 150.7,
+      "ev_am": 1.511,
+      "ev_now": 1.102,
+      "ev_low_now": 0.8,
+      "judge_am": "buy",
+      "judge_now": "apparent",
+      "flags": [
+       "判定↓"
+      ]
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "01>13",
+      "nums": [
+       1,
+       13
+      ],
+      "amount": 100,
+      "odds_am": 363.4,
+      "odds_now": 363.2,
+      "ev_am": 1.293,
+      "ev_now": 1.097,
+      "ev_low_now": 0.888,
+      "judge_am": "buy",
+      "judge_now": "apparent",
+      "flags": [
+       "判定↓"
+      ]
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "01-03-13",
+      "nums": [
+       1,
+       3,
+       13
+      ],
+      "amount": 100,
+      "odds_am": 99.9,
+      "odds_now": 88.3,
+      "ev_am": 2.083,
+      "ev_now": 1.63,
+      "ev_low_now": 1.283,
+      "judge_am": "buy",
+      "judge_now": "buy",
+      "flags": []
+     }
+    ]
+   }
   ]
  }
 }
