@@ -317,6 +317,63 @@
      "hits": []
     }
    }
+  },
+  "202608050310": {
+   "top3": [
+    [
+     1,
+     "バッデレイト",
+     4
+    ],
+    [
+     13,
+     "ジャスティンビスタ",
+     5
+    ],
+    [
+     2,
+     "レクスノヴァス",
+     6
+    ]
+   ],
+   "marks": "◎6→6着 ◯5→9着 ▲3→8着",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
