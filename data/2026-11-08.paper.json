@@ -1,0 +1,713 @@
+{
+ "races": {
+  "202605050207": {
+   "top3": [
+    [
+     7,
+     "ハクシンブライアン",
+     2
+    ],
+    [
+     14,
+     "ダノンマスタング",
+     1
+    ],
+    [
+     3,
+     "アイランド",
+     5
+    ]
+   ],
+   "marks": "◎5→4着 ◯14→2着 ▲11→5着 ☆8→12着",
+   "books": {
+    "全部入り": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 10,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 33,
+     "invest": 3300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 23,
+     "invest": 2300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030208": {
+   "top3": [
+    [
+     6,
+     "オプティモ",
+     2
+    ],
+    [
+     9,
+     "ファンシーフリル",
+     6
+    ],
+    [
+     15,
+     "アメリカンビヨンド",
+     3
+    ]
+   ],
+   "marks": "◎6→1着 ◯14→9着 ▲15→3着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 4,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050209": {
+   "top3": [
+    [
+     7,
+     "エスクアドラ",
+     2
+    ],
+    [
+     6,
+     "ヴァンドレスト",
+     1
+    ],
+    [
+     3,
+     "テキサス",
+     4
+    ]
+   ],
+   "marks": "◎9→5着 ◯2→4着 ▲7→1着 ☆6→2着",
+   "books": {
+    "全部入り": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 7,
+     "invest": 700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 15,
+     "invest": 1500,
+     "payout": 1510,
+     "refund": 0,
+     "hits": [
+      "馬連06-07 500円",
+      "馬単07>06 1,010円"
+     ]
+    },
+    "Logic◎馬単なし": {
+     "points": 9,
+     "invest": 900,
+     "payout": 500,
+     "refund": 0,
+     "hits": [
+      "馬連06-07 500円"
+     ]
+    }
+   }
+  },
+  "202608050209": {
+   "top3": [
+    [
+     4,
+     "ホットロッドハート",
+     13
+    ],
+    [
+     10,
+     "マーズエクレール",
+     5
+    ],
+    [
+     3,
+     "エピドゥブレ",
+     2
+    ]
+   ],
+   "marks": "◎15→圏外 ◯2→圏外 ▲10→2着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 15,
+     "invest": 1500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050210": {
+   "top3": [
+    [
+     8,
+     "ワイドクリーガー",
+     9
+    ],
+    [
+     3,
+     "セギレエルビエント",
+     2
+    ],
+    [
+     7,
+     "メイショウタムシバ",
+     7
+    ]
+   ],
+   "marks": "◎11→7着 ◯5→4着 ☆1→9着 ☆10→6着",
+   "books": {
+    "全部入り": {
+     "points": 7,
+     "invest": 700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050210": {
+   "top3": [
+    [
+     6,
+     "アヴィオン",
+     1
+    ],
+    [
+     8,
+     "ブルーマエストロ",
+     2
+    ],
+    [
+     2,
+     "スライビングロード",
+     5
+    ]
+   ],
+   "marks": "",
+   "books": {
+    "全部入り": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 4,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030211": {
+   "top3": [
+    [
+     8,
+     "ギリーズボール",
+     2
+    ],
+    [
+     6,
+     "シンバーシア",
+     10
+    ],
+    [
+     7,
+     "ベイビーキッス",
+     5
+    ]
+   ],
+   "marks": "◎12→5着 ◯6→2着 ▲4→圏外 △5→圏外",
+   "books": {
+    "全部入り": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 14,
+     "invest": 1400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 10,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050211": {
+   "top3": [
+    [
+     6,
+     "ファミリータイム",
+     16
+    ],
+    [
+     15,
+     "ホーエリート",
+     13
+    ],
+    [
+     12,
+     "メイショウゲキリン",
+     12
+    ]
+   ],
+   "marks": "◎11→圏外 ◯14→圏外 ▲9→圏外",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050211": {
+   "top3": [
+    [
+     11,
+     "ロードクロンヌ",
+     2
+    ],
+    [
+     8,
+     "テスティモーネ",
+     5
+    ],
+    [
+     3,
+     "パシアンジャン",
+     14
+    ]
+   ],
+   "marks": "◎1→7着 ◯8→2着 ▲11→1着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030212": {
+   "top3": [
+    [
+     16,
+     "ルクスコスモス",
+     4
+    ],
+    [
+     12,
+     "ステキサプライズ",
+     9
+    ],
+    [
+     15,
+     "レッドカメリア",
+     11
+    ]
+   ],
+   "marks": "◎7→8着 ◯3→10着 ▲4→5着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050212": {
+   "top3": [
+    [
+     12,
+     "ジャンヌローサ",
+     13
+    ],
+    [
+     18,
+     "フロンティエール",
+     4
+    ],
+    [
+     5,
+     "キシャール",
+     1
+    ]
+   ],
+   "marks": "◎8→圏外 ◯4→4着 ▲5→3着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 10,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単あり": {
+     "points": 46,
+     "invest": 4600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎馬単なし": {
+     "points": 31,
+     "invest": 3100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  }
+ }
+}

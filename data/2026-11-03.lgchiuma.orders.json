@@ -1,0 +1,195 @@
+{
+ "date": "2026-11-03",
+ "source": "Logic JBC《最終結論》の印を非馬テンプレートで組んだもの（ユーザー指示）",
+ "default_amount": 100,
+ "races": [
+  {
+   "race_id": "202646110307",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      11
+     ],
+     "partners": [
+      5,
+      8,
+      12
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      11
+     ],
+     "partners": [
+      5,
+      8,
+      12,
+      9
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      11
+     ],
+     "partners": [
+      5,
+      8,
+      12,
+      9
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202646110308",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      10
+     ],
+     "partners": [
+      4,
+      12,
+      7
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      10
+     ],
+     "partners": [
+      4,
+      12,
+      7,
+      11
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      10
+     ],
+     "partners": [
+      4,
+      12,
+      7,
+      11
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202630110309",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      9
+     ],
+     "partners": [
+      4,
+      5,
+      1
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      9
+     ],
+     "partners": [
+      4,
+      5,
+      1,
+      2,
+      8
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      9
+     ],
+     "partners": [
+      4,
+      5,
+      1,
+      2,
+      8
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202646110309",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      6
+     ],
+     "partners": [
+      2,
+      11,
+      8
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      6
+     ],
+     "partners": [
+      2,
+      11,
+      8,
+      3,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      6
+     ],
+     "partners": [
+      2,
+      11,
+      8,
+      3,
+      10
+     ],
+     "source": "ref"
+    }
+   ]
+  }
+ ]
+}

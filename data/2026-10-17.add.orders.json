@@ -1,0 +1,50 @@
+{
+ "date": "2026-10-17",
+ "source": "非馬 note 10:15（★ 新潟11R、◎はスキで表示＝8ハッピーエンジェル、ユーザー申告・出馬表で8番と確認）",
+ "default_amount": 100,
+ "races": [
+  {
+   "race_id": "202604040111",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      8
+     ],
+     "partners": [
+      3,
+      17
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      8
+     ],
+     "partners": [
+      3,
+      17,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      8
+     ],
+     "partners": [
+      3,
+      17,
+      10
+     ],
+     "source": "ref"
+    }
+   ]
+  }
+ ]
+}

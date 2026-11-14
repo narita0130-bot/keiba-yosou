@@ -1,0 +1,34 @@
+{
+ "date": "2026-11-01",
+ "races": [
+  {
+   "race_id": "202605041112",
+   "horses": [
+    {
+     "umaban": 3,
+     "mark": "◎"
+    },
+    {
+     "umaban": 8,
+     "mark": "◯"
+    },
+    {
+     "umaban": 9,
+     "mark": "▲"
+    },
+    {
+     "umaban": 13,
+     "mark": "△"
+    },
+    {
+     "umaban": 14,
+     "mark": "☆"
+    },
+    {
+     "umaban": 2,
+     "mark": "☆"
+    }
+   ]
+  }
+ ]
+}

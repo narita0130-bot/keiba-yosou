@@ -1,0 +1,122 @@
+{
+ "date": "2026-11-01",
+ "default_amount": 100,
+ "source": "天皇賞 非馬×Logic トータル：両者が評価した7マスカレードボール（非馬◯・Logic◎）軸、相手は両者の印の馬 1・3・10・12・16・17 の3連複流し。既存（非馬テンプレート）と重複する組・トリガミになる組は除く",
+ "races": [
+  {
+   "race_id": "202605041111",
+   "orders": [
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      7,
+      12
+     ],
+     "source": "tenno_total"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      7,
+      16
+     ],
+     "source": "tenno_total"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      3,
+      7,
+      10
+     ],
+     "source": "tenno_total"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      3,
+      7,
+      12
+     ],
+     "source": "tenno_total"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      3,
+      7,
+      16
+     ],
+     "source": "tenno_total"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      3,
+      7,
+      17
+     ],
+     "source": "tenno_total"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      10,
+      12
+     ],
+     "source": "tenno_total"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      10,
+      17
+     ],
+     "source": "tenno_total"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      12,
+      16
+     ],
+     "source": "tenno_total"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      12,
+      17
+     ],
+     "source": "tenno_total"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      16,
+      17
+     ],
+     "source": "tenno_total"
+    }
+   ]
+  }
+ ]
+}

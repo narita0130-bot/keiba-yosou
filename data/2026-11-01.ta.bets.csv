@@ -1,0 +1,4 @@
+﻿date,race_id,jyo_code,venue,race_no,post_time,bet_type,bet_type_code,combo,amount,group_id,group_method,group_points,odds,ninki,ev,ev_low,judge,source,odds_time
+20261101,202605041110,05,東京,10,15:01,馬連,4,02-09,100,G001,normal,1,6.9,1,0.623,0.548,pass,ta,2026-11-01 12:56:11
+20261101,202608041111,08,京都,11,15:20,馬連,4,07-12,100,G003,normal,1,16.9,3,0.795,0.736,pass,ta,2026-11-01 12:15:01
+20261101,202605041111,05,東京,11,15:40,馬連,4,01-07,100,G002,normal,1,2.9,1,0.570,0.482,pass,ta,2026-11-01 12:35:06

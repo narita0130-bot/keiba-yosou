@@ -1,0 +1,177 @@
+{
+ "date": "2026-11-01",
+ "source": "非馬◎＋Logic指名を◯に置き換えた版（ユーザー指示 11/1 12:05）。Logicの印が分かる4鞍のみ。天皇賞はLogicの◎のみ",
+ "default_amount": 100,
+ "races": [
+  {
+   "race_id": "202605041106",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      11
+     ],
+     "partners": [
+      7,
+      9
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      11
+     ],
+     "partners": [
+      7,
+      9
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      11
+     ],
+     "partners": [
+      7,
+      9
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202605041109",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      1
+     ],
+     "partners": [
+      7,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      1
+     ],
+     "partners": [
+      7,
+      10,
+      2
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      1
+     ],
+     "partners": [
+      7,
+      10,
+      2
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202605041111",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      10
+     ],
+     "partners": [
+      7,
+      1
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      10
+     ],
+     "partners": [
+      7,
+      1,
+      16
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      10
+     ],
+     "partners": [
+      7,
+      1,
+      16
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202608041110",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      4
+     ],
+     "partners": [
+      5,
+      7
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      4
+     ],
+     "partners": [
+      5,
+      7,
+      9
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      4
+     ],
+     "partners": [
+      5,
+      7,
+      9
+     ],
+     "source": "ref"
+    }
+   ]
+  }
+ ]
+}
