@@ -20,6 +20,13 @@
    ],
    "marks": "◎8→2着 ◯1→4着 ▲7→9着",
    "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
     "全部入り": {
      "points": 5,
      "invest": 500,
@@ -37,6 +44,13 @@
     "◎◯3点": {
      "points": 3,
      "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
      "payout": 0,
      "refund": 0,
      "hits": []
@@ -63,6 +77,13 @@
    ],
    "marks": "◎1→14着 ◯3→1着 ▲13→8着",
    "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
     "全部入り": {
      "points": 5,
      "invest": 500,
@@ -80,6 +101,13 @@
     "◎◯3点": {
      "points": 3,
      "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
      "payout": 0,
      "refund": 0,
      "hits": []
@@ -275,7 +303,7 @@
      7
     ]
    ],
-   "marks": "◎15→2着 ◯5→圏外 ▲10→1着",
+   "marks": "◎15→2着 ◯5→13着 ▲10→1着",
    "books": {
     "購入分": {
      "points": 5,
@@ -564,7 +592,7 @@
      5
     ]
    ],
-   "marks": "◎6→5着 ◯1→4着 ▲4→1着 ☆3→圏外 ☆11→圏外",
+   "marks": "◎6→5着 ◯1→4着 ▲4→1着 ☆3→6着 ☆11→取消",
    "books": {
     "購入分": {
      "points": 0,
@@ -575,16 +603,16 @@
     },
     "全部入り": {
      "points": 12,
-     "invest": 1200,
+     "invest": 800,
      "payout": 0,
-     "refund": 0,
+     "refund": 400,
      "hits": []
     },
     "30倍以下": {
      "points": 5,
-     "invest": 500,
+     "invest": 300,
      "payout": 0,
-     "refund": 0,
+     "refund": 200,
      "hits": []
     },
     "◎◯3点": {
@@ -596,9 +624,9 @@
     },
     "両◎軸版": {
      "points": 6,
-     "invest": 600,
+     "invest": 300,
      "payout": 0,
-     "refund": 0,
+     "refund": 300,
      "hits": []
     }
    }
