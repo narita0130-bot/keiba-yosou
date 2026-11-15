@@ -1,0 +1,272 @@
+{
+ "date": "2026-11-15",
+ "source": "非馬 note 11:25（★★★・★★・★。★なしの東京10R・京都10Rは買い目なし）。京都11R エリザベス女王杯は◎の馬番と馬名が出馬表で食い違うため保留",
+ "default_amount": 100,
+ "races": [
+  {
+   "race_id": "202608050406",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      9
+     ],
+     "partners": [
+      7,
+      13
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      9
+     ],
+     "partners": [
+      7,
+      13,
+      2,
+      8
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      9
+     ],
+     "partners": [
+      7,
+      13,
+      2,
+      8
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030408",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      2
+     ],
+     "partners": [
+      11,
+      12
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      2
+     ],
+     "partners": [
+      11,
+      12,
+      7,
+      13
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      2
+     ],
+     "partners": [
+      11,
+      12,
+      7,
+      13
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030411",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      4
+     ],
+     "partners": [
+      7,
+      6
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      4
+     ],
+     "partners": [
+      7,
+      6,
+      5
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      4
+     ],
+     "partners": [
+      7,
+      6,
+      5
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202605050411",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      10
+     ],
+     "partners": [
+      4,
+      15
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      10
+     ],
+     "partners": [
+      4,
+      15,
+      7
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      10
+     ],
+     "partners": [
+      4,
+      15,
+      7
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030412",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      5
+     ],
+     "partners": [
+      15,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      5
+     ],
+     "partners": [
+      15,
+      10,
+      4,
+      6
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      5
+     ],
+     "partners": [
+      15,
+      10,
+      4,
+      6
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050412",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      4
+     ],
+     "partners": [
+      11,
+      7,
+      16
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      4
+     ],
+     "partners": [
+      11,
+      7,
+      16
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      4
+     ],
+     "partners": [
+      11,
+      7,
+      16
+     ],
+     "source": "ref"
+    }
+   ]
+  }
+ ]
+}
