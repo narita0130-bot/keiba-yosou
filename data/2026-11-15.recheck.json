@@ -1,0 +1,225 @@
+{
+ "bets_file": "data/2026-11-15.all.bets.csv",
+ "races": {
+  "202608050406": [
+   {
+    "checked_at": "2026-11-15 12:38:26",
+    "odds_time": "2026-11-15 11:45:36",
+    "post_time": "12:50",
+    "total": 2400,
+    "rows": [
+     {
+      "bet_type": "馬連",
+      "combo": "07-09",
+      "nums": [
+       7,
+       9
+      ],
+      "amount": 200,
+      "odds_am": 102.2,
+      "odds_now": 102.2,
+      "ev_am": 0.918,
+      "ev_now": 0.918,
+      "ev_low_now": 0.711,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "馬連",
+      "combo": "09-13",
+      "nums": [
+       9,
+       13
+      ],
+      "amount": 200,
+      "odds_am": 78.9,
+      "odds_now": 78.9,
+      "ev_am": 0.601,
+      "ev_now": 0.601,
+      "ev_low_now": 0.471,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "09>07",
+      "nums": [
+       9,
+       7
+      ],
+      "amount": 200,
+      "odds_am": 231.8,
+      "odds_now": 231.8,
+      "ev_am": 1.004,
+      "ev_now": 1.004,
+      "ev_low_now": 0.798,
+      "judge_am": "apparent",
+      "judge_now": "apparent",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "09>13",
+      "nums": [
+       9,
+       13
+      ],
+      "amount": 200,
+      "odds_am": 189.3,
+      "odds_now": 189.3,
+      "ev_am": 0.711,
+      "ev_now": 0.711,
+      "ev_low_now": 0.562,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "09>02",
+      "nums": [
+       9,
+       2
+      ],
+      "amount": 200,
+      "odds_am": 100.6,
+      "odds_now": 100.6,
+      "ev_am": 1.155,
+      "ev_now": 1.155,
+      "ev_low_now": 0.921,
+      "judge_am": "apparent",
+      "judge_now": "apparent",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "09>08",
+      "nums": [
+       9,
+       8
+      ],
+      "amount": 200,
+      "odds_am": 92.1,
+      "odds_now": 92.1,
+      "ev_am": 0.763,
+      "ev_now": 0.763,
+      "ev_low_now": 0.63,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "07-09-13",
+      "nums": [
+       7,
+       9,
+       13
+      ],
+      "amount": 200,
+      "odds_am": 270.3,
+      "odds_now": 270.3,
+      "ev_am": 0.571,
+      "ev_now": 0.571,
+      "ev_low_now": 0.374,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "02-07-09",
+      "nums": [
+       2,
+       7,
+       9
+      ],
+      "amount": 200,
+      "odds_am": 134.9,
+      "odds_now": 134.9,
+      "ev_am": 1.056,
+      "ev_now": 1.056,
+      "ev_low_now": 0.865,
+      "judge_am": "apparent",
+      "judge_now": "apparent",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "07-08-09",
+      "nums": [
+       7,
+       8,
+       9
+      ],
+      "amount": 200,
+      "odds_am": 157.1,
+      "odds_now": 157.1,
+      "ev_am": 0.815,
+      "ev_now": 0.815,
+      "ev_low_now": 0.682,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "02-09-13",
+      "nums": [
+       2,
+       9,
+       13
+      ],
+      "amount": 200,
+      "odds_am": 81.6,
+      "odds_now": 81.6,
+      "ev_am": 0.549,
+      "ev_now": 0.549,
+      "ev_low_now": 0.468,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "08-09-13",
+      "nums": [
+       8,
+       9,
+       13
+      ],
+      "amount": 200,
+      "odds_am": 83.0,
+      "odds_now": 83.0,
+      "ev_am": 0.37,
+      "ev_now": 0.37,
+      "ev_low_now": 0.307,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "02-08-09",
+      "nums": [
+       2,
+       8,
+       9
+      ],
+      "amount": 200,
+      "odds_am": 47.6,
+      "odds_now": 47.6,
+      "ev_am": 0.768,
+      "ev_now": 0.768,
+      "ev_low_now": 0.605,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     }
+    ]
+   }
+  ]
+ }
+}
