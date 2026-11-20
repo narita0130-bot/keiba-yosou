@@ -1,0 +1,145 @@
+{
+ "date": "2026-11-21",
+ "default_amount": 100,
+ "source": "非馬ワイド版：全部入りの馬連・馬単の2頭の組をワイドに置き換え（同じ組は1点、3連複なし）。ユーザー依頼（11/21）、記録用。",
+ "races": [
+  {
+   "race_id": "202603030506",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      7,
+      10
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      6,
+      10
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      10,
+      13
+     ],
+     "source": "whatif"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030508",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      7,
+      16
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      7,
+      12
+     ],
+     "source": "whatif"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030510",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      1,
+      15
+     ],
+     "source": "whatif"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030511",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      5,
+      11
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      5,
+      15
+     ],
+     "source": "whatif"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050510",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      7,
+      14
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      5,
+      14
+     ],
+     "source": "whatif"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050511",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      2,
+      6
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      3,
+      6
+     ],
+     "source": "whatif"
+    }
+   ]
+  }
+ ]
+}
