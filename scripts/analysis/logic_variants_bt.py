@@ -17,7 +17,7 @@ for r in rows:
 key = lambda k, n: "".join(f"{x:02d}" for x in (n if k == "馬単" else sorted(n)))
 use = [rid for rid in sorted(H) if rid in cache and cache[rid]["finished"] and rid in L and rid in meta
        and list(H[rid].values()).count("◎") == 1 and "◯" in H[rid].values() and meta[rid].get("stars")]
-print(f"対象 {len(use)}レース（{meta[use[0]]['date']}〜{meta[use[-1]]['date']}、非馬★以上・Logic注目馬あり）")
+print(f"対象 {len(use)}レース（{min(meta[r]['date'] for r in use)}〜{max(meta[r]['date'] for r in use)}、非馬★以上・Logic注目馬あり）")
 res = defaultdict(list)
 for rid in use:
     hm, lg, c = H[rid], L[rid], cache[rid]
