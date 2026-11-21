@@ -275,6 +275,131 @@
      "hits": []
     }
    }
+  },
+  "202608050510": {
+   "top3": [
+    [
+     7,
+     "ロードフィレール",
+     1
+    ],
+    [
+     5,
+     "ベトルス",
+     2
+    ],
+    [
+     9,
+     "オメガナビゲーター",
+     8
+    ]
+   ],
+   "marks": "◎5→2着 ◯7→1着 ☆14→圏外",
+   "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 4,
+     "invest": 400,
+     "payout": 650,
+     "refund": 0,
+     "hits": [
+      "馬連05-07 650円"
+     ]
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 650,
+     "refund": 0,
+     "hits": [
+      "馬連05-07 650円"
+     ]
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 650,
+     "refund": 0,
+     "hits": [
+      "馬連05-07 650円"
+     ]
+    },
+    "両◎軸版": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic軸版": {
+     "points": 3,
+     "invest": 300,
+     "payout": 340,
+     "refund": 0,
+     "hits": [
+      "ワイド05-07 340円"
+     ]
+    },
+    "Logic◎版": {
+     "points": 4,
+     "invest": 400,
+     "payout": 1590,
+     "refund": 0,
+     "hits": [
+      "馬連05-07 650円",
+      "馬単07>05 940円"
+     ]
+    },
+    "Logic◯版": {
+     "points": 4,
+     "invest": 400,
+     "payout": 650,
+     "refund": 0,
+     "hits": [
+      "馬連05-07 650円"
+     ]
+    },
+    "非馬ワイド": {
+     "points": 2,
+     "invest": 200,
+     "payout": 340,
+     "refund": 0,
+     "hits": [
+      "ワイド05-07 340円"
+     ]
+    },
+    "Logic◎ワイド": {
+     "points": 2,
+     "invest": 200,
+     "payout": 340,
+     "refund": 0,
+     "hits": [
+      "ワイド05-07 340円"
+     ]
+    },
+    "Logic◯ワイド": {
+     "points": 2,
+     "invest": 200,
+     "payout": 340,
+     "refund": 0,
+     "hits": [
+      "ワイド05-07 340円"
+     ]
+    }
+   }
   }
  }
 }
