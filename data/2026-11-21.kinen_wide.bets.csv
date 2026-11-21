@@ -1,0 +1,3 @@
+﻿date,race_id,jyo_code,venue,race_no,post_time,bet_type,bet_type_code,combo,amount,group_id,group_method,group_points,odds,ninki,ev,ev_low,judge,source,odds_time
+20261121,202603030511,03,福島,11,15:20,ワイド,5,05-11,200,G001,normal,1,43.6,54,1.076,0.811,apparent,kinen_wide,2026-11-21 09:17:20
+20261121,202603030511,03,福島,11,15:20,ワイド,5,05-15,200,G002,normal,1,46.3,57,1.130,0.872,apparent,kinen_wide,2026-11-21 09:17:20

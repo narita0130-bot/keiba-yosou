@@ -43,10 +43,30 @@ BET_TYPES = {
 
 JYO = {"01": "札幌", "02": "函館", "03": "福島", "04": "新潟", "05": "東京",
        "06": "中山", "07": "中京", "08": "京都", "09": "阪神", "10": "小倉"}
+# 地方（nar.netkeiba.com）の場コード。race_id の場コードが 11 以上なら地方で、
+# race_info / odds_api は nar.py に回す（2026-11-02、JBC用に追加）。
+NAR_JYO = {"30": "門別", "31": "北見", "32": "岩見沢", "33": "帯広", "34": "旭川", "35": "盛岡",
+           "36": "水沢", "37": "上山", "38": "三条", "39": "足利", "40": "宇都宮", "41": "高崎",
+           "42": "浦和", "43": "船橋", "44": "大井", "45": "川崎", "46": "金沢", "47": "笠松",
+           "48": "名古屋", "49": "紀三井寺", "50": "園田", "51": "姫路", "52": "益田", "53": "福山",
+           "54": "高知", "55": "佐賀", "56": "荒尾", "57": "中津", "65": "帯広"}
+JYO.update(NAR_JYO)
+
+
+def is_nar(race_id):
+    return int(race_id[4:6]) > 10
 
 
 def today_jst():
     return datetime.now(JST).strftime("%Y%m%d")
+
+
+# netkeiba は正常なリクエストにも散発的に 400 を返す。1鞍ぶん取る間に
+# 何度も叩くので、ここで吸収しないとパイプライン全体が途中で落ちる。
+RETRY_CODES = (400, 429, 500, 502, 503, 504)
+RETRIES = 6
+# netkeiba は短時間に叩きすぎると 400 を返す。1.5秒刻みでは足りず、
+# 朝のまとめ取得で取りこぼした（9/19）。2秒から倍々で計62秒まで粘る。
 
 
 def _get(url, referer=None):
@@ -54,18 +74,33 @@ def _get(url, referer=None):
     if referer:
         headers["Referer"] = referer
     req = urllib.request.Request(url, headers=headers)
-    try:
-        return urllib.request.urlopen(req, timeout=30).read()
-    except urllib.error.HTTPError as exc:
-        if exc.code in (403, 407):
-            raise SystemExit(
-                f"{url} が HTTP {exc.code}。実行環境の egress 許可ドメインに "
-                "race.netkeiba.com が入っていない可能性がある。"
-                "オッズの数値は絶対に推測しないこと。"
-            ) from exc
-        raise SystemExit(f"{url} が HTTP {exc.code} を返した") from exc
-    except urllib.error.URLError as exc:
-        raise SystemExit(f"{url} への接続に失敗: {exc.reason}") from exc
+    last = None
+    for i in range(RETRIES):
+        try:
+            return urllib.request.urlopen(req, timeout=30).read()
+        except urllib.error.HTTPError as exc:
+            if exc.code in (403, 407):
+                raise SystemExit(
+                    f"{url} が HTTP {exc.code}。実行環境の egress 許可ドメインに "
+                    "race.netkeiba.com が入っていない可能性がある。"
+                    "オッズの数値は絶対に推測しないこと。"
+                ) from exc
+            if exc.code not in RETRY_CODES or i == RETRIES - 1:
+                raise SystemExit(f"{url} が HTTP {exc.code} を返した（{i+1}回試行）") from exc
+            last = exc
+        except urllib.error.URLError as exc:
+            if i == RETRIES - 1:
+                raise SystemExit(f"{url} への接続に失敗: {exc.reason}") from exc
+            last = exc
+        except (TimeoutError, ConnectionError, OSError) as exc:
+            # 接続後の read() でのタイムアウトは URLError に包まれず素の TimeoutError で
+            # 飛んでくる。拾わないと一括処理全体が落ちる（2025-08の収集停止、
+            # 2026-09-24のLogic払戻取得停止はどちらもこれ）。再試行の対象にする。
+            if i == RETRIES - 1:
+                raise SystemExit(f"{url} の読み込みが失敗: {exc}") from exc
+            last = exc
+        time.sleep(2 * 2 ** i)
+    raise SystemExit(f"{url} の取得に失敗: {last}")
 
 
 def _strip(html):
@@ -83,8 +118,41 @@ def list_races(date):
     return sorted(set(ids))
 
 
+def kaisai_prefixes(date):
+    """その日の開催から {競馬場名: race_idの先頭10桁} を返す。
+
+    race_id は 年4+場2+回次2+日目2+R2。回次・日目は同じ開催なら全レース共通なので、
+    先頭10桁さえ分かれば「中山9R」から race_id を組める。予想記事が
+    「競馬場,レース番号」でしかレースを指さないとき（Logic@競馬など）に使う。
+
+      date: "2026-09-20" か "20260920"
+    """
+    d = date.replace("-", "")
+    html = _get(f"https://race.netkeiba.com/top/race_list_sub.html?kaisai_date={d}").decode("utf-8", "replace")
+    pre = {}
+    for rid in sorted(set(re.findall(r"race_id=(\d{12})", html))):
+        v = JYO.get(rid[4:6])
+        if v:
+            pre[v] = rid[:10]
+    # 地方（JBCなど）。地方の race_id は 年4+場2+月日4+R2 なので、先頭10桁+R で組める点は同じ
+    try:
+        nhtml = _get(f"https://nar.netkeiba.com/top/race_list_sub.html?kaisai_date={d}").decode("utf-8", "replace")
+        for rid in sorted(set(re.findall(r"race_id=(\d{12})", nhtml))):
+            v = NAR_JYO.get(rid[4:6])
+            if v and v not in pre:
+                pre[v] = rid[:10]
+    except SystemExit:
+        pass
+    if not pre:
+        sys.exit(f"{date} の開催一覧から race_id を取得できなかった。開催日か確認すること。")
+    return pre
+
+
 def race_info(race_id):
     """出馬表から レース名・条件・出走各馬（枠/馬番/馬名/性齢/斤量/騎手/厩舎）を取得する。"""
+    if is_nar(race_id):
+        import nar
+        return nar.race_info(race_id)
     html = _get(f"https://race.netkeiba.com/race/shutuba.html?race_id={race_id}").decode("utf-8", "replace")
     name = re.search(r'class="RaceName"[^>]*>\s*([^<\n]+)', html)
     d1 = re.search(r'RaceData01">(.*?)</div>', html, re.S)
@@ -131,6 +199,9 @@ def race_info(race_id):
 
 
 def odds_api(race_id, type_):
+    if is_nar(race_id):
+        import nar
+        return nar.odds_api(race_id, type_)
     url = (f"https://race.netkeiba.com/api/api_get_jra_odds.html"
            f"?type={type_}&race_id={race_id}&action=init")
     res = json.loads(_get(url, referer=f"https://race.netkeiba.com/odds/index.html?race_id={race_id}").decode())

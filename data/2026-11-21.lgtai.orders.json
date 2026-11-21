@@ -1,0 +1,463 @@
+{
+ "date": "2026-11-21",
+ "default_amount": 100,
+ "source": "Logic◯版：軸は非馬の◎のまま、Logicの注目馬を◯として相手に加えた非馬型。ユーザー依頼（11/21）、記録用。 福島11Rは11/21にLogic《最終結論》が届いて追加：Logic◎5が非馬◎5と同じ馬なので全部入りと同じ組。",
+ "races": [
+  {
+   "race_id": "202603030506",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      10,
+      3
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      10,
+      6
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      10,
+      7
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      10,
+      13
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      10,
+      3
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      10,
+      6
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      10,
+      7
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      10,
+      13
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      3,
+      6
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      3,
+      7
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      3,
+      13
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      6,
+      7
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      6,
+      13
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      7,
+      13
+     ],
+     "source": "whatif"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030508",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      7,
+      3
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      7,
+      4
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      7,
+      16
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      7,
+      12
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      7,
+      3
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      7,
+      4
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      7,
+      16
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      7,
+      12
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      3,
+      4
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      3,
+      16
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      3,
+      12
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      4,
+      16
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      4,
+      12
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      16,
+      12
+     ],
+     "source": "whatif"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030511",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      5,
+      11
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      5,
+      15
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      11
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      15
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      11,
+      15
+     ],
+     "source": "whatif_final"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050510",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      5,
+      7
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      7
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      14
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      7,
+      14
+     ],
+     "source": "whatif"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050511",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      6,
+      1
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      6,
+      3
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      6,
+      2
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      6,
+      1
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      6,
+      3
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      6,
+      2
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      1,
+      3
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      1,
+      2
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      3,
+      2
+     ],
+     "source": "whatif"
+    }
+   ]
+  }
+ ]
+}

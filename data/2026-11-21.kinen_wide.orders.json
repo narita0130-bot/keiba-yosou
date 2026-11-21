@@ -1,0 +1,30 @@
+{
+ "date": "2026-11-21",
+ "default_amount": 200,
+ "source": "ユーザー指示（11/21朝）：福島記念はワイドも。非馬◎5から◯11・▲15（▲15はLogicの◯）。非馬◎とLogic◎が重なるレースなので200円",
+ "races": [
+  {
+   "race_id": "202603030511",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      5,
+      11
+     ],
+     "source": "kinen_wide"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      5,
+      15
+     ],
+     "source": "kinen_wide"
+    }
+   ]
+  }
+ ]
+}

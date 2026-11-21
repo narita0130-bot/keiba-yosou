@@ -1,0 +1,292 @@
+{
+ "races": {
+  "202646110307": {
+   "top3": [
+    [
+     9,
+     "アンズアメ",
+     4
+    ],
+    [
+     5,
+     "メモリアカフェ",
+     2
+    ],
+    [
+     12,
+     "タガノミスト",
+     1
+    ]
+   ],
+   "marks": "◎8→圏外 ◯5→2着 ▲11→圏外 ☆12→3着",
+   "books": {
+    "Logic×非馬型": {
+     "points": 13,
+     "invest": 1300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬全部入り": {
+     "points": 8,
+     "invest": 1600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬30倍以下": {
+     "points": 4,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬本人想定": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Z-NOTE3連単": {
+     "points": 19,
+     "invest": 1900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202646110308": {
+   "top3": [
+    [
+     11,
+     "メイショウハチロー",
+     2
+    ],
+    [
+     10,
+     "ウィルソンテソーロ",
+     3
+    ],
+    [
+     5,
+     "ハッピーマン",
+     7
+    ]
+   ],
+   "marks": "◎11→1着 ◯12→圏外 ☆7→圏外",
+   "books": {
+    "Logic×非馬型": {
+     "points": 13,
+     "invest": 1300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬全部入り": {
+     "points": 4,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬30倍以下": {
+     "points": 2,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬本人想定": {
+     "points": 3,
+     "invest": 300,
+     "payout": 340,
+     "refund": 0,
+     "hits": [
+      "単勝11 340円"
+     ]
+    },
+    "Z-NOTE3連単": {
+     "points": 24,
+     "invest": 2400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202630110309": {
+   "top3": [
+    [
+     1,
+     "オーリエイト",
+     1
+    ],
+    [
+     6,
+     "マルカルーカス",
+     3
+    ],
+    [
+     9,
+     "ワンダーマーベル",
+     2
+    ]
+   ],
+   "marks": "◎4→圏外 ◯1→1着 ☆10→圏外 ☆11→圏外",
+   "books": {
+    "Logic×非馬型": {
+     "points": 18,
+     "invest": 1800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬全部入り": {
+     "points": 7,
+     "invest": 1400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬30倍以下": {
+     "points": 2,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 29,
+     "invest": 2900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬本人想定": {
+     "points": 4,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202646110309": {
+   "top3": [
+    [
+     2,
+     "アウトレンジ",
+     1
+    ],
+    [
+     10,
+     "ホウオウルーレット",
+     3
+    ],
+    [
+     6,
+     "セラフィックコール",
+     4
+    ]
+   ],
+   "marks": "◎10→2着 ◯11→圏外 ☆8→圏外",
+   "books": {
+    "Logic×非馬型": {
+     "points": 18,
+     "invest": 1800,
+     "payout": 1170,
+     "refund": 0,
+     "hits": [
+      "3連複02-06-10 1,170円"
+     ]
+    },
+    "非馬全部入り": {
+     "points": 4,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬30倍以下": {
+     "points": 2,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 13,
+     "invest": 1300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬本人想定": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Z-NOTE3連単": {
+     "points": 39,
+     "invest": 3900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  }
+ },
+ "actual": {
+  "purchased": "62点（Logicの印×非馬テンプレート）のみ",
+  "invest": 6200,
+  "payout": 1170,
+  "profit": -5030,
+  "note": "非馬全部入り・その他の版は購入なし（報告上「買った扱い」にした計算のみ）"
+ }
+}

@@ -1,0 +1,608 @@
+{
+ "date": "2026-11-21",
+ "default_amount": 100,
+ "source": "Logic軸版（11/21ユーザー依頼「Logic軸で組んでみて」）：Logicの注目馬を軸に、非馬の印の馬とLogicの他の注目馬を相手にして、ワイド（軸-相手）と3連複（軸+相手2頭）。Logicの印は3着内に強いので、軸が勝たなくてもよい券種だけにした。トリガミは除外。福島11RはLogicが取消後に出し直した◎6バルナバを軸に追加（13:05頃）",
+ "races": [
+  {
+   "race_id": "202603030508",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      3,
+      7
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      3,
+      16
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      3,
+      12
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      3,
+      4
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      4,
+      7
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      4,
+      16
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      4,
+      12
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      3,
+      7,
+      16
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      3,
+      7,
+      12
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      3,
+      4,
+      7
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      3,
+      12,
+      16
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      3,
+      4,
+      16
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      3,
+      4,
+      12
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      4,
+      7,
+      16
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      4,
+      7,
+      12
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      4,
+      12,
+      16
+     ],
+     "source": "logic_axis3"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030511",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      6,
+      11
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      6,
+      15
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      1,
+      6
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      6,
+      13
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      6,
+      7
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      6,
+      9
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      6,
+      14
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      11,
+      15
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      6,
+      11
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      11,
+      13
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      7,
+      11
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      9,
+      11
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      11,
+      14
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      6,
+      15
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      13,
+      15
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      7,
+      15
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      9,
+      15
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      14,
+      15
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      6,
+      13
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      6,
+      7
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      6,
+      9
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      6,
+      14
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      7,
+      13
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      9,
+      13
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      13,
+      14
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      7,
+      9
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      7,
+      14
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      9,
+      14
+     ],
+     "source": "logic_axis3"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050509",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      3,
+      4
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      3,
+      7
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      4,
+      7
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      3,
+      4,
+      7
+     ],
+     "source": "logic_axis3"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050510",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      5,
+      7
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      7,
+      14
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      7,
+      14
+     ],
+     "source": "logic_axis3"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050511",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      1,
+      6
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      1,
+      2
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      1,
+      3
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      3,
+      6
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      2,
+      3
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      2,
+      6
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      3,
+      6
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      2,
+      3
+     ],
+     "source": "logic_axis3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      3,
+      6
+     ],
+     "source": "logic_axis3"
+    }
+   ]
+  }
+ ]
+}
