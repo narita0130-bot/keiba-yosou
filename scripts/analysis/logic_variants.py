@@ -42,3 +42,29 @@ def to_wide(bets):
     return _dedupe([("ワイド", sorted(n)) for k, n in bets if k in ("馬連", "馬単")])
 
 VARIANTS = {"非馬": hiuma, "Logic◎": logic_hon, "Logic◯": logic_tai}
+
+
+def original(hm, lg):
+    """オリジナル版「2人の意見が一致した馬で組む」（2026-11-21 ユーザー依頼で作成）。
+    対象は非馬の◎をLogicも挙げたレースだけ（それ以外は空リスト）。
+    軸＝その◎。本線＝非馬とLogicの両方が印を付けた他の馬。相手＝どちらか一方だけが印を付けた馬。
+      ワイド 軸-本線・軸-非馬◯ ／ 馬連 軸-本線 ／ 3連複 軸+本線+相手1頭
+    本線がいないときは 軸-非馬◯ のワイド・馬連と、軸+非馬◯+Logicの最上位馬 の3連複。"""
+    hon = by(hm, "◎")
+    if len(hon) != 1 or hon[0] not in lg:
+        return []
+    c = hon[0]
+    tai = [u for u in by(hm, "◯") if u != c]
+    main = [u for u in by(hm, "◯▲△☆") if u in lg and u != c]
+    others = [u for u in list(dict.fromkeys(by(hm, "◯▲△☆") + list(lg))) if u != c and u not in main]
+    bets = []
+    if main:
+        bets += [("ワイド", [c, m]) for m in main] + [("ワイド", [c, t]) for t in tai]
+        bets += [("馬連", [c, m]) for m in main]
+        bets += [("3連複", [c, m, o]) for m in main for o in others]
+        bets += [("3連複", [c, a, b]) for a, b in itertools.combinations(main, 2)]
+    else:
+        lg_top = [u for u in lg if u != c][:1]
+        bets += [("ワイド", [c, t]) for t in tai] + [("馬連", [c, t]) for t in tai]
+        bets += [("3連複", [c, t, l]) for t in tai for l in lg_top if l != t]
+    return _dedupe(bets)
