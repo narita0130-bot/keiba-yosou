@@ -122,8 +122,11 @@ def main():
         for r in rr:
             kind, nums, amt = r["bet_type"], combo_nums(r["combo"]), int(r["amount"])
             raw = omap.get(kind, {}).get(odds_key(kind, nums))
+            scratched = False
             try:
                 now = to_odds(raw[0]) if raw else None
+                if now is not None and now >= 99999:    # 取消馬を含む組は 99999.9 で返る（11/21 福島記念で確認）
+                    now, scratched = None, True
                 if now is not None and now <= 0:        # 0.0 は未発売・取消
                     now = None
             except ValueError:
@@ -141,7 +144,9 @@ def main():
                     j_now = ""
             j_am = r.get("judge", "")
             flags = []
-            if now is None:
+            if scratched:
+                flags.append("取消")
+            elif now is None:
                 flags.append("不明")
             else:
                 if now * amt < total:
@@ -175,14 +180,16 @@ def main():
             ch = f"{(o['odds_now'] / o['odds_am'] - 1) * 100:+.0f}%" if o["odds_am"] and o["odds_now"] else ""
             jd = f"{JUDGE_SYM.get(o['judge_am'], '－')}→{JUDGE_SYM.get(o['judge_now'], '－')}"
             mark = "⚠ " + "・".join(f for f in o["flags"] if f != "不明") if drop and o in drop else \
-                   ("不明" if "不明" in o["flags"] else "")
+                   ("取消（返還）" if "取消" in o["flags"] else "不明" if "不明" in o["flags"] else "")
             print(f"| {o['bet_type']} {c} | {o['amount']}円 | {od} | {ch} | {jd} | {mark} |")
         print()
         avg_s = f"{avg * 100:+.0f}%" if avg is not None else "不明"
         print(f"外す候補 {len(drop)}点（トリガミ {sum('トリガミ' in o['flags'] for o in drop)}・"
               f"判定↓ {sum('判定↓' in o['flags'] for o in drop)}）／オッズ平均 {avg_s}"
               + (f"／今のEV1未満 {below1}点（朝から❌を含む）" if eng is not None else "")
-              + (f"／オッズ不明 {len(unknown)}点" if unknown else ""))
+              + (f"／オッズ不明 {len(unknown)}点" if unknown else "")
+              + (f"／取消馬を含む {sum('取消' in o['flags'] for o in out)}点（返還）"
+                 if any("取消" in o["flags"] for o in out) else ""))
 
         if args.paste:
             ds = rr[0].get("date", "")

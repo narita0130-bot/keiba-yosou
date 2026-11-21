@@ -398,7 +398,7 @@
   ],
   "202603030511": [
    {
-    "checked_at": "2026-11-21 15:08:32",
+    "checked_at": "2026-11-21 15:09:14",
     "odds_time": "2026-11-21 14:15:15",
     "post_time": "15:20",
     "total": 1000,
@@ -412,13 +412,15 @@
       ],
       "amount": 200,
       "odds_am": 223.5,
-      "odds_now": 99999.9,
+      "odds_now": null,
       "ev_am": 1.522,
       "ev_now": null,
       "ev_low_now": null,
       "judge_am": "buy",
       "judge_now": "",
-      "flags": []
+      "flags": [
+       "取消"
+      ]
      },
      {
       "bet_type": "馬連",
@@ -429,13 +431,15 @@
       ],
       "amount": 200,
       "odds_am": 230.8,
-      "odds_now": 99999.9,
+      "odds_now": null,
       "ev_am": 1.574,
       "ev_now": null,
       "ev_low_now": null,
       "judge_am": "buy",
       "judge_now": "",
-      "flags": []
+      "flags": [
+       "取消"
+      ]
      },
      {
       "bet_type": "馬単",
@@ -446,13 +450,15 @@
       ],
       "amount": 200,
       "odds_am": 410.8,
-      "odds_now": 99999.9,
+      "odds_now": null,
       "ev_am": 1.125,
       "ev_now": null,
       "ev_low_now": null,
       "judge_am": "apparent",
       "judge_now": "",
-      "flags": []
+      "flags": [
+       "取消"
+      ]
      },
      {
       "bet_type": "馬単",
@@ -463,13 +469,15 @@
       ],
       "amount": 200,
       "odds_am": 493.6,
-      "odds_now": 99999.9,
+      "odds_now": null,
       "ev_am": 1.353,
       "ev_now": null,
       "ev_low_now": null,
       "judge_am": "buy",
       "judge_now": "",
-      "flags": []
+      "flags": [
+       "取消"
+      ]
      },
      {
       "bet_type": "3連複",
@@ -481,13 +489,15 @@
       ],
       "amount": 200,
       "odds_am": 551.1,
-      "odds_now": 99999.9,
+      "odds_now": null,
       "ev_am": 1.651,
       "ev_now": null,
       "ev_low_now": null,
       "judge_am": "buy",
       "judge_now": "",
-      "flags": []
+      "flags": [
+       "取消"
+      ]
      }
     ]
    }
