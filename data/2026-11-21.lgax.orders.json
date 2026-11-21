@@ -1,7 +1,7 @@
 {
  "date": "2026-11-21",
  "default_amount": 100,
- "source": "Logic◎版：Logicの注目馬を軸、相手＝非馬の印の馬＋Logicの他の注目馬（11/8と同じ組み方）。ユーザー依頼（11/21）、記録用。",
+ "source": "Logic◎版：Logicの注目馬を軸、相手＝非馬の印の馬＋Logicの他の注目馬（11/8と同じ組み方）。ユーザー依頼（11/21）、記録用。 福島11Rは11/21にLogic《最終結論》が届いて追加：Logicの印（◎5◯15▲1△13★6,7,14）だけで非馬型に組んだ（★は☆扱い）。",
  "races": [
   {
    "race_id": "202603030506",
@@ -460,6 +460,242 @@
       12
      ],
      "source": "whatif"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030511",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      5,
+      15
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      5,
+      1
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      5,
+      13
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      15
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      1
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      13
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      6
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      7
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      14
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      15,
+      1
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      15,
+      13
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      15,
+      6
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      15,
+      7
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      15,
+      14
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      1,
+      13
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      1,
+      6
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      1,
+      7
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      1,
+      14
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      13,
+      6
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      13,
+      7
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      13,
+      14
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      6,
+      7
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      6,
+      14
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      7,
+      14
+     ],
+     "source": "whatif_final"
     }
    ]
   },

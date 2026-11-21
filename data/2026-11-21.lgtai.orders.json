@@ -1,7 +1,7 @@
 {
  "date": "2026-11-21",
  "default_amount": 100,
- "source": "Logic◯版：軸は非馬の◎のまま、Logicの注目馬を◯として相手に加えた非馬型。ユーザー依頼（11/21）、記録用。",
+ "source": "Logic◯版：軸は非馬の◎のまま、Logicの注目馬を◯として相手に加えた非馬型。ユーザー依頼（11/21）、記録用。 福島11Rは11/21にLogic《最終結論》が届いて追加：Logic◎5が非馬◎5と同じ馬なので全部入りと同じ組。",
  "races": [
   {
    "race_id": "202603030506",
@@ -274,6 +274,57 @@
       12
      ],
      "source": "whatif"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030511",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      5,
+      11
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      5,
+      15
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      11
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      15
+     ],
+     "source": "whatif_final"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      11,
+      15
+     ],
+     "source": "whatif_final"
     }
    ]
   },
