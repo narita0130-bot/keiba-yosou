@@ -140,66 +140,6 @@
      "method": "normal",
      "combo": [
       1,
-      5,
-      6
-     ],
-     "source": "dual"
-    },
-    {
-     "kind": "3連複",
-     "method": "normal",
-     "combo": [
-      1,
-      5,
-      7
-     ],
-     "source": "dual"
-    },
-    {
-     "kind": "3連複",
-     "method": "normal",
-     "combo": [
-      1,
-      5,
-      11
-     ],
-     "source": "dual"
-    },
-    {
-     "kind": "3連複",
-     "method": "normal",
-     "combo": [
-      1,
-      5,
-      13
-     ],
-     "source": "dual"
-    },
-    {
-     "kind": "3連複",
-     "method": "normal",
-     "combo": [
-      1,
-      5,
-      14
-     ],
-     "source": "dual"
-    },
-    {
-     "kind": "3連複",
-     "method": "normal",
-     "combo": [
-      1,
-      5,
-      15
-     ],
-     "source": "dual"
-    },
-    {
-     "kind": "3連複",
-     "method": "normal",
-     "combo": [
-      5,
       6,
       7
      ],
@@ -209,7 +149,17 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      1,
+      6,
+      9
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
       6,
       11
      ],
@@ -219,7 +169,7 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      1,
       6,
       13
      ],
@@ -229,7 +179,7 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      1,
       6,
       14
      ],
@@ -239,7 +189,7 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      1,
       6,
       15
      ],
@@ -249,7 +199,7 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      1,
       7,
       11
      ],
@@ -259,7 +209,57 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      1,
+      9,
+      11
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      11,
+      14
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      11,
+      15
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      7,
+      9
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      7,
+      11
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
       7,
       13
      ],
@@ -269,7 +269,7 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      6,
       7,
       14
      ],
@@ -279,7 +279,7 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      6,
       7,
       15
      ],
@@ -289,7 +289,47 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      6,
+      9,
+      11
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      9,
+      13
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      9,
+      14
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      9,
+      15
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
       11,
       13
      ],
@@ -299,7 +339,7 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      6,
       11,
       14
      ],
@@ -309,7 +349,7 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      6,
       11,
       15
      ],
@@ -319,7 +359,7 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      6,
       13,
       14
      ],
@@ -329,7 +369,7 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      6,
       13,
       15
      ],
@@ -339,7 +379,97 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      5,
+      6,
+      14,
+      15
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      9,
+      11
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      11,
+      13
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      11,
+      14
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      11,
+      15
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      9,
+      11,
+      13
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      9,
+      11,
+      14
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      9,
+      11,
+      15
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      11,
+      13,
+      14
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      11,
       14,
       15
      ],
