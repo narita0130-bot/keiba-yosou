@@ -161,37 +161,38 @@
    "orders": [
     {
      "kind": "馬連",
-     "method": "nagashi",
-     "axis": [
-      14
-     ],
-     "partners": [
-      7,
-      5
+     "method": "normal",
+     "combo": [
+      5,
+      7
      ],
      "source": "ref"
     },
     {
      "kind": "馬単",
-     "method": "nagashi_1st",
-     "axis": [
-      14
+     "method": "normal",
+     "combo": [
+      5,
+      7
      ],
-     "partners": [
-      7,
-      5
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      14
      ],
      "source": "ref"
     },
     {
      "kind": "3連複",
-     "method": "nagashi",
-     "axis": [
-      14
-     ],
-     "partners": [
+     "method": "normal",
+     "combo": [
+      5,
       7,
-      5
+      14
      ],
      "source": "ref"
     }

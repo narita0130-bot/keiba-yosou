@@ -707,12 +707,12 @@
      "method": "normal",
      "combo": [
       7,
-      14
+      5
      ],
      "source": "whatif"
     },
     {
-     "kind": "馬連",
+     "kind": "馬単",
      "method": "normal",
      "combo": [
       7,
@@ -726,15 +726,6 @@
      "combo": [
       7,
       14
-     ],
-     "source": "whatif"
-    },
-    {
-     "kind": "馬単",
-     "method": "normal",
-     "combo": [
-      7,
-      5
      ],
      "source": "whatif"
     },
@@ -743,8 +734,8 @@
      "method": "normal",
      "combo": [
       7,
-      14,
-      5
+      5,
+      14
      ],
      "source": "whatif"
     }

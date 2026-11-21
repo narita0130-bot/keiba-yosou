@@ -335,25 +335,7 @@
      "kind": "馬連",
      "method": "normal",
      "combo": [
-      14,
-      7
-     ],
-     "source": "whatif"
-    },
-    {
-     "kind": "馬連",
-     "method": "normal",
-     "combo": [
-      14,
-      5
-     ],
-     "source": "whatif"
-    },
-    {
-     "kind": "馬単",
-     "method": "normal",
-     "combo": [
-      14,
+      5,
       7
      ],
      "source": "whatif"
@@ -362,8 +344,17 @@
      "kind": "馬単",
      "method": "normal",
      "combo": [
-      14,
-      5
+      5,
+      7
+     ],
+     "source": "whatif"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      14
      ],
      "source": "whatif"
     },
@@ -371,9 +362,9 @@
      "kind": "3連複",
      "method": "normal",
      "combo": [
-      14,
+      5,
       7,
-      5
+      14
      ],
      "source": "whatif"
     }

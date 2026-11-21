@@ -131,7 +131,7 @@
      "kind": "馬連",
      "method": "normal",
      "combo": [
-      14,
+      5,
       7
      ],
      "source": "m3"
@@ -140,18 +140,8 @@
      "kind": "馬単",
      "method": "normal",
      "combo": [
-      14,
-      7
-     ],
-     "source": "m3"
-    },
-    {
-     "kind": "3連複",
-     "method": "normal",
-     "combo": [
       5,
-      7,
-      14
+      7
      ],
      "source": "m3"
     }
