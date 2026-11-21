@@ -270,6 +270,52 @@
      }
     ]
    }
+  ],
+  "202603030510": [
+   {
+    "checked_at": "2026-11-21 14:33:44",
+    "odds_time": "2026-11-21 13:40:26",
+    "post_time": "14:45",
+    "total": 200,
+    "rows": [
+     {
+      "bet_type": "馬連",
+      "combo": "01-15",
+      "nums": [
+       1,
+       15
+      ],
+      "amount": 100,
+      "odds_am": 28.4,
+      "odds_now": 28.3,
+      "ev_am": 1.334,
+      "ev_now": 1.088,
+      "ev_low_now": 0.957,
+      "judge_am": "buy",
+      "judge_now": "apparent",
+      "flags": [
+       "判定↓"
+      ]
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "15>01",
+      "nums": [
+       15,
+       1
+      ],
+      "amount": 100,
+      "odds_am": 30.5,
+      "odds_now": 43.9,
+      "ev_am": 0.761,
+      "ev_now": 0.821,
+      "ev_low_now": 0.711,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     }
+    ]
+   }
   ]
  }
 }
