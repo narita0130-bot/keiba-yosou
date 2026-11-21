@@ -506,6 +506,112 @@
      "hits": []
     }
    }
+  },
+  "202608050511": {
+   "top3": [
+    [
+     12,
+     "メルカントゥール",
+     3
+    ],
+    [
+     10,
+     "テーオーマルコーニ",
+     1
+    ],
+    [
+     9,
+     "レッドプロフェシー",
+     8
+    ]
+   ],
+   "marks": "◎6→圏外 ◯2→圏外 ▲3→4着",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic軸版": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎版": {
+     "points": 15,
+     "invest": 1500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "非馬ワイド": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◎ワイド": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯ワイド": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
