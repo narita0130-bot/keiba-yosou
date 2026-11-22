@@ -1,0 +1,179 @@
+{
+ "date": "2026-11-22",
+ "source": "非馬 note 11:24（★★★2・★★1・★1。★なしの東京11Rは買い目なし）。東京10R・京都10Rは「見解追記中」（完成版で印が変わることがある、handoff §）",
+ "default_amount": 100,
+ "races": [
+  {
+   "race_id": "202605050510",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      4
+     ],
+     "partners": [
+      6,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      4
+     ],
+     "partners": [
+      6,
+      10,
+      5,
+      12
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      4
+     ],
+     "partners": [
+      6,
+      10,
+      5,
+      12
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050609",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      12
+     ],
+     "partners": [
+      14,
+      11
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      12
+     ],
+     "partners": [
+      14,
+      11
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      12
+     ],
+     "partners": [
+      14,
+      11
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050610",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      12
+     ],
+     "partners": [
+      1,
+      5
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      12
+     ],
+     "partners": [
+      1,
+      5,
+      8,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      12
+     ],
+     "partners": [
+      1,
+      5,
+      8,
+      10
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050611",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      13
+     ],
+     "partners": [
+      14,
+      8
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      13
+     ],
+     "partners": [
+      14,
+      8
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      13
+     ],
+     "partners": [
+      14,
+      8
+     ],
+     "source": "ref"
+    }
+   ]
+  }
+ ]
+}

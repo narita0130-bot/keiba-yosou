@@ -1,0 +1,216 @@
+{
+ "date": "2026-11-22",
+ "source": "Logic@競馬",
+ "races": [
+  {
+   "race_id": "202608050601",
+   "venue": "京都",
+   "race_no": 1,
+   "horses": [
+    {
+     "name": "マシュマロデイズ",
+     "umaban": 1
+    },
+    {
+     "name": "エイントノーウェイ",
+     "umaban": 2
+    }
+   ]
+  },
+  {
+   "race_id": "202608050602",
+   "venue": "京都",
+   "race_no": 2,
+   "horses": [
+    {
+     "name": "スマートメモリー",
+     "umaban": 10
+    },
+    {
+     "name": "レッドガレオン",
+     "umaban": 13
+    }
+   ]
+  },
+  {
+   "race_id": "202608050606",
+   "venue": "京都",
+   "race_no": 6,
+   "horses": [
+    {
+     "name": "スターフュージョン",
+     "umaban": 4
+    },
+    {
+     "name": "エシェックオロワ",
+     "umaban": 5
+    }
+   ]
+  },
+  {
+   "race_id": "202608050607",
+   "venue": "京都",
+   "race_no": 7,
+   "horses": [
+    {
+     "name": "ページターナー",
+     "umaban": 5
+    }
+   ]
+  },
+  {
+   "race_id": "202608050608",
+   "venue": "京都",
+   "race_no": 8,
+   "horses": [
+    {
+     "name": "サイモンゼスト",
+     "umaban": 4
+    },
+    {
+     "name": "アンティスマ",
+     "umaban": 6
+    }
+   ]
+  },
+  {
+   "race_id": "202608050609",
+   "venue": "京都",
+   "race_no": 9,
+   "horses": [
+    {
+     "name": "ランドプリメーロ",
+     "umaban": 4
+    },
+    {
+     "name": "バルセシート",
+     "umaban": 11
+    }
+   ]
+  },
+  {
+   "race_id": "202608050610",
+   "venue": "京都",
+   "race_no": 10,
+   "horses": [
+    {
+     "name": "フェンダー",
+     "umaban": 9
+    },
+    {
+     "name": "スニーカースキル",
+     "umaban": 10
+    }
+   ]
+  },
+  {
+   "race_id": "202605050501",
+   "venue": "東京",
+   "race_no": 1,
+   "horses": [
+    {
+     "name": "トロフィアス",
+     "umaban": 2
+    },
+    {
+     "name": "ハイトラクション",
+     "umaban": 4
+    }
+   ]
+  },
+  {
+   "race_id": "202605050502",
+   "venue": "東京",
+   "race_no": 2,
+   "horses": [
+    {
+     "name": "リバーススイープ",
+     "umaban": 6
+    },
+    {
+     "name": "マイネルカピラリス",
+     "umaban": 11
+    }
+   ]
+  },
+  {
+   "race_id": "202605050503",
+   "venue": "東京",
+   "race_no": 3,
+   "horses": [
+    {
+     "name": "ペアレンツハート",
+     "umaban": 8
+    },
+    {
+     "name": "サルーミアモール",
+     "umaban": 10
+    }
+   ]
+  },
+  {
+   "race_id": "202605050507",
+   "venue": "東京",
+   "race_no": 7,
+   "horses": [
+    {
+     "name": "ヴァレンティーニ",
+     "umaban": 7
+    },
+    {
+     "name": "ゴールデンダガー",
+     "umaban": 8
+    }
+   ]
+  },
+  {
+   "race_id": "202605050508",
+   "venue": "東京",
+   "race_no": 8,
+   "horses": [
+    {
+     "name": "ヴンダーバール",
+     "umaban": 3
+    },
+    {
+     "name": "タイセイジェイド",
+     "umaban": 4
+    }
+   ]
+  },
+  {
+   "race_id": "202605050509",
+   "venue": "東京",
+   "race_no": 9,
+   "horses": [
+    {
+     "name": "モンサンラパージュ",
+     "umaban": 7
+    },
+    {
+     "name": "ラプチュラス",
+     "umaban": 8
+    }
+   ]
+  },
+  {
+   "race_id": "202605050512",
+   "venue": "東京",
+   "race_no": 12,
+   "horses": [
+    {
+     "name": "スペルーチェ",
+     "umaban": 9
+    },
+    {
+     "name": "ラパンチュール",
+     "umaban": 13
+    },
+    {
+     "name": "ショウナンカリス",
+     "umaban": 16
+    }
+   ]
+  }
+ ]
+}
