@@ -1,0 +1,126 @@
+{
+ "date": "2026-11-22",
+ "default_amount": 100,
+ "source": "京都12R 11軸（ユーザー依頼「11軸で組んでみて、1番は外して」）。相手はLogicの▲12・△13・☆10・☆7。非馬型、トリガミ除外",
+ "races": [
+  {
+   "race_id": "202608050612",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      11,
+      12
+     ],
+     "source": "k12_11axis"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      11,
+      13
+     ],
+     "source": "k12_11axis"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      11,
+      12
+     ],
+     "source": "k12_11axis"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      11,
+      13
+     ],
+     "source": "k12_11axis"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      11,
+      7
+     ],
+     "source": "k12_11axis"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      11,
+      10
+     ],
+     "source": "k12_11axis"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      11,
+      12,
+      13
+     ],
+     "source": "k12_11axis"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      11,
+      12,
+      7
+     ],
+     "source": "k12_11axis"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      11,
+      12,
+      10
+     ],
+     "source": "k12_11axis"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      11,
+      13,
+      7
+     ],
+     "source": "k12_11axis"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      11,
+      13,
+      10
+     ],
+     "source": "k12_11axis"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      11,
+      7,
+      10
+     ],
+     "source": "k12_11axis"
+    }
+   ]
+  }
+ ]
+}
