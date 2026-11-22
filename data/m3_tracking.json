@@ -386,11 +386,35 @@
    "date": "2026-11-21",
    "invest": 300,
    "payout": 0
+  },
+  {
+   "race_id": "202608050609",
+   "date": "2026-11-22",
+   "invest": 300,
+   "payout": 1360
+  },
+  {
+   "race_id": "202605050510",
+   "date": "2026-11-22",
+   "invest": 300,
+   "payout": 0
+  },
+  {
+   "race_id": "202608050610",
+   "date": "2026-11-22",
+   "invest": 300,
+   "payout": 0
+  },
+  {
+   "race_id": "202608050611",
+   "date": "2026-11-22",
+   "invest": 300,
+   "payout": 0
   }
  ],
  "total": {
-  "races": 64,
-  "invest": 18100,
-  "payout": 4950
+  "races": 68,
+  "invest": 19300,
+  "payout": 6310
  }
 }
