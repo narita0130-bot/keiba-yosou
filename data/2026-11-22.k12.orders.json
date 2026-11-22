@@ -1,0 +1,184 @@
+{
+ "date": "2026-11-22",
+ "default_amount": 100,
+ "source": "Logic厳選 京都12Rの印で組んだ非馬型（馬連◎-◯▲△、馬単◎→◯▲△☆、3連複◎+相手2頭）。ユーザーが購入を検討",
+ "races": [
+  {
+   "race_id": "202608050612",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      1,
+      11
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      1,
+      12
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      1,
+      13
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      1,
+      11
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      1,
+      12
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      1,
+      13
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      1,
+      7
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      1,
+      10
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      11,
+      12
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      11,
+      13
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      11,
+      7
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      11,
+      10
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      12,
+      13
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      12,
+      7
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      12,
+      10
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      13,
+      7
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      13,
+      10
+     ],
+     "source": "logic_gensen"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      7,
+      10
+     ],
+     "source": "logic_gensen"
+    }
+   ]
+  }
+ ]
+}
