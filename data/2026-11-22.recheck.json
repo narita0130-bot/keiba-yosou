@@ -320,6 +320,226 @@
      }
     ]
    }
+  ],
+  "202608050610": [
+   {
+    "checked_at": "2026-11-22 14:50:07",
+    "odds_time": "2026-11-22 13:55:31",
+    "post_time": "15:01",
+    "total": 1200,
+    "rows": [
+     {
+      "bet_type": "馬連",
+      "combo": "01-12",
+      "nums": [
+       1,
+       12
+      ],
+      "amount": 100,
+      "odds_am": 19.6,
+      "odds_now": 12.4,
+      "ev_am": 0.837,
+      "ev_now": 0.588,
+      "ev_low_now": 0.514,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "馬連",
+      "combo": "05-12",
+      "nums": [
+       5,
+       12
+      ],
+      "amount": 100,
+      "odds_am": 32.1,
+      "odds_now": 35.7,
+      "ev_am": 0.448,
+      "ev_now": 0.469,
+      "ev_low_now": 0.385,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "12>01",
+      "nums": [
+       12,
+       1
+      ],
+      "amount": 100,
+      "odds_am": 71.8,
+      "odds_now": 59.8,
+      "ev_am": 1.133,
+      "ev_now": 1.04,
+      "ev_low_now": 0.81,
+      "judge_am": "apparent",
+      "judge_now": "apparent",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "12>05",
+      "nums": [
+       12,
+       5
+      ],
+      "amount": 100,
+      "odds_am": 80.4,
+      "odds_now": 79.7,
+      "ev_am": 0.52,
+      "ev_now": 0.497,
+      "ev_low_now": 0.422,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "12>08",
+      "nums": [
+       12,
+       8
+      ],
+      "amount": 100,
+      "odds_am": 182.0,
+      "odds_now": 174.1,
+      "ev_am": 0.913,
+      "ev_now": 0.866,
+      "ev_low_now": 0.703,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "12>10",
+      "nums": [
+       12,
+       10
+      ],
+      "amount": 100,
+      "odds_am": 166.2,
+      "odds_now": 147.1,
+      "ev_am": 0.852,
+      "ev_now": 0.718,
+      "ev_low_now": 0.579,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "01-05-12",
+      "nums": [
+       1,
+       5,
+       12
+      ],
+      "amount": 100,
+      "odds_am": 31.8,
+      "odds_now": 29.7,
+      "ev_am": 0.515,
+      "ev_now": 0.49,
+      "ev_low_now": 0.393,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "01-08-12",
+      "nums": [
+       1,
+       8,
+       12
+      ],
+      "amount": 100,
+      "odds_am": 77.1,
+      "odds_now": 66.6,
+      "ev_am": 0.948,
+      "ev_now": 0.865,
+      "ev_low_now": 0.72,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "01-10-12",
+      "nums": [
+       1,
+       10,
+       12
+      ],
+      "amount": 100,
+      "odds_am": 79.1,
+      "odds_now": 71.9,
+      "ev_am": 0.996,
+      "ev_now": 0.915,
+      "ev_low_now": 0.764,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "05-08-12",
+      "nums": [
+       5,
+       8,
+       12
+      ],
+      "amount": 100,
+      "odds_am": 90.1,
+      "odds_now": 92.0,
+      "ev_am": 0.363,
+      "ev_now": 0.331,
+      "ev_low_now": 0.238,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "05-10-12",
+      "nums": [
+       5,
+       10,
+       12
+      ],
+      "amount": 100,
+      "odds_am": 116.0,
+      "odds_now": 121.6,
+      "ev_am": 0.478,
+      "ev_now": 0.428,
+      "ev_low_now": 0.306,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "08-10-12",
+      "nums": [
+       8,
+       10,
+       12
+      ],
+      "amount": 100,
+      "odds_am": 266.3,
+      "odds_now": 285.0,
+      "ev_am": 0.827,
+      "ev_now": 0.781,
+      "ev_low_now": 0.535,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     }
+    ]
+   }
   ]
  }
 }
