@@ -294,6 +294,234 @@
      }
     ]
    }
+  ],
+  "202605050609": [
+   {
+    "checked_at": "2026-11-23 14:08:40",
+    "odds_time": "2026-11-23 13:15:42",
+    "post_time": "14:20",
+    "total": 1200,
+    "rows": [
+     {
+      "bet_type": "馬連",
+      "combo": "05-09",
+      "nums": [
+       5,
+       9
+      ],
+      "amount": 100,
+      "odds_am": 33.9,
+      "odds_now": 35.0,
+      "ev_am": 1.44,
+      "ev_now": 1.349,
+      "ev_low_now": 1.179,
+      "judge_am": "buy",
+      "judge_now": "buy",
+      "flags": []
+     },
+     {
+      "bet_type": "馬連",
+      "combo": "05-07",
+      "nums": [
+       5,
+       7
+      ],
+      "amount": 100,
+      "odds_am": 17.3,
+      "odds_now": 15.7,
+      "ev_am": 0.838,
+      "ev_now": 0.785,
+      "ev_low_now": 0.74,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "05>09",
+      "nums": [
+       5,
+       9
+      ],
+      "amount": 100,
+      "odds_am": 37.2,
+      "odds_now": 40.4,
+      "ev_am": 1.077,
+      "ev_now": 1.057,
+      "ev_low_now": 0.821,
+      "judge_am": "apparent",
+      "judge_now": "apparent",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "05>07",
+      "nums": [
+       5,
+       7
+      ],
+      "amount": 100,
+      "odds_am": 25.2,
+      "odds_now": 24.2,
+      "ev_am": 0.822,
+      "ev_now": 0.803,
+      "ev_low_now": 0.688,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "05>06",
+      "nums": [
+       5,
+       6
+      ],
+      "amount": 100,
+      "odds_am": 12.1,
+      "odds_now": 11.4,
+      "ev_am": 0.964,
+      "ev_now": 0.906,
+      "ev_low_now": 0.835,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": [
+       "トリガミ"
+      ]
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "05>02",
+      "nums": [
+       5,
+       2
+      ],
+      "amount": 100,
+      "odds_am": 11.0,
+      "odds_now": 10.5,
+      "ev_am": 0.986,
+      "ev_now": 0.917,
+      "ev_low_now": 0.834,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": [
+       "トリガミ"
+      ]
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "05-07-09",
+      "nums": [
+       5,
+       7,
+       9
+      ],
+      "amount": 100,
+      "odds_am": 95.3,
+      "odds_now": 94.3,
+      "ev_am": 0.953,
+      "ev_now": 0.92,
+      "ev_low_now": 0.668,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "05-06-09",
+      "nums": [
+       5,
+       6,
+       9
+      ],
+      "amount": 100,
+      "odds_am": 49.0,
+      "odds_now": 49.6,
+      "ev_am": 1.294,
+      "ev_now": 1.266,
+      "ev_low_now": 1.101,
+      "judge_am": "buy",
+      "judge_now": "buy",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "02-05-09",
+      "nums": [
+       2,
+       5,
+       9
+      ],
+      "amount": 100,
+      "odds_am": 39.6,
+      "odds_now": 39.0,
+      "ev_am": 1.203,
+      "ev_now": 1.114,
+      "ev_low_now": 0.96,
+      "judge_am": "buy",
+      "judge_now": "apparent",
+      "flags": [
+       "判定↓"
+      ]
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "05-06-07",
+      "nums": [
+       5,
+       6,
+       7
+      ],
+      "amount": 100,
+      "odds_am": 24.1,
+      "odds_now": 23.8,
+      "ev_am": 0.716,
+      "ev_now": 0.769,
+      "ev_low_now": 0.662,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "02-05-07",
+      "nums": [
+       2,
+       5,
+       7
+      ],
+      "amount": 100,
+      "odds_am": 19.7,
+      "odds_now": 19.3,
+      "ev_am": 0.673,
+      "ev_now": 0.697,
+      "ev_low_now": 0.595,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "02-05-06",
+      "nums": [
+       2,
+       5,
+       6
+      ],
+      "amount": 100,
+      "odds_am": 7.8,
+      "odds_now": 8.0,
+      "ev_am": 0.679,
+      "ev_now": 0.729,
+      "ev_low_now": 0.537,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": [
+       "トリガミ"
+      ]
+     }
+    ]
+   }
   ]
  }
 }
