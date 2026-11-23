@@ -306,6 +306,101 @@
      "source": "dual"
     }
    ]
+  },
+  {
+   "race_id": "202605050611",
+   "orders": [
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      2,
+      4
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      2,
+      8
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      2,
+      10
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      4,
+      8
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      4,
+      10
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      8,
+      10
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      4,
+      8
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      8,
+      10
+     ],
+     "source": "dual"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      4,
+      8,
+      10
+     ],
+     "source": "dual"
+    }
+   ]
   }
  ]
 }

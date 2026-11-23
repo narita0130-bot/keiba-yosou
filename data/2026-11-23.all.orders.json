@@ -302,6 +302,50 @@
      "source": "ref"
     }
    ]
+  },
+  {
+   "race_id": "202605050611",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      8
+     ],
+     "partners": [
+      1,
+      4,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      8
+     ],
+     "partners": [
+      1,
+      4,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      8
+     ],
+     "partners": [
+      1,
+      4,
+      10
+     ],
+     "source": "ref"
+    }
+   ]
   }
  ]
 }
