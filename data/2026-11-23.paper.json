@@ -70,6 +70,77 @@
      "hits": []
     }
    }
+  },
+  "202605050608": {
+   "top3": [
+    [
+     10,
+     "メルシージュテーム",
+     10
+    ],
+    [
+     1,
+     "マーゴットサンズ",
+     2
+    ],
+    [
+     15,
+     "エリカマユーリ",
+     1
+    ]
+   ],
+   "marks": "◎16→6着 ◯1→2着 ▲14→13着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
