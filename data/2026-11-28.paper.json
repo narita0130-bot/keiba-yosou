@@ -1,0 +1,89 @@
+{
+ "races": {
+  "202605050707": {
+   "top3": [
+    [
+     11,
+     "カットソロ",
+     4
+    ],
+    [
+     3,
+     "ガウラディスコ",
+     2
+    ],
+    [
+     12,
+     "グランドスウェル",
+     1
+    ]
+   ],
+   "marks": "◎2→8着 ◯3→2着 ▲12→3着 ☆9→4着 ☆10→7着 ☆11→1着",
+   "books": {
+    "全部入り": {
+     "points": 17,
+     "invest": 1700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 10,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 17,
+     "invest": 1700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 19,
+     "invest": 1900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "馬単抜き": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイドbox": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  }
+ }
+}
