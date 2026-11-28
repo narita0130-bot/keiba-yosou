@@ -1700,6 +1700,104 @@
      }
     ]
    }
+  ],
+  "202608050711": [
+   {
+    "checked_at": "2026-11-28 15:28:40",
+    "odds_time": "2026-11-28 14:35:22",
+    "post_time": "15:40",
+    "total": 500,
+    "rows": [
+     {
+      "bet_type": "馬連",
+      "combo": "02-03",
+      "nums": [
+       2,
+       3
+      ],
+      "amount": 100,
+      "odds_am": 33.2,
+      "odds_now": 32.6,
+      "ev_am": 0.672,
+      "ev_now": 0.747,
+      "ev_low_now": 0.618,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "馬連",
+      "combo": "03-08",
+      "nums": [
+       3,
+       8
+      ],
+      "amount": 100,
+      "odds_am": 11.8,
+      "odds_now": 11.4,
+      "ev_am": 0.959,
+      "ev_now": 0.799,
+      "ev_low_now": 0.72,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "03>02",
+      "nums": [
+       3,
+       2
+      ],
+      "amount": 100,
+      "odds_am": 56.6,
+      "odds_now": 59.4,
+      "ev_am": 0.617,
+      "ev_now": 0.733,
+      "ev_low_now": 0.578,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "馬単",
+      "combo": "03>08",
+      "nums": [
+       3,
+       8
+      ],
+      "amount": 100,
+      "odds_am": 27.4,
+      "odds_now": 27.5,
+      "ev_am": 0.938,
+      "ev_now": 0.86,
+      "ev_low_now": 0.741,
+      "judge_am": "pass",
+      "judge_now": "pass",
+      "flags": []
+     },
+     {
+      "bet_type": "3連複",
+      "combo": "02-03-08",
+      "nums": [
+       2,
+       3,
+       8
+      ],
+      "amount": 100,
+      "odds_am": 44.2,
+      "odds_now": 43.1,
+      "ev_am": 1.089,
+      "ev_now": 0.956,
+      "ev_low_now": 0.828,
+      "judge_am": "apparent",
+      "judge_now": "pass",
+      "flags": [
+       "判定↓"
+      ]
+     }
+    ]
+   }
   ]
  }
 }
