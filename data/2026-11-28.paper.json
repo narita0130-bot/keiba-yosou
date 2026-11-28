@@ -347,6 +347,98 @@
      "hits": []
     }
    }
+  },
+  "202605050710": {
+   "top3": [
+    [
+     6,
+     "マジッククッキー",
+     1
+    ],
+    [
+     14,
+     "レッドラパルマ",
+     11
+    ],
+    [
+     7,
+     "ジャンヌドゥレーヴ",
+     5
+    ]
+   ],
+   "marks": "◎5→14着 ◯6→1着 ☆1→6着 ☆2→9着 ☆10→4着 ☆11→10着 ☆13→13着 ☆14→2着",
+   "books": {
+    "購入分": {
+     "points": 29,
+     "invest": 2900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 29,
+     "invest": 2900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 28,
+     "invest": 2800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 29,
+     "invest": 2900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 38,
+     "invest": 3800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "馬単抜き": {
+     "points": 22,
+     "invest": 2200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイドbox": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
