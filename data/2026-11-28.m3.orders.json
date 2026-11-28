@@ -224,6 +224,39 @@
    ]
   },
   {
+   "race_id": "202608050711",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      2,
+      3
+     ],
+     "source": "m3"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      3,
+      2
+     ],
+     "source": "m3"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      3,
+      8
+     ],
+     "source": "m3"
+    }
+   ]
+  },
+  {
    "race_id": "202608050712",
    "orders": [
     {
