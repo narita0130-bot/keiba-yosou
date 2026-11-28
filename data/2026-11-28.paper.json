@@ -20,6 +20,13 @@
    ],
    "marks": "◎2→8着 ◯3→2着 ▲12→3着 ☆9→4着 ☆10→7着 ☆11→1着",
    "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
     "全部入り": {
      "points": 17,
      "invest": 1700,
@@ -82,6 +89,20 @@
      "payout": 0,
      "refund": 0,
      "hits": []
+    },
+    "ワイド提案": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
     }
    }
   },
@@ -105,6 +126,13 @@
    ],
    "marks": "◎10→7着 ◯2→1着 ▲7→3着 ☆15→2着",
    "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
     "全部入り": {
      "points": 8,
      "invest": 800,
@@ -169,6 +197,20 @@
      "hits": [
       "ワイド02-07 340円"
      ]
+    },
+    "ワイド提案": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
     }
    }
   },
@@ -192,6 +234,13 @@
    ],
    "marks": "◎6→3着 ◯12→1着 ▲9→4着 ☆2→11着 ☆13→5着 ☆15→10着",
    "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
     "全部入り": {
      "points": 17,
      "invest": 1700,
@@ -260,6 +309,20 @@
      "hits": [
       "ワイド06-12 1,280円"
      ]
+    },
+    "ワイド提案": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
     }
    }
   },
@@ -283,6 +346,13 @@
    ],
    "marks": "◎2→13着 ◯6→5着 ▲11→6着",
    "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
     "全部入り": {
      "points": 5,
      "invest": 500,
@@ -342,6 +412,20 @@
     "ワイドbox": {
      "points": 3,
      "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイド提案": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 0,
+     "invest": 0,
      "payout": 0,
      "refund": 0,
      "hits": []
@@ -437,6 +521,20 @@
      "payout": 0,
      "refund": 0,
      "hits": []
+    },
+    "ワイド提案": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
     }
    }
   },
@@ -524,6 +622,13 @@
      "hits": []
     },
     "ワイドbox": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイド提案": {
      "points": 3,
      "invest": 300,
      "payout": 0,
@@ -623,6 +728,13 @@
      "hits": []
     },
     "ワイドbox": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイド提案": {
      "points": 3,
      "invest": 300,
      "payout": 0,
@@ -766,7 +878,7 @@
      5
     ]
    ],
-   "marks": "◎7→圏外 ◯2→2着 ▲9→圏外 △4→圏外",
+   "marks": "◎7→8着 ◯2→2着 ▲9→6着 △4→12着",
    "books": {
     "購入分": {
      "points": 9,
