@@ -1,0 +1,1225 @@
+{
+ "date": "2026-11-28",
+ "default_amount": 100,
+ "source": "Logic◯版（記録用）",
+ "races": [
+  {
+   "race_id": "202608050708",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      6,
+      3
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      6,
+      9
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      6,
+      12
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      6,
+      3
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      6,
+      9
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      6,
+      12
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      6,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      6,
+      13
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      6,
+      15
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      3,
+      9
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      3,
+      12
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      3,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      3,
+      13
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      3,
+      15
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      9,
+      12
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      9,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      9,
+      13
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      9,
+      15
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      12,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      12,
+      13
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      12,
+      15
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      2,
+      13
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      2,
+      15
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      6,
+      13,
+      15
+     ],
+     "source": "logic_tai"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050709",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      2,
+      6
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      2,
+      7
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      2,
+      11
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      2,
+      6
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      2,
+      7
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      2,
+      11
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      6,
+      7
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      6,
+      11
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      7,
+      11
+     ],
+     "source": "logic_tai"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050712",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      7,
+      4
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      7,
+      8
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      7,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      7,
+      9
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      7,
+      4
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      7,
+      8
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      7,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      7,
+      9
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      4,
+      8
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      4,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      4,
+      9
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      8,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      8,
+      9
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      7,
+      2,
+      9
+     ],
+     "source": "logic_tai"
+    }
+   ]
+  },
+  {
+   "race_id": "202605050707",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      2,
+      9
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      2,
+      11
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      2,
+      3
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      2,
+      12
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      2,
+      9
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      2,
+      11
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      2,
+      3
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      2,
+      12
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      2,
+      10
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      9,
+      11
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      9,
+      3
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      9,
+      12
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      9,
+      10
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      11,
+      3
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      11,
+      12
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      11,
+      10
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      3,
+      12
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      3,
+      10
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      2,
+      12,
+      10
+     ],
+     "source": "logic_tai"
+    }
+   ]
+  },
+  {
+   "race_id": "202605050708",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      10,
+      12
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      10,
+      14
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      10,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      10,
+      7
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      10,
+      12
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      10,
+      14
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      10,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      10,
+      7
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      10,
+      15
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      12,
+      14
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      12,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      12,
+      7
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      12,
+      15
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      14,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      14,
+      7
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      14,
+      15
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      2,
+      7
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      2,
+      15
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      10,
+      7,
+      15
+     ],
+     "source": "logic_tai"
+    }
+   ]
+  },
+  {
+   "race_id": "202605050710",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      5,
+      11
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      5,
+      15
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      5,
+      6
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      11
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      15
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      6
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      1
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      10
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      13
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      5,
+      14
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      11,
+      15
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      11,
+      6
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      11,
+      1
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      11,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      11,
+      10
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      11,
+      13
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      11,
+      14
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      15,
+      6
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      15,
+      1
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      15,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      15,
+      10
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      15,
+      13
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      15,
+      14
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      6,
+      1
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      6,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      6,
+      10
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      6,
+      13
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      6,
+      14
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      1,
+      2
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      1,
+      10
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      1,
+      13
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      1,
+      14
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      2,
+      10
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      2,
+      13
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      2,
+      14
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      10,
+      13
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      10,
+      14
+     ],
+     "source": "logic_tai"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      5,
+      13,
+      14
+     ],
+     "source": "logic_tai"
+    }
+   ]
+  }
+ ]
+}
