@@ -1,0 +1,143 @@
+{
+ "date": "2026-09-26",
+ "source": "複勝専門店 有料note（9/25 18:08）の勝負レースのうち未発走の3鞍を、非馬テンプレートで組んだもの",
+ "default_amount": 100,
+ "races": [
+  {
+   "race_id": "202606040808",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      1
+     ],
+     "partners": [
+      7,
+      10,
+      12
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      1
+     ],
+     "partners": [
+      7,
+      10,
+      12
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      1
+     ],
+     "partners": [
+      7,
+      10,
+      12
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040810",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      1
+     ],
+     "partners": [
+      2,
+      8,
+      11
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      1
+     ],
+     "partners": [
+      2,
+      8,
+      11,
+      3
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      1
+     ],
+     "partners": [
+      2,
+      8,
+      11,
+      3
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202609040812",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      7
+     ],
+     "partners": [
+      6,
+      8,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      7
+     ],
+     "partners": [
+      6,
+      8,
+      10,
+      4
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      7
+     ],
+     "partners": [
+      6,
+      8,
+      10,
+      4
+     ],
+     "source": "ref"
+    }
+   ]
+  }
+ ]
+}

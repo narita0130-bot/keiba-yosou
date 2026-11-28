@@ -1,0 +1,5 @@
+﻿date,race_id,jyo_code,venue,race_no,post_time,bet_type,bet_type_code,combo,amount,group_id,group_method,group_points,odds,ninki,ev,ev_low,judge,source,odds_time
+20261025,202608040912,08,京都,12,16:30,馬連,4,05-12,100,G001,normal,1,8.2,1,,,,combo,2026-10-25 15:25:38
+20261025,202608040912,08,京都,12,16:30,馬単,6,05>12,100,G002,normal,1,18.7,4,,,,combo,2026-10-25 15:25:38
+20261025,202608040912,08,京都,12,16:30,馬単,6,12>05,100,G003,normal,1,18.0,3,,,,combo,2026-10-25 15:25:38
+20261025,202608040912,08,京都,12,16:30,3連複,7,05-11-12,100,G004,normal,1,22.9,4,,,,combo,2026-10-25 15:25:38

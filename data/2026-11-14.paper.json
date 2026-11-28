@@ -1,0 +1,635 @@
+{
+ "races": {
+  "202603030306": {
+   "top3": [
+    [
+     12,
+     "ウェルカムソング",
+     5
+    ],
+    [
+     8,
+     "マイティキングダム",
+     4
+    ],
+    [
+     3,
+     "ミスターマーボー",
+     7
+    ]
+   ],
+   "marks": "◎8→2着 ◯1→4着 ▲7→9着",
+   "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050307": {
+   "top3": [
+    [
+     3,
+     "アルカディアカフェ",
+     1
+    ],
+    [
+     14,
+     "フクシマブリルハム",
+     3
+    ],
+    [
+     9,
+     "ヘインズポイント",
+     4
+    ]
+   ],
+   "marks": "◎1→14着 ◯3→1着 ▲13→8着",
+   "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030309": {
+   "top3": [
+    [
+     13,
+     "スワローシチー",
+     3
+    ],
+    [
+     1,
+     "ライフイズカラフル",
+     5
+    ],
+    [
+     2,
+     "サンヴィクトワール",
+     1
+    ]
+   ],
+   "marks": "◎13→1着 ◯2→3着 ▲10→7着 △9→13着",
+   "books": {
+    "購入分": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 9,
+     "invest": 1800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050309": {
+   "top3": [
+    [
+     6,
+     "ヤマニンバロネス",
+     4
+    ],
+    [
+     10,
+     "ダンツシタン",
+     2
+    ],
+    [
+     8,
+     "ルクスフレンジー",
+     5
+    ]
+   ],
+   "marks": "◎10→2着 ◯4→4着 ▲2→6着",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 4,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030310": {
+   "top3": [
+    [
+     10,
+     "アラナコア",
+     1
+    ],
+    [
+     9,
+     "アンティミスト",
+     6
+    ],
+    [
+     5,
+     "ディアウス",
+     3
+    ]
+   ],
+   "marks": "◎7→4着 ◯15→9着 ▲10→1着 ☆12→5着",
+   "books": {
+    "購入分": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 8,
+     "invest": 1600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050310": {
+   "top3": [
+    [
+     10,
+     "トライアンフパス",
+     6
+    ],
+    [
+     15,
+     "グーテンベルク",
+     4
+    ],
+    [
+     17,
+     "レオアジャイル",
+     7
+    ]
+   ],
+   "marks": "◎15→2着 ◯5→13着 ▲10→1着",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 4760,
+     "refund": 0,
+     "hits": [
+      "馬連10-15 4,760円"
+     ]
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 4760,
+     "refund": 0,
+     "hits": [
+      "馬連10-15 4,760円"
+     ]
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050310": {
+   "top3": [
+    [
+     1,
+     "バッデレイト",
+     4
+    ],
+    [
+     13,
+     "ジャスティンビスタ",
+     5
+    ],
+    [
+     2,
+     "レクスノヴァス",
+     6
+    ]
+   ],
+   "marks": "◎6→6着 ◯5→9着 ▲3→8着",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030311": {
+   "top3": [
+    [
+     3,
+     "アスタールフナ",
+     6
+    ],
+    [
+     14,
+     "サウスバンク",
+     7
+    ],
+    [
+     4,
+     "タカネノハナコサン",
+     9
+    ]
+   ],
+   "marks": "◎15→10着 ◯9→9着 ▲5→15着 △7→5着",
+   "books": {
+    "購入分": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 10,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050311": {
+   "top3": [
+    [
+     5,
+     "ブラッドバローズ",
+     3
+    ],
+    [
+     11,
+     "シェフザーデ",
+     1
+    ],
+    [
+     7,
+     "リュウトウコヤク",
+     11
+    ]
+   ],
+   "marks": "◎3→11着 ◯11→2着 ▲8→4着",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030312": {
+   "top3": [
+    [
+     4,
+     "マーシーラン",
+     5
+    ],
+    [
+     12,
+     "ペガサスノース",
+     2
+    ],
+    [
+     15,
+     "トレヴィ",
+     10
+    ]
+   ],
+   "marks": "◎12→2着 ◯6→5着 ▲5→4着",
+   "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050312": {
+   "top3": [
+    [
+     4,
+     "ジーティーマン",
+     1
+    ],
+    [
+     12,
+     "ルナルーチェット",
+     4
+    ],
+    [
+     9,
+     "デイジー",
+     5
+    ]
+   ],
+   "marks": "◎6→5着 ◯1→4着 ▲4→1着 ☆3→6着 ☆11→取消",
+   "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 12,
+     "invest": 800,
+     "payout": 0,
+     "refund": 400,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 5,
+     "invest": 300,
+     "payout": 0,
+     "refund": 200,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 300,
+     "payout": 0,
+     "refund": 300,
+     "hits": []
+    }
+   }
+  }
+ }
+}

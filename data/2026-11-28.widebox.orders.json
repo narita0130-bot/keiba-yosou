@@ -1,0 +1,245 @@
+{
+ "date": "2026-11-28",
+ "default_amount": 100,
+ "source": "ワイド版（11/28 ユーザー依頼「馬連・馬単を捨ててワイドで」）：非馬の◎◯▲のワイドボックス（▲がいないレースは◎-◯の1点）",
+ "races": [
+  {
+   "race_id": "202605050707",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      2,
+      3
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      2,
+      12
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      3,
+      12
+     ],
+     "source": "wide_box"
+    }
+   ]
+  },
+  {
+   "race_id": "202605050708",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      2,
+      7
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      2,
+      10
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      7,
+      10
+     ],
+     "source": "wide_box"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050708",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      6,
+      9
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      6,
+      12
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      9,
+      12
+     ],
+     "source": "wide_box"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050709",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      2,
+      6
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      2,
+      11
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      6,
+      11
+     ],
+     "source": "wide_box"
+    }
+   ]
+  },
+  {
+   "race_id": "202605050710",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      5,
+      6
+     ],
+     "source": "wide_box"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050710",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      3,
+      7
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      3,
+      15
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      7,
+      15
+     ],
+     "source": "wide_box"
+    }
+   ]
+  },
+  {
+   "race_id": "202605050711",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      4,
+      6
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      4,
+      15
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      6,
+      15
+     ],
+     "source": "wide_box"
+    }
+   ]
+  },
+  {
+   "race_id": "202608050712",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      2,
+      7
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      2,
+      9
+     ],
+     "source": "wide_box"
+    },
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      7,
+      9
+     ],
+     "source": "wide_box"
+    }
+   ]
+  }
+ ]
+}

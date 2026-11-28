@@ -1,0 +1,970 @@
+{
+ "races": {
+  "202605050707": {
+   "top3": [
+    [
+     11,
+     "カットソロ",
+     4
+    ],
+    [
+     3,
+     "ガウラディスコ",
+     2
+    ],
+    [
+     12,
+     "グランドスウェル",
+     1
+    ]
+   ],
+   "marks": "◎2→8着 ◯3→2着 ▲12→3着 ☆9→4着 ☆10→7着 ☆11→1着",
+   "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 17,
+     "invest": 1700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 10,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 17,
+     "invest": 1700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 19,
+     "invest": 1900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "馬単抜き": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイドbox": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイド提案": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050708": {
+   "top3": [
+    [
+     2,
+     "ミッキーダムール",
+     1
+    ],
+    [
+     15,
+     "フィールドノート",
+     2
+    ],
+    [
+     7,
+     "エラルディーク",
+     4
+    ]
+   ],
+   "marks": "◎10→7着 ◯2→1着 ▲7→3着 ☆15→2着",
+   "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 8,
+     "invest": 800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 4,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 10,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 17,
+     "invest": 1700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "馬単抜き": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイドbox": {
+     "points": 3,
+     "invest": 300,
+     "payout": 340,
+     "refund": 0,
+     "hits": [
+      "ワイド02-07 340円"
+     ]
+    },
+    "ワイド提案": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050708": {
+   "top3": [
+    [
+     12,
+     "モンサンゴールデン",
+     4
+    ],
+    [
+     3,
+     "オプティモ",
+     8
+    ],
+    [
+     6,
+     "フェアリーライズ",
+     7
+    ]
+   ],
+   "marks": "◎6→3着 ◯12→1着 ▲9→4着 ☆2→11着 ☆13→5着 ☆15→10着",
+   "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 17,
+     "invest": 1700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 15,
+     "invest": 1500,
+     "payout": 15110,
+     "refund": 0,
+     "hits": [
+      "3連複03-06-12 15,110円"
+     ]
+    },
+    "★★以上": {
+     "points": 17,
+     "invest": 1700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 24,
+     "invest": 2400,
+     "payout": 15110,
+     "refund": 0,
+     "hits": [
+      "3連複03-06-12 15,110円"
+     ]
+    },
+    "馬単抜き": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイドbox": {
+     "points": 3,
+     "invest": 300,
+     "payout": 1280,
+     "refund": 0,
+     "hits": [
+      "ワイド06-12 1,280円"
+     ]
+    },
+    "ワイド提案": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050709": {
+   "top3": [
+    [
+     12,
+     "レッドイステル",
+     5
+    ],
+    [
+     1,
+     "ロイスター",
+     2
+    ],
+    [
+     13,
+     "ナイトスラッガー",
+     6
+    ]
+   ],
+   "marks": "◎2→13着 ◯6→5着 ▲11→6着",
+   "books": {
+    "購入分": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "馬単抜き": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイドbox": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイド提案": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050710": {
+   "top3": [
+    [
+     6,
+     "マジッククッキー",
+     1
+    ],
+    [
+     14,
+     "レッドラパルマ",
+     11
+    ],
+    [
+     7,
+     "ジャンヌドゥレーヴ",
+     5
+    ]
+   ],
+   "marks": "◎5→14着 ◯6→1着 ☆1→6着 ☆2→9着 ☆10→4着 ☆11→10着 ☆13→13着 ☆14→2着",
+   "books": {
+    "購入分": {
+     "points": 29,
+     "invest": 2900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 29,
+     "invest": 2900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 28,
+     "invest": 2800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 29,
+     "invest": 2900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 38,
+     "invest": 3800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "馬単抜き": {
+     "points": 22,
+     "invest": 2200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイドbox": {
+     "points": 1,
+     "invest": 100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイド提案": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050710": {
+   "top3": [
+    [
+     11,
+     "セシリエプラージュ",
+     4
+    ],
+    [
+     15,
+     "アンダースコア",
+     1
+    ],
+    [
+     2,
+     "マッシャーブルム",
+     13
+    ]
+   ],
+   "marks": "◎15→2着 ◯3→8着 ▲7→14着 △8→9着",
+   "books": {
+    "購入分": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 4,
+     "invest": 400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "馬単抜き": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイドbox": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイド提案": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 1,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050711": {
+   "top3": [
+    [
+     16,
+     "カヴァレリッツォ",
+     4
+    ],
+    [
+     8,
+     "クルゼイロドスル",
+     14
+    ],
+    [
+     4,
+     "マジックサンズ",
+     1
+    ]
+   ],
+   "marks": "◎6→6着 ◯4→3着 ▲15→10着",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "馬単抜き": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイドbox": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイド提案": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 4,
+     "invest": 3000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050711": {
+   "top3": [
+    [
+     6,
+     "ゴールデンプロミス",
+     4
+    ],
+    [
+     8,
+     "ノヴァヴェローチェ",
+     1
+    ],
+    [
+     3,
+     "ショウナンバトレニ",
+     3
+    ]
+   ],
+   "marks": "◎3→3着 ◯2→4着 ▲8→2着",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "馬単抜き": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイドbox": {
+     "points": 3,
+     "invest": 300,
+     "payout": 290,
+     "refund": 0,
+     "hits": [
+      "ワイド03-08 290円"
+     ]
+    },
+    "ワイド提案": {
+     "points": 3,
+     "invest": 300,
+     "payout": 290,
+     "refund": 0,
+     "hits": [
+      "ワイド03-08 290円"
+     ]
+    },
+    "予算5000円版": {
+     "points": 1,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202608050712": {
+   "top3": [
+    [
+     13,
+     "フロムレイブン",
+     2
+    ],
+    [
+     2,
+     "マウンテンバローズ",
+     1
+    ],
+    [
+     5,
+     "クイーンズデイ",
+     5
+    ]
+   ],
+   "marks": "◎7→8着 ◯2→2着 ▲9→6着 △4→12着",
+   "books": {
+    "購入分": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 14,
+     "invest": 1400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "馬単抜き": {
+     "points": 6,
+     "invest": 600,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイドbox": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイド提案": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  }
+ }
+}

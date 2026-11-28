@@ -1,0 +1,58 @@
+{
+ "date": "2026-11-21",
+ "default_amount": 200,
+ "source": "★なしの京都9Rを非馬型で組んだ試算。非馬◎4がLogic注目馬と重なるので200円",
+ "races": [
+  {
+   "race_id": "202608050509",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      4,
+      7
+     ],
+     "source": "nobet"
+    },
+    {
+     "kind": "馬連",
+     "method": "normal",
+     "combo": [
+      4,
+      3
+     ],
+     "source": "nobet"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      4,
+      7
+     ],
+     "source": "nobet"
+    },
+    {
+     "kind": "馬単",
+     "method": "normal",
+     "combo": [
+      4,
+      3
+     ],
+     "source": "nobet"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      4,
+      7,
+      3
+     ],
+     "source": "nobet"
+    }
+   ]
+  }
+ ]
+}

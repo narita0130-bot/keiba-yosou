@@ -1,0 +1,572 @@
+{
+ "races": {
+  "202603030608": {
+   "top3": [
+    [
+     11,
+     "スウィッチインラヴ",
+     3
+    ],
+    [
+     14,
+     "シヴィータス",
+     1
+    ],
+    [
+     5,
+     "スプリングデイ",
+     11
+    ]
+   ],
+   "marks": "◎3→8着 ◯9→5着 ▲11→1着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 5,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050608": {
+   "top3": [
+    [
+     10,
+     "メルシージュテーム",
+     10
+    ],
+    [
+     1,
+     "マーゴットサンズ",
+     2
+    ],
+    [
+     15,
+     "エリカマユーリ",
+     1
+    ]
+   ],
+   "marks": "◎16→6着 ◯1→2着 ▲14→13着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030609": {
+   "top3": [
+    [
+     12,
+     "トラストボス",
+     11
+    ],
+    [
+     13,
+     "ボンボンベイビー",
+     3
+    ],
+    [
+     15,
+     "ダノンミッドナイト",
+     2
+    ]
+   ],
+   "marks": "◎14→5着 ◯13→2着 ▲10→4着",
+   "books": {
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050609": {
+   "top3": [
+    [
+     4,
+     "スカイスプレンダー",
+     4
+    ],
+    [
+     2,
+     "アロンズロッド",
+     2
+    ],
+    [
+     7,
+     "ニュークレド",
+     5
+    ]
+   ],
+   "marks": "◎5→5着 ◯9→6着 ▲7→3着 ☆6→4着 ☆2→2着",
+   "books": {
+    "全部入り": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 7,
+     "invest": 700,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 10,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030610": {
+   "top3": [
+    [
+     4,
+     "アイドクレース",
+     13
+    ],
+    [
+     11,
+     "ロートホルン",
+     9
+    ],
+    [
+     3,
+     "アストリル",
+     1
+    ]
+   ],
+   "marks": "◎10→11着 ◯3→3着 ▲8→4着 ☆13→12着 ☆15→14着",
+   "books": {
+    "全部入り": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 10,
+     "invest": 1000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 18,
+     "invest": 1800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050610": {
+   "top3": [
+    [
+     11,
+     "シャルクハフト",
+     10
+    ],
+    [
+     1,
+     "ペンナヴェローチェ",
+     4
+    ],
+    [
+     7,
+     "ビービーアジャイル",
+     5
+    ]
+   ],
+   "marks": "◎15→8着 ◯13→9着 ▲14→13着 ☆1→2着 ☆3→6着",
+   "books": {
+    "全部入り": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 12,
+     "invest": 1200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202603030611": {
+   "top3": [
+    [
+     3,
+     "ジェイエルモーダル",
+     1
+    ],
+    [
+     8,
+     "ディーズゴールド",
+     2
+    ],
+    [
+     10,
+     "プロミシングスター",
+     8
+    ]
+   ],
+   "marks": "◎3→1着 ◯10→3着 ▲12→4着 △2→14着",
+   "books": {
+    "全部入り": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 2,
+     "invest": 200,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  },
+  "202605050611": {
+   "top3": [
+    [
+     12,
+     "オンユアマークス",
+     6
+    ],
+    [
+     10,
+     "ショウナンガレオン",
+     1
+    ],
+    [
+     8,
+     "コラリオン",
+     4
+    ]
+   ],
+   "marks": "◎8→3着 ◯1→10着 ▲4→7着 △10→2着",
+   "books": {
+    "全部入り": {
+     "points": 9,
+     "invest": 1800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 7,
+     "invest": 1400,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 9,
+     "invest": 900,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 9,
+     "invest": 1800,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 11,
+     "invest": 1100,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
+  }
+ }
+}

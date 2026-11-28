@@ -1,0 +1,66 @@
+{
+ "date": "2026-11-22",
+ "default_amount": 100,
+ "source": "京都12R 提案（Logic◎1が3着以内に来ることに賭ける形。ワイド1-11を200円、3連複1-11-印4頭を100円ずつ）",
+ "races": [
+  {
+   "race_id": "202608050612",
+   "orders": [
+    {
+     "kind": "ワイド",
+     "method": "normal",
+     "combo": [
+      1,
+      11
+     ],
+     "amount": 200,
+     "source": "proposal"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      11,
+      12
+     ],
+     "amount": 100,
+     "source": "proposal"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      11,
+      13
+     ],
+     "amount": 100,
+     "source": "proposal"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      10,
+      11
+     ],
+     "amount": 100,
+     "source": "proposal"
+    },
+    {
+     "kind": "3連複",
+     "method": "normal",
+     "combo": [
+      1,
+      7,
+      11
+     ],
+     "amount": 100,
+     "source": "proposal"
+    }
+   ]
+  }
+ ]
+}

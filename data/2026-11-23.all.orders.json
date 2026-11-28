@@ -1,0 +1,353 @@
+{
+ "date": "2026-11-23",
+ "source": "非馬 note 10:24（★★★4・★4）。東京11R（★、G2東スポ2歳S）は◎がスキで表示のため未確定（ユーザーに確認中）。福島10R・11R・東京9R・10Rは「見解追記中」。東京10Rは本人の想定馬券あり（単勝◎・馬連◎-◯▲・3連複◎◯▲-◎◯▲-◎◯▲☆）だがテンプレートで組む",
+ "default_amount": 100,
+ "races": [
+  {
+   "race_id": "202603030608",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      3
+     ],
+     "partners": [
+      9,
+      11
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      3
+     ],
+     "partners": [
+      9,
+      11
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      3
+     ],
+     "partners": [
+      9,
+      11
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030609",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      14
+     ],
+     "partners": [
+      13,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      14
+     ],
+     "partners": [
+      13,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      14
+     ],
+     "partners": [
+      13,
+      10
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030610",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      10
+     ],
+     "partners": [
+      3,
+      8
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      10
+     ],
+     "partners": [
+      3,
+      8,
+      13,
+      15
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      10
+     ],
+     "partners": [
+      3,
+      8,
+      13,
+      15
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202603030611",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      3
+     ],
+     "partners": [
+      10,
+      12,
+      2
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      3
+     ],
+     "partners": [
+      10,
+      12,
+      2
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      3
+     ],
+     "partners": [
+      10,
+      12,
+      2
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202605050608",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      16
+     ],
+     "partners": [
+      1,
+      14
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      16
+     ],
+     "partners": [
+      1,
+      14
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      16
+     ],
+     "partners": [
+      1,
+      14
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202605050609",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      5
+     ],
+     "partners": [
+      9,
+      7
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      5
+     ],
+     "partners": [
+      9,
+      7,
+      6,
+      2
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      5
+     ],
+     "partners": [
+      9,
+      7,
+      6,
+      2
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202605050610",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      15
+     ],
+     "partners": [
+      13,
+      14
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      15
+     ],
+     "partners": [
+      13,
+      14,
+      1,
+      3
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      15
+     ],
+     "partners": [
+      13,
+      14,
+      1,
+      3
+     ],
+     "source": "ref"
+    }
+   ]
+  },
+  {
+   "race_id": "202605050611",
+   "orders": [
+    {
+     "kind": "馬連",
+     "method": "nagashi",
+     "axis": [
+      8
+     ],
+     "partners": [
+      1,
+      4,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "馬単",
+     "method": "nagashi_1st",
+     "axis": [
+      8
+     ],
+     "partners": [
+      1,
+      4,
+      10
+     ],
+     "source": "ref"
+    },
+    {
+     "kind": "3連複",
+     "method": "nagashi",
+     "axis": [
+      8
+     ],
+     "partners": [
+      1,
+      4,
+      10
+     ],
+     "source": "ref"
+    }
+   ]
+  }
+ ]
+}

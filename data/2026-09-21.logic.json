@@ -1,0 +1,103 @@
+{
+ "date": "2026-09-21",
+ "source": "Logic@競馬",
+ "races": [
+  {
+   "race_id": "202609040701",
+   "venue": "阪神",
+   "race_no": 1,
+   "horses": [
+    {
+     "name": "ランズエンド",
+     "umaban": 6
+    }
+   ]
+  },
+  {
+   "race_id": "202609040702",
+   "venue": "阪神",
+   "race_no": 2,
+   "horses": [
+    {
+     "name": "リアンフィニ",
+     "umaban": 5
+    }
+   ]
+  },
+  {
+   "race_id": "202609040703",
+   "venue": "阪神",
+   "race_no": 3,
+   "horses": [
+    {
+     "name": "ノヴァーリス",
+     "umaban": 6
+    },
+    {
+     "name": "カフジポポー",
+     "umaban": 7
+    },
+    {
+     "name": "キャンドル",
+     "umaban": 8
+    }
+   ]
+  },
+  {
+   "race_id": "202609040706",
+   "venue": "阪神",
+   "race_no": 6,
+   "horses": [
+    {
+     "name": "ルシタニア",
+     "umaban": 8
+    }
+   ]
+  },
+  {
+   "race_id": "202609040707",
+   "venue": "阪神",
+   "race_no": 7,
+   "horses": [
+    {
+     "name": "ルクスノア",
+     "umaban": 1
+    },
+    {
+     "name": "ダンデノン",
+     "umaban": 2
+    }
+   ]
+  },
+  {
+   "race_id": "202609040708",
+   "venue": "阪神",
+   "race_no": 8,
+   "horses": [
+    {
+     "name": "メイショウカスガイ",
+     "umaban": 5
+    },
+    {
+     "name": "ディニテ",
+     "umaban": 6
+    }
+   ]
+  },
+  {
+   "race_id": "202609040709",
+   "venue": "阪神",
+   "race_no": 9,
+   "horses": [
+    {
+     "name": "ポートデラメール",
+     "umaban": 3
+    },
+    {
+     "name": "ダイシンリンク",
+     "umaban": 4
+    }
+   ]
+  }
+ ]
+}
