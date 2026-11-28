@@ -538,6 +538,105 @@
      "hits": []
     }
    }
+  },
+  "202605050711": {
+   "top3": [
+    [
+     16,
+     "カヴァレリッツォ",
+     4
+    ],
+    [
+     8,
+     "クルゼイロドスル",
+     14
+    ],
+    [
+     4,
+     "マジックサンズ",
+     1
+    ]
+   ],
+   "marks": "◎6→6着 ◯4→3着 ▲15→10着",
+   "books": {
+    "購入分": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "全部入り": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "30倍以下": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "◎◯3点": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "両◎軸版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "★★以上": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "オリジナル版": {
+     "points": 5,
+     "invest": 500,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "Logic◯版": {
+     "points": 0,
+     "invest": 0,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "馬単抜き": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "ワイドbox": {
+     "points": 3,
+     "invest": 300,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    },
+    "予算5000円版": {
+     "points": 4,
+     "invest": 3000,
+     "payout": 0,
+     "refund": 0,
+     "hits": []
+    }
+   }
   }
  }
 }
